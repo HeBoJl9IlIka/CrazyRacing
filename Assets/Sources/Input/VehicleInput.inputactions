@@ -1,0 +1,34 @@
+{
+    "name": "VehicleInput",
+    "maps": [
+        {
+            "name": "Vehicle",
+            "id": "ae414714-9422-4ca5-b637-c6834fcc146a",
+            "actions": [
+                {
+                    "name": "RecoveredVehicle",
+                    "type": "Button",
+                    "id": "04e56752-e3fe-4214-bb5c-30d3ca14e102",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1a084171-f4f0-4f78-9323-b47a527a9ab8",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RecoveredVehicle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

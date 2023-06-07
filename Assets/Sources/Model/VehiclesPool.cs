@@ -1,18 +1,15 @@
-using UnityEngine;
-
-namespace MVVM
+namespace CrazyRacing.Model
 {
-    public class VehiclePool
+    public class VehiclesPool
     {
-        private Vehicle[] _vehicles;
-        private Vehicle _current;
+        private VehiclePresenter[] _vehicles;
+        private VehiclePresenter _current;
 
-        public Vehicle Current => _current;
+        public VehiclePresenter Current => _current;
 
-        public VehiclePool(Vehicle[] vehicles)
+        public VehiclesPool(VehiclePresenter[] vehicles)
         {
             _vehicles = vehicles;
-            DisableAllVehicles();
             EnableFirstVehicle();
         }
 
@@ -32,13 +29,7 @@ namespace MVVM
             }
         }
 
-        private void DisableAllVehicles()
-        {
-            foreach (var vehicle in _vehicles)
-                vehicle.gameObject.SetActive(false);
-        }
-
-        private void EnableFirstVehicle()
+        public void EnableFirstVehicle()
         {
             _current = _vehicles[0];
             _current.gameObject.SetActive(true);

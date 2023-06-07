@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace MVVM
+namespace CrazyRacing.Model
 {
     public class RecoveryVehicle
     {
@@ -13,8 +13,8 @@ namespace MVVM
 
         public void Execute(Transform target)
         {
-            Debug.Log("Rcovery");
             target.position = _recoveryPoint;
+            target.eulerAngles = _recoveryPoint;
         }
     }
 }
