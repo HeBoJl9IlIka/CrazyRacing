@@ -2381,18 +2381,6 @@ MonoBehaviour:
     e32: 0
     e33: 0
   substeps: 5
---- !u!114 &2393607770721786144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3257780161372232328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: add4cb13c3fff1545988f1cee191eaee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3257780160677182601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3500,7 +3488,7 @@ MonoBehaviour:
   OnVehicleInitialized:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &6883134057613648892
+--- !u!114 &6847702812971946992
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3509,7 +3497,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3257780161372232328}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: add4cb13c3fff1545988f1cee191eaee, type: 3}
+  m_Script: {fileID: 11500000, guid: f9ea07bd4547c2a4d96c72cf9bae071b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3257780161372232330 stripped

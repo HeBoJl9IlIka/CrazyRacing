@@ -1671,8 +1671,7 @@ GameObject:
   - component: {fileID: 1522747413}
   - component: {fileID: 6189815300312925335}
   - component: {fileID: 6985688408984224017}
-  - component: {fileID: 7983872281903426038}
-  - component: {fileID: 2487460593724184917}
+  - component: {fileID: 3364350887743052938}
   m_Layer: 0
   m_Name: Sports Car
   m_TagString: Vehicle
@@ -2912,7 +2911,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.96, y: 1.4, z: 4.69}
   m_Center: {x: 0, y: 0.5, z: 0}
---- !u!114 &7983872281903426038
+--- !u!114 &3364350887743052938
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2921,24 +2920,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7372666997863621945}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: add4cb13c3fff1545988f1cee191eaee, type: 3}
+  m_Script: {fileID: 11500000, guid: f9ea07bd4547c2a4d96c72cf9bae071b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2487460593724184917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7372666997863621945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3dc3518a7311a44f8e12272fe6652e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _layerMask:
-    serializedVersion: 2
-    m_Bits: 2147483647
 --- !u!1 &7372666997879058320
 GameObject:
   m_ObjectHideFlags: 0

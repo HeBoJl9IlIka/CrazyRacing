@@ -1,35 +1,57 @@
+using CrazyRacing.Model;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VehiclesPoolPresenter : LevelPresenter
+public class VehiclesPoolPresenter
 {
-    [SerializeField] private GameObject[] _vehiclesPrefabs;
+    private readonly VehiclesPoolView _view;
+    private readonly VehiclesPool _model;
 
-    private void Awake()
+    private VehicleView _lastVehicle;
+    private VehicleView _currentVehicle;
+
+    public VehiclesPoolPresenter(VehiclesPoolView view, VehiclesPool model)
     {
-        if (_vehiclesPrefabs.Length == 0)
-            throw new ArgumentNullException(nameof(_vehiclesPrefabs));
-
-        foreach (var vehicle in _vehiclesPrefabs)
-        {
-            if (vehicle.TryGetComponent(out VehiclePresenter component) == false)
-                throw new ArgumentNullException(nameof(vehicle));
-        }
+        _view = view;
+        _model = model;
     }
 
-    public override VehiclePresenter[] CreateVehicles()
+    public void Enable()
     {
-        List<VehiclePresenter> vehicles = new List<VehiclePresenter>();
+        _model.EnablingVehicle += OnEnablingVehicle;
+        _model.DisablingVehicle += OnDisablingVehicle;
+        _model.RelocatingVehicle += OnRelocatingVehicle;
+    }
 
-        foreach (var vehicle in _vehiclesPrefabs)
-        {
-            GameObject newVehicle = Instantiate(vehicle, transform);
-            vehicles.Add(newVehicle.GetComponent<VehiclePresenter>());
-            newVehicle.gameObject.SetActive(false);
-        }
+    public void Disable()
+    {
+        _model.EnablingVehicle -= OnEnablingVehicle;
+        _model.DisablingVehicle -= OnDisablingVehicle;
+        _model.RelocatingVehicle -= OnRelocatingVehicle;
+    }
 
-        return vehicles.ToArray();
+    private void OnDisablingVehicle(VehicleView vehicle)
+    {
+        _lastVehicle = vehicle;
+        _view.DisableVehicle(vehicle);
+    }
+
+    private void OnEnablingVehicle(VehicleView vehicle)
+    {
+        _currentVehicle = vehicle;
+        _view.EnableVehicle(vehicle);
+    }
+
+    private void OnRelocatingVehicle()
+    {
+        if (_lastVehicle == null)
+            throw new ArgumentNullException(nameof(_lastVehicle));
+
+        if(_currentVehicle == null)
+            throw new ArgumentNullException(nameof(_currentVehicle));
+
+        _view.RelocateVehicle(_lastVehicle, _currentVehicle);
     }
 }
 

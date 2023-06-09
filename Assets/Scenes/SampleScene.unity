@@ -158,9 +158,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47ac63e9bcc73b148960bf2bb66b1158, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _vehiclesPoolPresenter: {fileID: 1099257414}
-  _checkpointPresenter: {fileID: 1828921944}
-  _recoveryPoint: {fileID: 2102629836}
 --- !u!4 &467674807
 Transform:
   m_ObjectHideFlags: 0
@@ -706,6 +703,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1099257413}
+  - component: {fileID: 1099257415}
   - component: {fileID: 1099257414}
   m_Layer: 0
   m_Name: VehiclePool
@@ -738,13 +736,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1099257412}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73cfc1aaf7e53da45afde97093f1f755, type: 3}
+  m_Script: {fileID: 11500000, guid: cd6b47407d7f3124584075c713715ae7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _view: {fileID: 1099257415}
+--- !u!114 &1099257415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099257412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a505501ee4d9994597c831fb9acf0c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _vehiclesPrefabs:
   - {fileID: 7372666997863621945, guid: 3e1aced4144dd784c8f3878b71b33dcf, type: 3}
   - {fileID: 3257780161372232328, guid: 858cc54b36ffeff478f53c58eef2b16c, type: 3}
-  - {fileID: 1649529085236753054, guid: b9a717f48a878014eace6ca32ea4f360, type: 3}
 --- !u!1001 &1126137642
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -921,7 +931,6 @@ GameObject:
   - component: {fileID: 1828921942}
   - component: {fileID: 1828921941}
   - component: {fileID: 1828921940}
-  - component: {fileID: 1828921944}
   m_Layer: 0
   m_Name: Checkpoint
   m_TagString: Untagged
@@ -1007,18 +1016,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1828921944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828921937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6912842930d581b4d9e68ab78eda93c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1966944845
 GameObject:
   m_ObjectHideFlags: 0
