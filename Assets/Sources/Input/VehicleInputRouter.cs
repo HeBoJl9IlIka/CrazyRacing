@@ -1,7 +1,8 @@
 using CrazyRacing.Input;
 using CrazyRacing.Model;
-using UnityEngine;
 using UnityEngine.InputSystem;
+
+using UnityEngine;
 
 public class VehicleInputRouter
 {
@@ -30,6 +31,6 @@ public class VehicleInputRouter
 
     private void OnRecoveredVehicle(InputAction.CallbackContext obj)
     {
-        _recoveryVehicle.Execute(_vehiclesPool.Current.transform);
+        _recoveryVehicle.Recover(_vehiclesPool.Current);
     }
 }

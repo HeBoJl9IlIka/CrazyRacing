@@ -20,11 +20,6 @@ public class VehiclesPoolView : MonoBehaviour
         }
     }
 
-    public void RelocateVehicle(VehicleView last, VehicleView current)
-    {
-        current.transform.position = last.transform.position;
-    }
-
     public void EnableVehicle(VehicleView vehicle)
     {
         vehicle.gameObject.SetActive(true);

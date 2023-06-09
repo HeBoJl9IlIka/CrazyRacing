@@ -3,15 +3,17 @@ using UnityEngine;
 
 public class VehiclesPoolSetup : MonoBehaviour
 {
-    [SerializeField] private VehiclesPoolView _view;
+    [SerializeField] private VehiclesPoolView _vehiclesPoolView;
 
     private VehiclesPool _model;
     private VehiclesPoolPresenter _presenter;
 
+    public VehiclesPool Model => _model;
+
     private void Awake()
     {
-        _model = new VehiclesPool(_view.CreateVehicles());
-        _presenter = new VehiclesPoolPresenter(_view, _model);
+        _model = new VehiclesPool(_vehiclesPoolView.CreateVehicles());
+        _presenter = new VehiclesPoolPresenter(_vehiclesPoolView, _model);
     }
 
     private void Start()
