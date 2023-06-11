@@ -9,7 +9,6 @@ public class RecoveryVehicleSetup : MonoBehaviour
     private RecoveryVehiclePresenter _presenter;
 
     public RecoveryVehicle Model => _model;
-    public RecoveryVehiclePresenter Presenter => _presenter;
 
     private void Awake()
     {

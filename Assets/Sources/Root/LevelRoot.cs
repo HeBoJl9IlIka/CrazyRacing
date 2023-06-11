@@ -21,15 +21,16 @@ public class LevelRoot : MonoBehaviour
             throw new ArgumentOutOfRangeException();
 
         _vehicleInputRouter = new VehicleInputRouter(_recoveryVehicle, _vehiclesPool);
-        _vehicleInputRouter.Enable();
-
-        _checkpointsCounter.Passed += OnPassed;
+        OnEnable();
     }
 
     private void OnEnable()
     {
         if (_vehicleInputRouter != null)
             _vehicleInputRouter.Enable();
+
+        if(_checkpointsCounter != null)
+            _checkpointsCounter.Passed += OnPassed;
     }
 
     private void OnDisable()

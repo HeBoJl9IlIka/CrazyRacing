@@ -5,13 +5,17 @@ public class CheckpointsCounterView : MonoBehaviour
 {
     private const float Delay = 1f;
 
-    [SerializeField] private CheckpointView[] _checkpoints;
-
+    private CheckpointView[] _checkpoints;
     private CheckpointView _current;
 
     public int AmountCheckpoints => _checkpoints.Length;
 
     public event Action<CheckpointView> Passing;
+
+    private void Awake()
+    {
+        _checkpoints = GetComponentsInChildren<CheckpointView>();
+    }
 
     private void Start()
     {

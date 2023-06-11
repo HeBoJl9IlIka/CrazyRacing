@@ -2,26 +2,24 @@ using CrazyRacing.Model;
 
 public class CheckpointsCounterPresenter
 {
-    private CheckpointsCounterView _counterView;
-    private ProgressBarView _progressBarView;
+    private CheckpointsCounterView _view;
     private CheckpointsCounter _model;
 
-    public CheckpointsCounterPresenter(CheckpointsCounterView view, CheckpointsCounter model, ProgressBarView progressBarView)
+    public CheckpointsCounterPresenter(CheckpointsCounterView view, CheckpointsCounter model)
     {
-        _counterView = view;
+        _view = view;
         _model = model;
-        _progressBarView = progressBarView;
     }
 
     public void Enable()
     {
-        _counterView.Passing += OnPassing;
+        _view.Passing += OnPassing;
         _model.Passed += OnPassedCheckpoint;
     }
 
     public void Disable()
     {
-        _counterView.Passing -= OnPassing;
+        _view.Passing -= OnPassing;
         _model.Passed -= OnPassedCheckpoint;
     }
 
@@ -32,7 +30,6 @@ public class CheckpointsCounterPresenter
 
     private void OnPassedCheckpoint(CheckpointView checkpoint, int currentNumber)
     {
-        _counterView.ChangeCheckpoint(checkpoint);
-        _progressBarView.Add(currentNumber);
+        _view.ChangeCheckpoint(checkpoint);
     }
 }
