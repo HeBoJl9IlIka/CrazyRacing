@@ -1666,7 +1666,6 @@ GameObject:
   - component: {fileID: 802445851}
   - component: {fileID: 802445850}
   - component: {fileID: 802445849}
-  - component: {fileID: 957050873}
   - component: {fileID: 1522747413}
   - component: {fileID: 6189815300312925335}
   - component: {fileID: 6985688408984224017}
@@ -2762,48 +2761,6 @@ MonoBehaviour:
       name: 
     intensity: 0.4
     lowerSpeedThreshold: 3
---- !u!114 &957050873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7372666997863621945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73de00e98f9f2fe4dbd478e69c4acc37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  module:
-    state:
-      fullName: 
-      isEnabled: 1
-      isOn: 1
-      lodIndex: -1
-      name: 
-    active: 0
-    capacity: 50
-    charge: 50
-    disableInReverse: 1
-    disableOffThrottle: 1
-    engineVolumeCoefficient: 1.5
-    exhaustEmissionCoefficient: 2
-    flow: 0.1
-    powerCoefficient: 2
-    soundComponent:
-      state:
-        fullName: 
-        isEnabled: 1
-        isOn: 1
-        lodIndex: -1
-        name: 
-      audioMixerGroup: {fileID: 0}
-      basePitch: 1
-      baseVolume: 0.1
-      clips:
-      - {fileID: 8300000, guid: b740255ffa07d4c489b74b29eb3e0f01, type: 3}
-      container: {fileID: 0}
-      sources: []
 --- !u!114 &1522747413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2910,7 +2867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b25a5ec12ee44ab47ab318a6e0856df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5
+  _force: 5
   _maxSpeed: 1
 --- !u!114 &7018263450592950328
 MonoBehaviour:

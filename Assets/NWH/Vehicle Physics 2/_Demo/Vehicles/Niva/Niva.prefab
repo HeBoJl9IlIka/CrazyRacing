@@ -2505,32 +2505,6 @@ MonoBehaviour:
     setTargetSpeedOnEnable: 1
     deactivateOnBrake: 0
     targetSpeed: 0
---- !u!114 &3257780160677182606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3257780161372232328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a9000aafa038fc419e4ffc3a58efaf7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  module:
-    state:
-      fullName: 
-      isEnabled: 1
-      isOn: 1
-      lodIndex: -1
-      name: 
-    allowedAngle: 70
-    flipOverInput: 0
-    flippedOver: 0
-    manual: 0
-    maxDetectionSpeed: 1
-    rotationSpeed: 130
-    timeout: 3
 --- !u!114 &3257780160677182613
 MonoBehaviour:
   m_ObjectHideFlags: 0

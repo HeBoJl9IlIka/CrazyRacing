@@ -12078,15 +12078,16 @@ GameObject:
   - component: {fileID: 1649529085236753055}
   - component: {fileID: 1649529085236753028}
   - component: {fileID: 1649529085636780089}
-  - component: {fileID: 1649529085236753031}
   - component: {fileID: 1649529085236753030}
   - component: {fileID: 1649529085236753025}
   - component: {fileID: 1649529085236753024}
   - component: {fileID: 1649529085236753027}
   - component: {fileID: 1649529085236753053}
-  - component: {fileID: 1649529085236753052}
   - component: {fileID: 1041165268}
   - component: {fileID: 900403441392062220}
+  - component: {fileID: 5120496403188121693}
+  - component: {fileID: 6470846588586428681}
+  - component: {fileID: 8611903275368641626}
   m_Layer: 0
   m_Name: MonsterTruck
   m_TagString: Vehicle
@@ -13238,32 +13239,6 @@ MonoBehaviour:
   OnVehicleInitialized:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1649529085236753031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1649529085236753054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a9000aafa038fc419e4ffc3a58efaf7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  module:
-    state:
-      fullName: 
-      isEnabled: 1
-      isOn: 1
-      lodIndex: -1
-      name: 
-    allowedAngle: 70
-    flipOverInput: 0
-    flippedOver: 0
-    manual: 0
-    maxDetectionSpeed: 1
-    rotationSpeed: 130
-    timeout: 3
 --- !u!114 &1649529085236753030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13388,48 +13363,6 @@ MonoBehaviour:
     setTargetSpeedOnEnable: 1
     deactivateOnBrake: 0
     targetSpeed: 0
---- !u!114 &1649529085236753052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1649529085236753054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73de00e98f9f2fe4dbd478e69c4acc37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  module:
-    state:
-      fullName: 
-      isEnabled: 1
-      isOn: 1
-      lodIndex: -1
-      name: 
-    active: 0
-    capacity: 50
-    charge: 50
-    disableInReverse: 1
-    disableOffThrottle: 1
-    engineVolumeCoefficient: 1.5
-    exhaustEmissionCoefficient: 2
-    flow: 0.1
-    powerCoefficient: 2
-    soundComponent:
-      state:
-        fullName: 
-        isEnabled: 1
-        isOn: 1
-        lodIndex: -1
-        name: 
-      audioMixerGroup: {fileID: 0}
-      basePitch: 1
-      baseVolume: 0.1
-      clips:
-      - {fileID: 8300000, guid: b740255ffa07d4c489b74b29eb3e0f01, type: 3}
-      container: {fileID: 0}
-      sources: []
 --- !u!114 &1041165268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13485,8 +13418,47 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.94, y: 1.45, z: 4.49}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.6, y: 2, z: 4}
+  m_Center: {x: 0, y: -0.1, z: 0}
+--- !u!114 &5120496403188121693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649529085236753054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9ea07bd4547c2a4d96c72cf9bae071b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6470846588586428681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649529085236753054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b25a5ec12ee44ab47ab318a6e0856df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _force: 5
+  _maxSpeed: 1
+--- !u!114 &8611903275368641626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649529085236753054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5908d2e17f052bb44aae6132012d32b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _view: {fileID: 6470846588586428681}
 --- !u!1 &1649529085260214511
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 using CrazyRacing.Model;
 using UnityEngine;
+using System;
 
 public class LevelRoot : MonoBehaviour
 {
@@ -9,40 +10,43 @@ public class LevelRoot : MonoBehaviour
 
     private VehiclesPool _vehiclesPool;
     private RecoveryVehicle _recoveryVehicle;
-    private CheckpointsCounter _checkpoints—ounter;
+    private CheckpointsCounter _checkpointsCounter;
     private VehicleInputRouter _vehicleInputRouter;
 
     private void Start()
     {
         Init();
+
+        if (_vehiclesPool.AmountVehicles != _checkpointsCounter.AmountCheckpoints)
+            throw new ArgumentOutOfRangeException();
+
         _vehicleInputRouter = new VehicleInputRouter(_recoveryVehicle, _vehiclesPool);
         _vehicleInputRouter.Enable();
 
-        _checkpoints—ounter.Passed += OnPassed;
+        _checkpointsCounter.Passed += OnPassed;
     }
 
     private void OnEnable()
     {
         if (_vehicleInputRouter != null)
             _vehicleInputRouter.Enable();
-
     }
 
     private void OnDisable()
     {
         _vehicleInputRouter.Disable();
 
-        _checkpoints—ounter.Passed += OnPassed;
+        _checkpointsCounter.Passed += OnPassed;
     }
 
     private void Init()
     {
         _vehiclesPool = _vehiclesPoolSetup.Model;
         _recoveryVehicle = _recoveryVehicleSetup.Model;
-        _checkpoints—ounter = _checkpointsCounterSetup.Model;
+        _checkpointsCounter = _checkpointsCounterSetup.Model;
     }
 
-    private void OnPassed(CheckpointView checkpoint)
+    private void OnPassed(CheckpointView checkpoint, int currentNumber)
     {
         _vehiclesPool.ChangeVehicle();
     }

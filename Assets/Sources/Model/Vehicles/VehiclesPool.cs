@@ -9,6 +9,7 @@ namespace CrazyRacing.Model
         private VehicleView _last;
 
         public VehicleView Current => _current;
+        public int AmountVehicles => _vehicles.Length;
 
         public event Action<VehicleView> EnablingVehicle;
         public event Action<VehicleView> DisablingVehicle;

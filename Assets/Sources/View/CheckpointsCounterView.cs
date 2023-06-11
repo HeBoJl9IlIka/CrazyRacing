@@ -61,14 +61,13 @@ public class CheckpointsCounterView : MonoBehaviour
     {
         foreach (var checkpoint in _checkpoints)
         {
+            checkpoint.TryGetComponent(out BoxCollider collider);
+
             if (checkpoint != _checkpoints[0])
             {
-                if (checkpoint.TryGetComponent(out BoxCollider collider))
-                    collider.enabled = false;
-
+                collider.enabled = false;
                 checkpoint.gameObject.SetActive(false);
             }
         }
-
     }
 }

@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class CheckpointsCounterSetup : MonoBehaviour
 {
-    [SerializeField] private CheckpointsCounterView _view;
+    [SerializeField] private CheckpointsCounterView _counterView;
+    [SerializeField] private ProgressBarView _progressBarView;
 
     private CheckpointsCounter _model;
     private CheckpointsCounterPresenter _presenter;
@@ -12,8 +13,9 @@ public class CheckpointsCounterSetup : MonoBehaviour
 
     private void Awake()
     {
-        _model = new CheckpointsCounter(_view.AmountCheckpoints);
-        _presenter = new CheckpointsCounterPresenter(_view, _model);
+        _model = new CheckpointsCounter(_counterView.AmountCheckpoints);
+        _presenter = new CheckpointsCounterPresenter(_counterView, _model, _progressBarView);
+        _progressBarView.Init(_counterView.AmountCheckpoints);
     }
 
     private void OnEnable()
