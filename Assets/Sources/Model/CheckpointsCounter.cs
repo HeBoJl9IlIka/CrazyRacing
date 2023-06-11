@@ -2,14 +2,14 @@ using System;
 
 namespace CrazyRacing.Model
 {
-    public class CheckpointsСounter
+    public class CheckpointsCounter
     {
         private int _amountCheckpoints;
 
         public event Action<CheckpointView> Passed;
         public event Action LevelCompleted;
 
-        public CheckpointsСounter(int amountCheckpoints)
+        public CheckpointsCounter(int amountCheckpoints)
         {
             _amountCheckpoints = amountCheckpoints;
         }

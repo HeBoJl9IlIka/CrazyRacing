@@ -5,14 +5,14 @@ public class CheckpointsCounterSetup : MonoBehaviour
 {
     [SerializeField] private CheckpointsCounterView _view;
 
-    private Checkpoints—ounter _model;
+    private CheckpointsCounter _model;
     private CheckpointsCounterPresenter _presenter;
 
-    public Checkpoints—ounter Model => _model;
+    public CheckpointsCounter Model => _model;
 
     private void Awake()
     {
-        _model = new Checkpoints—ounter(_view.AmountCheckpoints);
+        _model = new CheckpointsCounter(_view.AmountCheckpoints);
         _presenter = new CheckpointsCounterPresenter(_view, _model);
     }
 

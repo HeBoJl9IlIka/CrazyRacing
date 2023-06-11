@@ -1,7 +1,7 @@
 using CrazyRacing.Model;
 using UnityEngine;
 
-public class VehicleRoot : MonoBehaviour
+public class LevelRoot : MonoBehaviour
 {
     [SerializeField] private VehiclesPoolSetup _vehiclesPoolSetup;
     [SerializeField] private RecoveryVehicleSetup _recoveryVehicleSetup;
@@ -9,7 +9,7 @@ public class VehicleRoot : MonoBehaviour
 
     private VehiclesPool _vehiclesPool;
     private RecoveryVehicle _recoveryVehicle;
-    private Checkpoints—ounter _checkpoints—ounter;
+    private CheckpointsCounter _checkpoints—ounter;
     private VehicleInputRouter _vehicleInputRouter;
 
     private void Start()

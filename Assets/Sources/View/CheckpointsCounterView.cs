@@ -21,13 +21,13 @@ public class CheckpointsCounterView : MonoBehaviour
     private void OnEnable()
     {
         foreach (var checkpoint in _checkpoints)
-            checkpoint.Passed += OnPassing;
+            checkpoint.Passed += OnPassed;
     }
 
     private void OnDisable()
     {
         foreach (var checkpoint in _checkpoints)
-            checkpoint.Passed -= OnPassing;
+            checkpoint.Passed -= OnPassed;
     }
 
     public void ChangeCheckpoint(CheckpointView checkpoint)
@@ -46,7 +46,7 @@ public class CheckpointsCounterView : MonoBehaviour
         Invoke(nameof(EnableCurrentCollider), Delay);
     }
 
-    private void OnPassing(CheckpointView checkpoint)
+    private void OnPassed(CheckpointView checkpoint)
     {
         Passing?.Invoke(checkpoint);
     }

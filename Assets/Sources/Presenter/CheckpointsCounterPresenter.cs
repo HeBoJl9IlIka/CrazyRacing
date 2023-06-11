@@ -3,9 +3,9 @@ using CrazyRacing.Model;
 public class CheckpointsCounterPresenter
 {
     private CheckpointsCounterView _view;
-    private Checkpoints—ounter _model;
+    private CheckpointsCounter _model;
 
-    public CheckpointsCounterPresenter(CheckpointsCounterView view, Checkpoints—ounter model)
+    public CheckpointsCounterPresenter(CheckpointsCounterView view, CheckpointsCounter model)
     {
         _view = view;
         _model = model;

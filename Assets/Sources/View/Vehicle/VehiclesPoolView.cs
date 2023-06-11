@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class VehiclesPoolView : MonoBehaviour
 {
-    [SerializeField] private GameObject[] _vehiclesPrefabs;
+    [SerializeField] private VehicleView[] _vehiclesPrefabs;
 
     private List<VehicleView> _vehicles = new List<VehicleView>();
 
-    private void Awake()
+    private void Start()
     {
         if (_vehiclesPrefabs.Length == 0)
             throw new ArgumentNullException(nameof(_vehiclesPrefabs));
@@ -34,8 +34,8 @@ public class VehiclesPoolView : MonoBehaviour
     {
         foreach (var vehicle in _vehiclesPrefabs)
         {
-            GameObject newVehicle = Instantiate(vehicle, transform);
-            _vehicles.Add(newVehicle.GetComponent<VehicleView>());
+            VehicleView newVehicle = Instantiate(vehicle, transform);
+            _vehicles.Add(newVehicle);
             newVehicle.gameObject.SetActive(false);
         }
 

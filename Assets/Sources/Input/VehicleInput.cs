@@ -15,14 +15,12 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-namespace CrazyRacing.Input
+public partial class @VehicleInput : IInputActionCollection2, IDisposable
 {
-    public partial class @VehicleInput : IInputActionCollection2, IDisposable
+    public InputActionAsset asset { get; }
+    public @VehicleInput()
     {
-        public InputActionAsset asset { get; }
-        public @VehicleInput()
-        {
-            asset = InputActionAsset.FromJson(@"{
+        asset = InputActionAsset.FromJson(@"{
     ""name"": ""VehicleInput"",
     ""maps"": [
         {
@@ -37,6 +35,24 @@ namespace CrazyRacing.Input
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RotatedHorizontal"",
+                    ""type"": ""Value"",
+                    ""id"": ""e8fc2fea-c506-43c5-a758-ffbac3e45cf8"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""RotatedVertical"",
+                    ""type"": ""Value"",
+                    ""id"": ""311e4c4a-825a-4ae8-8d9c-cb162ef48950"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -50,106 +66,191 @@ namespace CrazyRacing.Input
                     ""action"": ""RecoveredVehicle"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""f5622969-e716-4407-935d-138aa79f5dbd"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RotatedHorizontal"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""94e7a256-470d-4e22-9efe-867e51c64376"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RotatedHorizontal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""0cdbae44-6672-45e7-9b98-5668c1e9eb5b"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RotatedHorizontal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""6e16b784-efef-44ef-a614-05e4997ca91c"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RotatedVertical"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""3fb99e6d-4175-411b-ad28-8a57838166e8"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RotatedVertical"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""bfd19b21-6044-456f-9a9d-a3cc5389a3e5"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""RotatedVertical"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         }
     ],
     ""controlSchemes"": []
 }");
-            // Vehicle
-            m_Vehicle = asset.FindActionMap("Vehicle", throwIfNotFound: true);
-            m_Vehicle_RecoveredVehicle = m_Vehicle.FindAction("RecoveredVehicle", throwIfNotFound: true);
-        }
-
-        public void Dispose()
-        {
-            UnityEngine.Object.Destroy(asset);
-        }
-
-        public InputBinding? bindingMask
-        {
-            get => asset.bindingMask;
-            set => asset.bindingMask = value;
-        }
-
-        public ReadOnlyArray<InputDevice>? devices
-        {
-            get => asset.devices;
-            set => asset.devices = value;
-        }
-
-        public ReadOnlyArray<InputControlScheme> controlSchemes => asset.controlSchemes;
-
-        public bool Contains(InputAction action)
-        {
-            return asset.Contains(action);
-        }
-
-        public IEnumerator<InputAction> GetEnumerator()
-        {
-            return asset.GetEnumerator();
-        }
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return GetEnumerator();
-        }
-
-        public void Enable()
-        {
-            asset.Enable();
-        }
-
-        public void Disable()
-        {
-            asset.Disable();
-        }
-        public IEnumerable<InputBinding> bindings => asset.bindings;
-
-        public InputAction FindAction(string actionNameOrId, bool throwIfNotFound = false)
-        {
-            return asset.FindAction(actionNameOrId, throwIfNotFound);
-        }
-        public int FindBinding(InputBinding bindingMask, out InputAction action)
-        {
-            return asset.FindBinding(bindingMask, out action);
-        }
-
         // Vehicle
-        private readonly InputActionMap m_Vehicle;
-        private IVehicleActions m_VehicleActionsCallbackInterface;
-        private readonly InputAction m_Vehicle_RecoveredVehicle;
-        public struct VehicleActions
+        m_Vehicle = asset.FindActionMap("Vehicle", throwIfNotFound: true);
+        m_Vehicle_RecoveredVehicle = m_Vehicle.FindAction("RecoveredVehicle", throwIfNotFound: true);
+        m_Vehicle_RotatedHorizontal = m_Vehicle.FindAction("RotatedHorizontal", throwIfNotFound: true);
+        m_Vehicle_RotatedVertical = m_Vehicle.FindAction("RotatedVertical", throwIfNotFound: true);
+    }
+
+    public void Dispose()
+    {
+        UnityEngine.Object.Destroy(asset);
+    }
+
+    public InputBinding? bindingMask
+    {
+        get => asset.bindingMask;
+        set => asset.bindingMask = value;
+    }
+
+    public ReadOnlyArray<InputDevice>? devices
+    {
+        get => asset.devices;
+        set => asset.devices = value;
+    }
+
+    public ReadOnlyArray<InputControlScheme> controlSchemes => asset.controlSchemes;
+
+    public bool Contains(InputAction action)
+    {
+        return asset.Contains(action);
+    }
+
+    public IEnumerator<InputAction> GetEnumerator()
+    {
+        return asset.GetEnumerator();
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return GetEnumerator();
+    }
+
+    public void Enable()
+    {
+        asset.Enable();
+    }
+
+    public void Disable()
+    {
+        asset.Disable();
+    }
+    public IEnumerable<InputBinding> bindings => asset.bindings;
+
+    public InputAction FindAction(string actionNameOrId, bool throwIfNotFound = false)
+    {
+        return asset.FindAction(actionNameOrId, throwIfNotFound);
+    }
+    public int FindBinding(InputBinding bindingMask, out InputAction action)
+    {
+        return asset.FindBinding(bindingMask, out action);
+    }
+
+    // Vehicle
+    private readonly InputActionMap m_Vehicle;
+    private IVehicleActions m_VehicleActionsCallbackInterface;
+    private readonly InputAction m_Vehicle_RecoveredVehicle;
+    private readonly InputAction m_Vehicle_RotatedHorizontal;
+    private readonly InputAction m_Vehicle_RotatedVertical;
+    public struct VehicleActions
+    {
+        private @VehicleInput m_Wrapper;
+        public VehicleActions(@VehicleInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @RecoveredVehicle => m_Wrapper.m_Vehicle_RecoveredVehicle;
+        public InputAction @RotatedHorizontal => m_Wrapper.m_Vehicle_RotatedHorizontal;
+        public InputAction @RotatedVertical => m_Wrapper.m_Vehicle_RotatedVertical;
+        public InputActionMap Get() { return m_Wrapper.m_Vehicle; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(VehicleActions set) { return set.Get(); }
+        public void SetCallbacks(IVehicleActions instance)
         {
-            private @VehicleInput m_Wrapper;
-            public VehicleActions(@VehicleInput wrapper) { m_Wrapper = wrapper; }
-            public InputAction @RecoveredVehicle => m_Wrapper.m_Vehicle_RecoveredVehicle;
-            public InputActionMap Get() { return m_Wrapper.m_Vehicle; }
-            public void Enable() { Get().Enable(); }
-            public void Disable() { Get().Disable(); }
-            public bool enabled => Get().enabled;
-            public static implicit operator InputActionMap(VehicleActions set) { return set.Get(); }
-            public void SetCallbacks(IVehicleActions instance)
+            if (m_Wrapper.m_VehicleActionsCallbackInterface != null)
             {
-                if (m_Wrapper.m_VehicleActionsCallbackInterface != null)
-                {
-                    @RecoveredVehicle.started -= m_Wrapper.m_VehicleActionsCallbackInterface.OnRecoveredVehicle;
-                    @RecoveredVehicle.performed -= m_Wrapper.m_VehicleActionsCallbackInterface.OnRecoveredVehicle;
-                    @RecoveredVehicle.canceled -= m_Wrapper.m_VehicleActionsCallbackInterface.OnRecoveredVehicle;
-                }
-                m_Wrapper.m_VehicleActionsCallbackInterface = instance;
-                if (instance != null)
-                {
-                    @RecoveredVehicle.started += instance.OnRecoveredVehicle;
-                    @RecoveredVehicle.performed += instance.OnRecoveredVehicle;
-                    @RecoveredVehicle.canceled += instance.OnRecoveredVehicle;
-                }
+                @RecoveredVehicle.started -= m_Wrapper.m_VehicleActionsCallbackInterface.OnRecoveredVehicle;
+                @RecoveredVehicle.performed -= m_Wrapper.m_VehicleActionsCallbackInterface.OnRecoveredVehicle;
+                @RecoveredVehicle.canceled -= m_Wrapper.m_VehicleActionsCallbackInterface.OnRecoveredVehicle;
+                @RotatedHorizontal.started -= m_Wrapper.m_VehicleActionsCallbackInterface.OnRotatedHorizontal;
+                @RotatedHorizontal.performed -= m_Wrapper.m_VehicleActionsCallbackInterface.OnRotatedHorizontal;
+                @RotatedHorizontal.canceled -= m_Wrapper.m_VehicleActionsCallbackInterface.OnRotatedHorizontal;
+                @RotatedVertical.started -= m_Wrapper.m_VehicleActionsCallbackInterface.OnRotatedVertical;
+                @RotatedVertical.performed -= m_Wrapper.m_VehicleActionsCallbackInterface.OnRotatedVertical;
+                @RotatedVertical.canceled -= m_Wrapper.m_VehicleActionsCallbackInterface.OnRotatedVertical;
+            }
+            m_Wrapper.m_VehicleActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @RecoveredVehicle.started += instance.OnRecoveredVehicle;
+                @RecoveredVehicle.performed += instance.OnRecoveredVehicle;
+                @RecoveredVehicle.canceled += instance.OnRecoveredVehicle;
+                @RotatedHorizontal.started += instance.OnRotatedHorizontal;
+                @RotatedHorizontal.performed += instance.OnRotatedHorizontal;
+                @RotatedHorizontal.canceled += instance.OnRotatedHorizontal;
+                @RotatedVertical.started += instance.OnRotatedVertical;
+                @RotatedVertical.performed += instance.OnRotatedVertical;
+                @RotatedVertical.canceled += instance.OnRotatedVertical;
             }
         }
-        public VehicleActions @Vehicle => new VehicleActions(this);
-        public interface IVehicleActions
-        {
-            void OnRecoveredVehicle(InputAction.CallbackContext context);
-        }
+    }
+    public VehicleActions @Vehicle => new VehicleActions(this);
+    public interface IVehicleActions
+    {
+        void OnRecoveredVehicle(InputAction.CallbackContext context);
+        void OnRotatedHorizontal(InputAction.CallbackContext context);
+        void OnRotatedVertical(InputAction.CallbackContext context);
     }
 }
