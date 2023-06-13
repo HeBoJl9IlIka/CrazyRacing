@@ -12,12 +12,6 @@ public class VehiclesPoolView : MonoBehaviour
     {
         if (_vehiclesPrefabs.Length == 0)
             throw new ArgumentNullException(nameof(_vehiclesPrefabs));
-
-        foreach (var vehicle in _vehiclesPrefabs)
-        {
-            if (vehicle.TryGetComponent(out VehicleView component) == false)
-                throw new ArgumentNullException(nameof(vehicle));
-        }
     }
 
     public void EnableVehicle(VehicleView vehicle)

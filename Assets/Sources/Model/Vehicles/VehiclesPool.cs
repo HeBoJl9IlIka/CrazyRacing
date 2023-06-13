@@ -16,6 +16,9 @@ namespace CrazyRacing.Model
 
         public VehiclesPool(VehicleView[] vehicles)
         {
+            if (vehicles.Length == 0)
+                throw new ArgumentNullException(nameof(vehicles));
+
             _vehicles = vehicles;
         }
 

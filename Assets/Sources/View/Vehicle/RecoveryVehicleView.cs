@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class RecoveryVehicleView : MonoBehaviour
 {
-    [SerializeField] private RecoveryPoint _recoveryPoint;
+    [SerializeField] private RecoveryPointView _recoveryPoint;
 
     public void Recover(VehicleView vehicle)
     {

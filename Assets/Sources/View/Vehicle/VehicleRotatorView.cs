@@ -28,7 +28,7 @@ public class VehicleRotatorView : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.TryGetComponent(out Road road))
+        if (other.TryGetComponent(out RoadView road))
             _isGrounded = true;
     }
 
