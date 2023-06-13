@@ -10,6 +10,7 @@ public class MainMenuRoot : MonoBehaviour
     private List<Level> _levels = new List<Level>();
     private LevelsUnlocker _levelsUnlocker;
     private LevelOpener _levelOpener;
+    private ProgressGame _progressGame = new ProgressGame();
 
     private void Start()
     {
@@ -43,7 +44,9 @@ public class MainMenuRoot : MonoBehaviour
         foreach (var levelSetup in _levelsSetups)
             _levels.Add(levelSetup.Model);
 
-        _levelsUnlocker = new LevelsUnlocker(_levels.ToArray(), 1);
+        _progressGame.Init();
+        _levelsUnlocker = new LevelsUnlocker(_levels.ToArray(), _progressGame.GetNumberCurrentLevel());
         _levelOpener = _levelOpenerSetup.Model;
+        
     }
 }

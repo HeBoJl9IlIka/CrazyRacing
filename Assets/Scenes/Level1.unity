@@ -641,6 +641,7 @@ MonoBehaviour:
   _vehiclesPoolSetup: {fileID: 1099257414}
   _recoveryVehicleSetup: {fileID: 2102629838}
   _checkpointsCounterSetup: {fileID: 1828921945}
+  _numberLevel: 1
 --- !u!1 &514748305
 GameObject:
   m_ObjectHideFlags: 0
