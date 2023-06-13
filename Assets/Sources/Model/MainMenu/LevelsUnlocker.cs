@@ -13,6 +13,9 @@ namespace CrazyRacing.Model
 
         public void UnlockLevels()
         {
+            if (_numberCurrentLevel > _levels.Length)
+                _numberCurrentLevel = _levels.Length;
+
             for (int i = 0; i < _numberCurrentLevel; i++)
                 _levels[i].Unlock();
         }

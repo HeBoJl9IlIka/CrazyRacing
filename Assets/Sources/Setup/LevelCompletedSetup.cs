@@ -22,6 +22,7 @@ public class LevelCompletedSetup : MonoBehaviour
 
     private void OnDisable()
     {
-        _presenter.Disable();
+        if (_presenter != null)
+            _presenter.Disable();
     }
 }

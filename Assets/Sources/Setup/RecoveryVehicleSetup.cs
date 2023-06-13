@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class RecoveryVehicleSetup : MonoBehaviour
 {
-    [SerializeField] private RecoveryVehicleView _view;
+    [SerializeField] private RecoveryVehicleView _recoveryVehicleView;
+    [SerializeField] private SkippingLevelView _skippingLevelView;
 
     private RecoveryVehicle _model;
     private RecoveryVehiclePresenter _presenter;
@@ -13,7 +14,7 @@ public class RecoveryVehicleSetup : MonoBehaviour
     private void Awake()
     {
         _model = new RecoveryVehicle();
-        _presenter = new RecoveryVehiclePresenter(_view, _model);
+        _presenter = new RecoveryVehiclePresenter(_skippingLevelView, _recoveryVehicleView, _model);
     }
 
     private void OnEnable()

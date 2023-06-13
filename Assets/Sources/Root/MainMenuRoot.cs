@@ -5,11 +5,10 @@ using UnityEngine;
 public class MainMenuRoot : MonoBehaviour
 {
     [SerializeField] private LevelSetup[] _levelsSetups;
-    [SerializeField] private LevelOpenerSetup _levelOpenerSetup;
 
     private List<Level> _levels = new List<Level>();
     private LevelsUnlocker _levelsUnlocker;
-    private LevelOpener _levelOpener;
+    private SceneOpener _levelOpener = new SceneOpener();
     private ProgressGame _progressGame = new ProgressGame();
 
     private void Start()
@@ -36,7 +35,7 @@ public class MainMenuRoot : MonoBehaviour
 
     private void OnOpening(int number)
     {
-        _levelOpener.OpenLevel(number);
+        _levelOpener.OpenScene(number);
     }
 
     private void Init()
@@ -46,7 +45,6 @@ public class MainMenuRoot : MonoBehaviour
 
         _progressGame.Init();
         _levelsUnlocker = new LevelsUnlocker(_levels.ToArray(), _progressGame.GetNumberCurrentLevel());
-        _levelOpener = _levelOpenerSetup.Model;
         
     }
 }

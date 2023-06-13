@@ -2,12 +2,12 @@ using CrazyRacing.Model;
 
 public class LevelCompletedMenuPresenter
 {
-    private readonly LevelCompletedMenuView _view;
+    private readonly LevelCompletedMenuView _levelCompletedMenuView;
     private readonly CheckpointsCounter _model;
 
     public LevelCompletedMenuPresenter(LevelCompletedMenuView view, CheckpointsCounter model)
     {
-        _view = view;
+        _levelCompletedMenuView = view;
         _model = model;
     }
 
@@ -23,6 +23,6 @@ public class LevelCompletedMenuPresenter
 
     private void OnLevelCompleted()
     {
-        _view.gameObject.SetActive(true);
+        _levelCompletedMenuView.gameObject.SetActive(true);
     }
 }

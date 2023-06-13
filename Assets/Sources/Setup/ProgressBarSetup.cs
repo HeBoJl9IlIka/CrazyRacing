@@ -18,12 +18,13 @@ public class ProgressBarSetup : MonoBehaviour
 
     private void OnEnable()
     {
-        if (_checkpointsCounterSetup.Model != null)
+        if (_presenter != null)
             _presenter.Enable();
     }
 
     private void OnDisable()
     {
-        _presenter.Disable();
+        if (_presenter != null)
+            _presenter.Disable();
     }
 }
