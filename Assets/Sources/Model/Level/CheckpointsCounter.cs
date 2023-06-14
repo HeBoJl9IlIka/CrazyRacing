@@ -9,7 +9,7 @@ namespace CrazyRacing.Model
 
         public int AmountCheckpoints => _amountCheckpoints;
 
-        public event Action<CheckpointView, int> Passed;
+        public event Action<CheckpointPresenter, int> Passed;
         public event Action LevelCompleted;
 
         public CheckpointsCounter(int amountCheckpoints)
@@ -17,7 +17,7 @@ namespace CrazyRacing.Model
             _amountCheckpoints = amountCheckpoints;
         }
 
-        public void CountCheckpoint(CheckpointView checkpoint)
+        public void CountCheckpoint(CheckpointPresenter checkpoint)
         {
             ++_numberCurrentCheckpoint;
             Passed?.Invoke(checkpoint, _numberCurrentCheckpoint);

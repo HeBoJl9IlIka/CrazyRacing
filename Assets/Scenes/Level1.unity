@@ -402,7 +402,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -456,7 +456,6 @@ GameObject:
   - component: {fileID: 274050599}
   - component: {fileID: 274050598}
   - component: {fileID: 274050597}
-  - component: {fileID: 274050596}
   m_Layer: 0
   m_Name: Checkpoint
   m_TagString: Untagged
@@ -479,18 +478,6 @@ Transform:
   m_Father: {fileID: 1828921943}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &274050596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274050594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6abc8a96b1da64142afdc3303ab5643f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &274050597
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -790,6 +777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _vehiclePresenterFactory: {fileID: 467674810}
+  _recoveryPointPresenter: {fileID: 2102629840}
   _vehicleCreators:
   - {fileID: -99964940794815460, guid: 9a69d73aad97d394486563eff10dff7d, type: 3}
   - {fileID: 3078587071073266292, guid: 42b48642f63f35f43a497c7fa14941b0, type: 3}
@@ -1055,7 +1043,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1529,7 +1517,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &664468944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2412,8 +2400,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364dd9f803517774e83c037002b08084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _checkpointsCounterSetup: {fileID: 1828921945}
-  _view: {fileID: 1183001467}
 --- !u!114 &1183001467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3146,7 +3132,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b11b5ef9fdb33104ea20436b44a34fa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _view: {fileID: 1828921944}
 --- !u!1 &1887737538
 GameObject:
   m_ObjectHideFlags: 0
@@ -3465,6 +3450,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2102629835}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69b53631a6f7b5a43b2eadcef44097f7, type: 3}
+  m_Script: {fileID: 11500000, guid: a50b6ca3b59961840af8cdd4f2099f7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

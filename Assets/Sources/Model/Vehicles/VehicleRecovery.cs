@@ -1,24 +1,21 @@
 using System;
+using UnityEngine;
 
 namespace CrazyRacing.Model
 {
     public class VehicleRecovery
     {
-        private const int MaxAmountRecovery = 2;
-
         private int _amountRecovery;
 
-        //public event Action<Vehicle> Recovering;
         public event Action MaxRecovered;
 
-        public void Recover(Ferrari vehicle, Point recoveryPoint)
+        public void Recover(Vehicle vehicle, Vector3 position, Vector3 rotation)
         {
-            vehicle.Recover(recoveryPoint);
+            vehicle.Recover(position, rotation);
 
-            //Recovering?.Invoke(vehicle);
             ++_amountRecovery;
 
-            if (_amountRecovery >= MaxAmountRecovery)
+            if (_amountRecovery >= Config.MaxAmountRecovery)
             {
                 _amountRecovery = 0;
                 MaxRecovered?.Invoke();

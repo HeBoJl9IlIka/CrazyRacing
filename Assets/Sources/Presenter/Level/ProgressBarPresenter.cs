@@ -21,7 +21,7 @@ public class ProgressBarPresenter
         _model.Passed -= OnPassedCheckpoint;
     }
 
-    private void OnPassedCheckpoint(CheckpointView checkpoint, int currentNumber)
+    private void OnPassedCheckpoint(CheckpointPresenter checkpoint, int currentNumber)
     {
         _view.Add(currentNumber);
     }
