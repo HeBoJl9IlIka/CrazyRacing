@@ -1669,12 +1669,9 @@ GameObject:
   - component: {fileID: 1522747413}
   - component: {fileID: 6189815300312925335}
   - component: {fileID: 6985688408984224017}
-  - component: {fileID: 3364350887743052938}
-  - component: {fileID: 2095827143981123553}
-  - component: {fileID: 7018263450592950328}
   - component: {fileID: 9056979826750947345}
   m_Layer: 0
-  m_Name: Sports Car
+  m_Name: Ferrari
   m_TagString: Vehicle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2844,43 +2841,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.7, y: 1, z: 4}
   m_Center: {x: 0, y: 0.3, z: 0}
---- !u!114 &3364350887743052938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7372666997863621945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9ea07bd4547c2a4d96c72cf9bae071b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2095827143981123553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7372666997863621945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b25a5ec12ee44ab47ab318a6e0856df0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _maxSpeed: 1
---- !u!114 &7018263450592950328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7372666997863621945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5908d2e17f052bb44aae6132012d32b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &9056979826750947345
 MonoBehaviour:
   m_ObjectHideFlags: 0

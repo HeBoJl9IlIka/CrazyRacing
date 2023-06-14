@@ -1,21 +1,28 @@
 using CrazyRacing.Model;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class VehicleRoot : MonoBehaviour
 {
-    [SerializeField] private VehicleFactory _vehicleFactory;
+    [SerializeField] private VehiclePresenterFactory _vehiclePresenterFactory;
+    [SerializeField] private CreatorVehicle[] _vehicleCreators;
 
     private VehiclesPool _vehiclesPool;
+    private List<Vehicle> _vehicles = new List<Vehicle>();
 
     private void Awake()
     {
-        Ferrari[] vehicles =
-        {
-            new Ferrari()
-        };
+        foreach (var creator in _vehicleCreators)
+            _vehicles.Add(creator.Create());
 
-        _vehiclesPool = new VehiclesPool(vehicles);
+        _vehiclesPool = new VehiclesPool(_vehicles.ToArray());
+    }
+
+    private void Start()
+    {
+        _vehiclesPool.CreateVehicles();
+        _vehiclesPool.EnableFirstVehicle();
     }
 
     private void OnEnable()
@@ -28,8 +35,13 @@ public class VehicleRoot : MonoBehaviour
         _vehiclesPool.CreatedVehicle -= OnCreatedVehicle;
     }
 
-    private void OnCreatedVehicle(Ferrari vehicle)
+    private void OnCreatedVehicle(Vehicle vehicle)
     {
-        throw new NotImplementedException();
+        _vehiclePresenterFactory.Create(vehicle);
     }
+}
+
+public abstract class CreatorVehicle : MonoBehaviour
+{
+    public abstract Vehicle Create();
 }

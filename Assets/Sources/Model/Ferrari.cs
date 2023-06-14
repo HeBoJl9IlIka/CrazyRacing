@@ -1,22 +1,10 @@
-using System;
-
 namespace CrazyRacing.Model
 {
-    public class Ferrari : IVehicle
+    public class Ferrari : Vehicle
     {
-        public string Name => Config.Ferrari;
+        public override string Name => Config.Ferrari;
 
         public void Init()
-        {
-
-        }
-
-        public void Enable()
-        {
-
-        }
-
-        public void Disable()
         {
 
         }

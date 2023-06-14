@@ -4,14 +4,14 @@ namespace CrazyRacing.Model
 {
     public class VehiclesPool 
     {
-        private readonly Ferrari[] _vehicles;
-        private Ferrari _current;
+        private readonly Vehicle[] _vehicles;
+        private Vehicle _current;
 
-        public Ferrari Current => _current;
+        public Vehicle Current => _current;
 
-        public event Action<Ferrari> CreatedVehicle;
+        public event Action<Vehicle> CreatedVehicle;
 
-        public VehiclesPool(Ferrari[] vehicles)
+        public VehiclesPool(Vehicle[] vehicles)
         {
             if (vehicles.Length == 0)
                 throw new ArgumentNullException(nameof(vehicles));

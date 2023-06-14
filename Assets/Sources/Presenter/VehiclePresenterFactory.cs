@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 using UnityEngine;
 
-public class VehicleFactory : MonoBehaviour
+public class VehiclePresenterFactory : MonoBehaviour
 {
     [SerializeField] private VehiclePresenter[] _vehicleTemplates;
 
@@ -13,15 +13,15 @@ public class VehicleFactory : MonoBehaviour
     {
         CreatorVehiclePresenter[] creatorsPresenters =
         {
-            new CreatorFerrari(),
-            new CreatorNiva()
+            new CreatorFerrariPresenter(),
+            new CreatorNivaPresenter()
         };
 
         CustomizeCreator(creatorsPresenters);
         _creatorsPresenters = creatorsPresenters;
     }
 
-    public void CreateVehicle(IVehicle vehicle)
+    public void Create(Vehicle vehicle)
     {
         CreatorVehiclePresenter creator = _creatorsPresenters.FirstOrDefault(creator => creator.VehicleName == vehicle.Name);
         creator.Create(vehicle);
@@ -52,19 +52,19 @@ public abstract class CreatorVehiclePresenter
         _template = template;
     }
 
-    public virtual void Create(IVehicle vehicle)
+    public virtual void Create(Vehicle vehicle)
     {
         VehiclePresenter presenter = MonoBehaviour.Instantiate(_template);
         presenter.Init(vehicle);
     }
 }
 
-public class CreatorFerrari : CreatorVehiclePresenter
+public class CreatorFerrariPresenter : CreatorVehiclePresenter
 {
     public override string VehicleName => Config.Ferrari;
 }
 
-public class CreatorNiva : CreatorVehiclePresenter
+public class CreatorNivaPresenter : CreatorVehiclePresenter
 {
     public override string VehicleName => Config.Niva;
 }

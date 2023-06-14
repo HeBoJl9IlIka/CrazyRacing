@@ -704,7 +704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 467674807}
   - component: {fileID: 467674808}
-  - component: {fileID: 467674809}
+  - component: {fileID: 467674811}
   - component: {fileID: 467674810}
   m_Layer: 0
   m_Name: _Root
@@ -762,18 +762,6 @@ MonoBehaviour:
   m_DefaultActionMap: Vehicle
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &467674809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 467674805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb3ba727d8a8b9e4aa0e09cd4f426529, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &467674810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -789,6 +777,22 @@ MonoBehaviour:
   _vehicleTemplates:
   - {fileID: 9056979826750947345, guid: 3e1aced4144dd784c8f3878b71b33dcf, type: 3}
   - {fileID: -5920557227010618216, guid: 858cc54b36ffeff478f53c58eef2b16c, type: 3}
+--- !u!114 &467674811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467674805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472b8973af3e1484488d96694f8195b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _vehiclePresenterFactory: {fileID: 467674810}
+  _vehicleCreators:
+  - {fileID: -99964940794815460, guid: 9a69d73aad97d394486563eff10dff7d, type: 3}
+  - {fileID: 3078587071073266292, guid: 42b48642f63f35f43a497c7fa14941b0, type: 3}
 --- !u!1 &514748305
 GameObject:
   m_ObjectHideFlags: 0
