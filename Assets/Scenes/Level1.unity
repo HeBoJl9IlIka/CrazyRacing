@@ -705,6 +705,7 @@ GameObject:
   - component: {fileID: 467674807}
   - component: {fileID: 467674808}
   - component: {fileID: 467674809}
+  - component: {fileID: 467674810}
   m_Layer: 0
   m_Name: _Root
   m_TagString: Untagged
@@ -773,13 +774,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb3ba727d8a8b9e4aa0e09cd4f426529, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _vehiclesPoolSetup: {fileID: 1099257414}
-  _recoveryVehicleSetup: {fileID: 2102629838}
-  _checkpointsCounterSetup: {fileID: 1828921945}
-  _buttonMainMenuView: {fileID: 1268883949}
-  _buttonNextLevelView: {fileID: 952790426}
-  _buttonSkipLevelView: {fileID: 1690723645}
-  _numberLevel: 1
+--- !u!114 &467674810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467674805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211ad7fd3df7f804b806a796572a3a49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _vehicleTemplates:
+  - {fileID: 9056979826750947345, guid: 3e1aced4144dd784c8f3878b71b33dcf, type: 3}
+  - {fileID: -5920557227010618216, guid: 858cc54b36ffeff478f53c58eef2b16c, type: 3}
 --- !u!1 &514748305
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,9 +907,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bde9c83bb7fc1504998c852a69d04dec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _vehiclesPoolSetup: {fileID: 1099257414}
-  _checkpointsCounterSetup: {fileID: 1828921945}
-  _view: {fileID: 514748308}
 --- !u!1 &515636944
 GameObject:
   m_ObjectHideFlags: 0
@@ -2225,8 +2231,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1099257413}
-  - component: {fileID: 1099257415}
-  - component: {fileID: 1099257414}
   m_Layer: 0
   m_Name: VehiclePool
   m_TagString: Untagged
@@ -2249,35 +2253,6 @@ Transform:
   m_Father: {fileID: 2045085674}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1099257414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099257412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd6b47407d7f3124584075c713715ae7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _vehiclesPoolView: {fileID: 1099257415}
---- !u!114 &1099257415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099257412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a505501ee4d9994597c831fb9acf0c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _vehiclesPrefabs:
-  - {fileID: 3364350887743052938, guid: 3e1aced4144dd784c8f3878b71b33dcf, type: 3}
-  - {fileID: 6847702812971946992, guid: 858cc54b36ffeff478f53c58eef2b16c, type: 3}
-  - {fileID: 5120496403188121693, guid: b9a717f48a878014eace6ca32ea4f360, type: 3}
 --- !u!1001 &1126137642
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2619,6 +2594,10 @@ PrefabInstance:
     - target: {fileID: 570990794540276038, guid: 3e1aced4144dd784c8f3878b71b33dcf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890207794752665312, guid: 3e1aced4144dd784c8f3878b71b33dcf, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7372666997863621945, guid: 3e1aced4144dd784c8f3878b71b33dcf, type: 3}
       propertyPath: m_Name
@@ -3451,8 +3430,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2102629837}
   - component: {fileID: 2102629840}
-  - component: {fileID: 2102629839}
-  - component: {fileID: 2102629838}
   m_Layer: 0
   m_Name: Recovery
   m_TagString: Untagged
@@ -3475,33 +3452,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2102629838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2102629835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c60badffe26fa83438f81e923665688a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _recoveryVehicleView: {fileID: 2102629839}
-  _skippingLevelView: {fileID: 654764490}
---- !u!114 &2102629839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2102629835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acad3f988a6d9bf4eaefd82cb0ed1bd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _recoveryPoint: {fileID: 2102629840}
 --- !u!114 &2102629840
 MonoBehaviour:
   m_ObjectHideFlags: 0

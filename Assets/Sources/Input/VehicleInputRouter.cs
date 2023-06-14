@@ -7,11 +7,11 @@ using Unity.VisualScripting;
 public class VehicleInputRouter
 {
     private readonly VehicleInput _input;
-    private readonly RecoveryVehicle _recoveryVehicle;
+    private readonly VehicleRecovery _recoveryVehicle;
     private readonly VehiclesPool _vehiclesPool;
     private VehicleRotator _vehicleRotator;
 
-    public VehicleInputRouter(RecoveryVehicle recoveryVehicle, VehiclesPool vehiclesPool)
+    public VehicleInputRouter(VehicleRecovery recoveryVehicle, VehiclesPool vehiclesPool)
     {
         _input = new VehicleInput();
         _recoveryVehicle = recoveryVehicle;
@@ -26,7 +26,7 @@ public class VehicleInputRouter
         _input.Vehicle.RotatedHorizontal.canceled += OnRotatedHorizontal;
         _input.Vehicle.RotatedVertical.started += OnRotatingVertical;
         _input.Vehicle.RotatedVertical.canceled += OnRotatedVertical;
-        _vehiclesPool.EnablingVehicle += OnEnablingVehicle;
+        //_vehiclesPool.EnablingVehicle += OnEnablingVehicle;
     }
 
     public void Disable()
@@ -37,12 +37,12 @@ public class VehicleInputRouter
         _input.Vehicle.RotatedHorizontal.canceled -= OnRotatedHorizontal;
         _input.Vehicle.RotatedVertical.started -= OnRotatingVertical;
         _input.Vehicle.RotatedVertical.canceled -= OnRotatedVertical;
-        _vehiclesPool.EnablingVehicle -= OnEnablingVehicle;
+        //_vehiclesPool.EnablingVehicle -= OnEnablingVehicle;
     }
 
     private void OnRecoveredVehicle(InputAction.CallbackContext context)
     {
-        _recoveryVehicle.Recover(_vehiclesPool.Current);
+        //_recoveryVehicle.Recover(_vehiclesPool.Current);
     }
 
     private void OnRotatingHorizontal(InputAction.CallbackContext context)
@@ -70,6 +70,6 @@ public class VehicleInputRouter
         if (vehicle.TryGetComponent(out VehicleRotatorSetup vehicleRotatorSetup) == false)
             throw new ArgumentNullException(nameof(vehicleRotatorSetup));
 
-        _vehicleRotator = vehicleRotatorSetup.Model;
+        //_vehicleRotator = vehicleRotatorSetup.Model;
     }
 }

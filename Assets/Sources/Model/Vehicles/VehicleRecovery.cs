@@ -2,18 +2,20 @@ using System;
 
 namespace CrazyRacing.Model
 {
-    public class RecoveryVehicle
+    public class VehicleRecovery
     {
         private const int MaxAmountRecovery = 2;
 
         private int _amountRecovery;
 
-        public event Action<VehicleView> Recovering;
+        //public event Action<Vehicle> Recovering;
         public event Action MaxRecovered;
 
-        public void Recover(VehicleView vehicle)
+        public void Recover(Ferrari vehicle, Point recoveryPoint)
         {
-            Recovering?.Invoke(vehicle);
+            vehicle.Recover(recoveryPoint);
+
+            //Recovering?.Invoke(vehicle);
             ++_amountRecovery;
 
             if (_amountRecovery >= MaxAmountRecovery)

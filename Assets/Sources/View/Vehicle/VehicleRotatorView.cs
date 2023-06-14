@@ -3,7 +3,6 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class VehicleRotatorView : MonoBehaviour
 {
-    [SerializeField] private float _force = 5;
     [SerializeField] private float _maxSpeed = 1;
 
     private Rigidbody _rigidbody;
@@ -22,8 +21,8 @@ public class VehicleRotatorView : MonoBehaviour
             return;
 
         _rigidbody.maxAngularVelocity = _maxSpeed;
-        _rigidbody.AddRelativeTorque(_vertical * Time.deltaTime * _force, ForceMode.VelocityChange);
-        _rigidbody.AddRelativeTorque(_horizontal * Time.deltaTime * _force, ForceMode.VelocityChange);
+        _rigidbody.AddRelativeTorque(_vertical, ForceMode.VelocityChange);
+        _rigidbody.AddRelativeTorque(_horizontal, ForceMode.VelocityChange);
     }
 
     private void OnTriggerStay(Collider other)
@@ -37,13 +36,13 @@ public class VehicleRotatorView : MonoBehaviour
         _isGrounded = false;
     }
 
-    public void RotateVertical(float direction)
+    public void RotateVertical(Vector3 vector)
     {
-        _vertical = new Vector3(0, 0, direction);
+        _vertical = vector;
     }
 
-    public void RotateHorizontal(float direction)
+    public void RotateHorizontal(Vector3 vector)
     {
-        _horizontal = new Vector3(direction, 0, 0);
+        _horizontal = vector;
     }
 }

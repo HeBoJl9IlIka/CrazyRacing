@@ -2,19 +2,16 @@ using System;
 
 namespace CrazyRacing.Model
 {
-    public class VehiclesPool
+    public class VehiclesPool 
     {
-        private readonly VehicleView[] _vehicles;
-        private VehicleView _current;
-        private VehicleView _last;
+        private readonly Ferrari[] _vehicles;
+        private Ferrari _current;
 
-        public VehicleView Current => _current;
-        public int AmountVehicles => _vehicles.Length;
+        public Ferrari Current => _current;
 
-        public event Action<VehicleView> EnablingVehicle;
-        public event Action<VehicleView> DisablingVehicle;
+        public event Action<Ferrari> CreatedVehicle;
 
-        public VehiclesPool(VehicleView[] vehicles)
+        public VehiclesPool(Ferrari[] vehicles)
         {
             if (vehicles.Length == 0)
                 throw new ArgumentNullException(nameof(vehicles));
@@ -27,23 +24,22 @@ namespace CrazyRacing.Model
             if (_current == _vehicles[^1])
                 return;
 
-            for (int i = 0; i < _vehicles.Length; i++)
-            {
-                if (_vehicles[i] == _current)
-                {
-                    _last = _current;
-                    _current = _vehicles[++i];
-
-                    DisablingVehicle?.Invoke(_last);
-                    EnablingVehicle?.Invoke(_current);
-                }
-            }
+            int index = Array.IndexOf(_vehicles, _current);
+            _vehicles[index].Disable();
+            _current = _vehicles[++index];
+            _current.Enable();
         }
 
         public void EnableFirstVehicle()
         {
             _current = _vehicles[0];
-            EnablingVehicle?.Invoke(_current);
+            _current.Enable();
+        }
+
+        public void CreateVehicles()
+        {
+            foreach (var vehicle in _vehicles)
+                CreatedVehicle?.Invoke(vehicle);
         }
     }
 }
