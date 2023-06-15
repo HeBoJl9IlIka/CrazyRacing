@@ -1,9 +1,65 @@
 using CrazyRacing.Model;
 using UnityEngine;
-using System;
+using System.Collections.Generic;
 
 public class LevelRoot : MonoBehaviour
 {
+    [SerializeField] private CheckpointPresenterFactory _checkpointPresenterFactory;
+
+    private CheckpointsCounter _checkpointsCounter;
+    private List<Checkpoint> _checkpoints = new List<Checkpoint>();
+
+    private void Awake()
+    {
+        _checkpointsCounter = new CheckpointsCounter(_checkpointPresenterFactory.AmountCheckpoints);
+    }
+
+    private void Start()
+    {
+        _checkpointsCounter.Init();
+        SubscribeCheckpoints();
+    }
+
+    private void OnEnable()
+    {
+        _checkpointsCounter.CreatedCheckpoint += OnCreatedCheckpoint;
+        _checkpointsCounter.LevelCompleted += OnLevelCompleted;
+    }
+
+    private void OnDisable()
+    {
+        foreach (var checkpoint in _checkpoints)
+            checkpoint.Passed -= OnPassed;
+
+        _checkpointsCounter.CreatedCheckpoint -= OnCreatedCheckpoint;
+        _checkpointsCounter.LevelCompleted -= OnLevelCompleted;
+    }
+
+    private void OnCreatedCheckpoint(Checkpoint checkpoint, int index)
+    {
+        _checkpoints.Add(checkpoint);
+        _checkpointPresenterFactory.InitPresenter(checkpoint, index);
+    }
+
+    private void OnPassed(Checkpoint checkpoint)
+    {
+        _checkpointsCounter.CountCheckpoint();
+        _checkpointsCounter.ChangeCheckpoint(checkpoint);
+    }
+
+    private void OnLevelCompleted()
+    {
+        Debug.Log("Completed");
+    }
+
+    private void SubscribeCheckpoints()
+    {
+        foreach (var checkpoint in _checkpoints)
+            checkpoint.Passed += OnPassed;
+    }
+
+
+
     //[SerializeField] private VehiclesPoolSetup _vehiclesPoolSetup;
     //[SerializeField] private RecoveryVehicleSetup _recoveryVehicleSetup;
     //[SerializeField] private CheckpointsCounterSetup _checkpointsCounterSetup;
