@@ -1,28 +1,30 @@
+using UnityEngine;
+using UnityEngine.UI;
+using DG.Tweening;
 using CrazyRacing.Model;
 
-public class ProgressBarPresenter
+[RequireComponent(typeof(Slider))]
+public class ProgressBarPresenter : MonoBehaviour
 {
-    //private ProgressBarView _view;
-    //private CheckpointsCounter _model;
+    private Slider _slider;
+    private float _duration = Config.ProgressBarFillingDuration;
+    private int _currentNumber;
 
-    //public ProgressBarPresenter(ProgressBarView view, CheckpointsCounter model)
-    //{
-    //    _view = view;
-    //    _model = model;
-    //}
+    private void Awake()
+    {
+        _slider = GetComponent<Slider>();
+    }
 
-    //public void Enable()
-    //{
-    //    _model.Passed += OnPassedCheckpoint;
-    //}
+    public void Init(int amountCheckpoints)
+    {
+        gameObject.SetActive(true);
+        _slider.maxValue = amountCheckpoints;
+    }
 
-    //public void Disable()
-    //{
-    //    _model.Passed -= OnPassedCheckpoint;
-    //}
-
-    //private void OnPassedCheckpoint(CheckpointPresenter checkpoint, int currentNumber)
-    //{
-    //    _view.Add(currentNumber);
-    //}
+    public void Add()
+    {
+        float number = _slider.value;
+        ++number;
+        _slider.DOValue(number, _duration);
+    }
 }

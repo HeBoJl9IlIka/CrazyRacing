@@ -11,6 +11,7 @@ public class VehiclePresenter : MonoBehaviour
     private bool _isGrounded;
 
     public virtual string VehicleName { get; }
+    public Vehicle Model => _model;
 
     private void Awake()
     {
@@ -24,6 +25,7 @@ public class VehiclePresenter : MonoBehaviour
         _model.Recovered += OnRecovered;
         _model.RotatingVertical += OnRotatingVertical;
         _model.RotatingHorizontal += OnRotatingHorizontal;
+        _model.Stopped += OnStopped;
     }
 
     private void OnDisable()
@@ -33,6 +35,7 @@ public class VehiclePresenter : MonoBehaviour
         _model.Recovered -= OnRecovered;
         _model.RotatingVertical -= OnRotatingVertical;
         _model.RotatingHorizontal -= OnRotatingHorizontal;
+        _model.Stopped -= OnStopped;
     }
 
     private void FixedUpdate()
@@ -46,7 +49,7 @@ public class VehiclePresenter : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.TryGetComponent(out RoadView road))
+        if (other.TryGetComponent(out RoadPresenter road))
             _isGrounded = true;
     }
 
@@ -87,5 +90,10 @@ public class VehiclePresenter : MonoBehaviour
     private void OnRotatingVertical(Vector3 vector)
     {
         _horizontal = vector;
+    }
+
+    private void OnStopped()
+    {
+        _rigidbody.isKinematic = true;
     }
 }

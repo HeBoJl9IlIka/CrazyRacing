@@ -15,7 +15,7 @@ public class CheckpointPresenter : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent(out VehiclePresenter vehicle))
-            _model.Pass();
+            _model.Pass(vehicle.Model);
     }
 
     public void Init(Checkpoint checkpoint)

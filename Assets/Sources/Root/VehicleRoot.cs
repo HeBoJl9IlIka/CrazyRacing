@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class VehicleRoot : MonoBehaviour
 {
+    [SerializeField] private LevelRoot _levelRoot;
     [SerializeField] private VehiclePresenterFactory _vehiclePresenterFactory;
     [SerializeField] private RecoveryPointPresenter _recoveryPointPresenter;
     [SerializeField] private CreatorVehicle[] _vehicleCreators;
@@ -36,6 +37,7 @@ public class VehicleRoot : MonoBehaviour
         _vehicleInputRouter.Recovered += OnRecovered;
         _vehicleInputRouter.RotatingVertical += OnRotatingVertical;
         _vehicleInputRouter.RotatingHorizontal += OnRotatingHorizontal;
+        _vehicleRecovery.MaxRecovered += OnMaxRecovered;
     }
 
     private void OnDisable()
@@ -45,18 +47,29 @@ public class VehicleRoot : MonoBehaviour
         _vehicleInputRouter.Recovered -= OnRecovered;
         _vehicleInputRouter.RotatingVertical -= OnRotatingVertical;
         _vehicleInputRouter.RotatingHorizontal -= OnRotatingHorizontal;
+        _vehicleRecovery.MaxRecovered -= OnMaxRecovered;
+    }
+
+    public void ChangeVehicle()
+    {
+        _vehiclesPool.ChangeVehicle();
+    }
+
+    public void OnRecovered()
+    {
+        Vector3 position = _recoveryPointPresenter.transform.position;
+        Vector3 rotation = _recoveryPointPresenter.transform.eulerAngles;
+        _vehicleRecovery.Recover(_vehiclesPool.Current, position, rotation);
+    }
+
+    public void StopVehicle()
+    {
+        _vehiclesPool.Current.Stop();
     }
 
     private void OnCreatedVehicle(Vehicle vehicle)
     {
         _vehiclePresenterFactory.Create(vehicle);
-    }
-
-    private void OnRecovered()
-    {
-        Vector3 position = _recoveryPointPresenter.transform.position;
-        Vector3 rotation = _recoveryPointPresenter.transform.eulerAngles;
-        _vehicleRecovery.Recover(_vehiclesPool.Current, position, rotation);
     }
 
     private void OnRotatingVertical(float direction)
@@ -69,6 +82,11 @@ public class VehicleRoot : MonoBehaviour
     {
         Vehicle vehicle = _vehiclesPool.Current;
         vehicle.RotateHorizontal(direction);
+    }
+
+    private void OnMaxRecovered()
+    {
+        _levelRoot.ShowSkipMenu();
     }
 }
 

@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-public class SkippingLevelView : MonoBehaviour
+public class SkippingLevelPresenter : MonoBehaviour
 {
     public void ShowMenu()
     {

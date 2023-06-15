@@ -9,6 +9,7 @@ namespace CrazyRacing.Model
 
         public event Action Enabled;
         public event Action Disabled;
+        public event Action Stopped;
         public event Action<Vector3, Vector3> Recovered;
         public event Action<Vector3> RotatingVertical;
         public event Action<Vector3> RotatingHorizontal;
@@ -38,6 +39,11 @@ namespace CrazyRacing.Model
         {
             Vector3 vector = new Vector3(direction, 0, 0) * Time.deltaTime * Config.RotationForce;
             RotatingHorizontal?.Invoke(vector);
+        }
+
+        public void Stop()
+        {
+            Stopped?.Invoke();
         }
     }
 }

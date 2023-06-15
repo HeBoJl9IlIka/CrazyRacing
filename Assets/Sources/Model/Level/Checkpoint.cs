@@ -7,7 +7,7 @@ namespace CrazyRacing.Model
         public event Action Showed;
         public event Action Hided;
         public event Action Disabled;
-        public event Action<Checkpoint> Passed;
+        public event Action<Checkpoint, Vehicle> Passed;
 
         public void Enable()
         {
@@ -19,9 +19,9 @@ namespace CrazyRacing.Model
             Disabled?.Invoke();
         }
 
-        public void Pass()
+        public void Pass(Vehicle vehicle)
         {
-            Passed?.Invoke(this);
+            Passed?.Invoke(this, vehicle);
         }
 
         public void Hide()

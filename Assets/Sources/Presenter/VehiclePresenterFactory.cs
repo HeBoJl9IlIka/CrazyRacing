@@ -54,7 +54,7 @@ public abstract class CreatorVehiclePresenter
 
     public virtual void Create(Vehicle vehicle)
     {
-        VehiclePresenter presenter = MonoBehaviour.Instantiate(_template);
+        VehiclePresenter presenter = UnityEngine.Object.Instantiate(_template);
         presenter.Init(vehicle);
     }
 }
