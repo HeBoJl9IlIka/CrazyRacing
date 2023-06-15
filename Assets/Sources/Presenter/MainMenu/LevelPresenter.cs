@@ -3,9 +3,9 @@ using CrazyRacing.Model;
 public class LevelPresenter
 {
     private LevelView _view;
-    private Level _model;
+    private Levelmain _model;
 
-    public LevelPresenter(LevelView view, Level model)
+    public LevelPresenter(LevelView view, Levelmain model)
     {
         _view = view;
         _model = model;

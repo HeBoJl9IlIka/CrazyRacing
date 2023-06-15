@@ -6,14 +6,14 @@ public class LevelSetup : MonoBehaviour
     [SerializeField] private int _numberLevel;
     [SerializeField] private LevelView _view;
 
-    private Level _model;
+    private Levelmain _model;
     private LevelPresenter _presenter;
 
-    public Level Model => _model;
+    public Levelmain Model => _model;
 
     private void Awake()
     {
-        _model = new Level(_numberLevel);
+        _model = new Levelmain(_numberLevel);
         _presenter = new LevelPresenter(_view, _model);
     }
 

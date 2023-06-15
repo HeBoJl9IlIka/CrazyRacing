@@ -31,6 +31,15 @@
                     "processors": "",
                     "interactions": "Press",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "PausedGame",
+                    "type": "Button",
+                    "id": "c742fdb7-87f5-482e-93e9-f28948759f7b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -176,6 +185,17 @@
                     "action": "RotatedVertical",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "4ba4867b-c4a4-4a27-9b1f-8b42b45a80f4",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PausedGame",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

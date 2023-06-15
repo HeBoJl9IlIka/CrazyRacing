@@ -1,4 +1,3 @@
-using CrazyRacing.Model;
 using UnityEngine.InputSystem;
 using System;
 
@@ -6,6 +5,7 @@ public class VehicleInputRouter
 {
     private readonly VehicleInput _input;
 
+    public event Action PausedGame;
     public event Action Recovered;
     public event Action<float> RotatingHorizontal;
     public event Action<float> RotatingVertical;
@@ -18,6 +18,7 @@ public class VehicleInputRouter
     public void Enable()
     {
         _input.Enable();
+        _input.Vehicle.PausedGame.performed += OnPausedGame;
         _input.Vehicle.RecoveredVehicle.performed += OnRecoveredVehicle;
         _input.Vehicle.RotatedHorizontal.started += OnRotatingHorizontal;
         _input.Vehicle.RotatedHorizontal.canceled += OnRotatedHorizontal;
@@ -28,11 +29,17 @@ public class VehicleInputRouter
     public void Disable()
     {
         _input.Disable();
+        _input.Vehicle.PausedGame.performed -= OnPausedGame;
         _input.Vehicle.RecoveredVehicle.performed -= OnRecoveredVehicle;
         _input.Vehicle.RotatedHorizontal.started -= OnRotatingHorizontal;
         _input.Vehicle.RotatedHorizontal.canceled -= OnRotatedHorizontal;
         _input.Vehicle.RotatedVertical.started -= OnRotatingVertical;
         _input.Vehicle.RotatedVertical.canceled -= OnRotatedVertical;
+    }
+
+    private void OnPausedGame(InputAction.CallbackContext obj)
+    {
+        PausedGame?.Invoke();
     }
 
     private void OnRecoveredVehicle(InputAction.CallbackContext context)

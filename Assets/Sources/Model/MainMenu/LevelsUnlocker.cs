@@ -2,10 +2,10 @@ namespace CrazyRacing.Model
 {
     public class LevelsUnlocker
     {
-        private Level[] _levels;
+        private Levelmain[] _levels;
         private int _numberCurrentLevel;
 
-        public LevelsUnlocker(Level[] levels, int numberCurrentLevel)
+        public LevelsUnlocker(Levelmain[] levels, int numberCurrentLevel)
         {
             _levels = levels;
             _numberCurrentLevel = numberCurrentLevel;

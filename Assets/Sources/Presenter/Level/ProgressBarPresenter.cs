@@ -8,7 +8,6 @@ public class ProgressBarPresenter : MonoBehaviour
 {
     private Slider _slider;
     private float _duration = Config.ProgressBarFillingDuration;
-    private int _currentNumber;
 
     private void Awake()
     {

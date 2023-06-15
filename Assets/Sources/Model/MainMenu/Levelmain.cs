@@ -2,14 +2,14 @@ using System;
 
 namespace CrazyRacing.Model
 {
-    public class Level
+    public class Levelmain
     {
         public int Number { get; private set; }
 
         public event Action<int> Opening;
         public event Action Unlocked;
 
-        public Level(int number)
+        public Levelmain(int number)
         {
             Number = number;
         }

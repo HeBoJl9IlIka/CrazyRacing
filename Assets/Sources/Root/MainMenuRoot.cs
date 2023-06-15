@@ -6,7 +6,7 @@ public class MainMenuRoot : MonoBehaviour
 {
     [SerializeField] private LevelSetup[] _levelsSetups;
 
-    private List<Level> _levels = new List<Level>();
+    private List<Levelmain> _levels = new List<Levelmain>();
     private LevelsUnlocker _levelsUnlocker;
     private SceneOpener _levelOpener = new SceneOpener();
     private ProgressGame _progressGame = new ProgressGame();

@@ -1,26 +1,29 @@
 using CrazyRacing.Model;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class SkippingLevelPresenter : MonoBehaviour
+public class PauseGamePresenter : MonoBehaviour
 {
     [SerializeField] private GameObject _menu;
-    [SerializeField] private ButtonSkipLevelPresenter _buttonSkipLevel;
+    [SerializeField] private ButtonMainMenuPresenter _buttonMainMenu;
     [SerializeField] private ButtonContinuePresenter _buttonContinue;
 
     private PauseGame _model;
 
     private void OnEnable()
     {
+        _model.Continued += OnPlaying;
         _model.Paused += OnPaused;
-        _buttonSkipLevel.onClick.AddListener(OnSkippedLevel);
         _buttonContinue.onClick.AddListener(OnContinued);
+        _buttonMainMenu.onClick.AddListener(OnExited);
     }
 
     private void OnDisable()
     {
+        _model.Continued -= OnPlaying;
         _model.Paused -= OnPaused;
-        _buttonSkipLevel.onClick.RemoveListener(OnSkippedLevel);
-        _buttonContinue.onClick.AddListener(OnContinued);
+        _buttonContinue.onClick.RemoveListener(OnContinued);
+        _buttonMainMenu.onClick.RemoveListener(OnExited);
     }
 
     public void Init(PauseGame pauseGame)
@@ -29,20 +32,24 @@ public class SkippingLevelPresenter : MonoBehaviour
         enabled = true;
     }
 
+    private void OnPlaying()
+    {
+        _menu.SetActive(false);
+    }
+
     private void OnPaused()
     {
         _menu.SetActive(true);
     }
 
-    private void OnSkippedLevel()
-    {
-        _model.Continue();
-        Debug.Log("SKIPPED!");
-    }
-
     private void OnContinued()
     {
         _model.Continue();
-        _menu.SetActive(false);
+    }
+    
+    private void OnExited()
+    {
+        _model.Continue();
+        SceneManager.LoadScene(Config.NumberSceneMainMenu);
     }
 }

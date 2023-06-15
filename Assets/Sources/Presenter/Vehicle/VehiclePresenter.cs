@@ -25,7 +25,6 @@ public class VehiclePresenter : MonoBehaviour
         _model.Recovered += OnRecovered;
         _model.RotatingVertical += OnRotatingVertical;
         _model.RotatingHorizontal += OnRotatingHorizontal;
-        _model.Stopped += OnStopped;
     }
 
     private void OnDisable()
@@ -35,7 +34,6 @@ public class VehiclePresenter : MonoBehaviour
         _model.Recovered -= OnRecovered;
         _model.RotatingVertical -= OnRotatingVertical;
         _model.RotatingHorizontal -= OnRotatingHorizontal;
-        _model.Stopped -= OnStopped;
     }
 
     private void FixedUpdate()
@@ -78,8 +76,7 @@ public class VehiclePresenter : MonoBehaviour
     {
         transform.position = position;
         transform.eulerAngles = rotation;
-        _rigidbody.isKinematic = true;
-        _rigidbody.isKinematic = false;
+        ResetVelocity();
     }
 
     private void OnRotatingHorizontal(Vector3 vector)
@@ -92,8 +89,9 @@ public class VehiclePresenter : MonoBehaviour
         _horizontal = vector;
     }
 
-    private void OnStopped()
+    private void ResetVelocity()
     {
         _rigidbody.isKinematic = true;
+        _rigidbody.isKinematic = false;
     }
 }
