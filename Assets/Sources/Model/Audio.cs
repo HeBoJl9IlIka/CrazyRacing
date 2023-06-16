@@ -18,7 +18,7 @@ namespace CrazyRacing.Model
             AudioListener.pause = true;
         }
 
-        public static void Customize()
+        public static void Switch()
         {
             if (IsEnabled)
                 IsEnabled = false;

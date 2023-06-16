@@ -3,27 +3,21 @@ using UnityEngine.UI;
 using DG.Tweening;
 using CrazyRacing.Model;
 
-[RequireComponent(typeof(Slider))]
 public class ProgressBarPresenter : MonoBehaviour
 {
-    private Slider _slider;
+    [SerializeField] private Slider _slider;
     private float _duration = Config.ProgressBarFillingDuration;
-
-    private void Awake()
-    {
-        _slider = GetComponent<Slider>();
-    }
 
     public void Init(int amountCheckpoints)
     {
-        gameObject.SetActive(true);
+        _slider.gameObject.SetActive(true);
         _slider.maxValue = amountCheckpoints;
     }
 
     public void Add()
     {
-        float number = _slider.value;
-        ++number;
-        _slider.DOValue(number, _duration);
+        float value = _slider.value;
+        ++value;
+        _slider.DOValue(value, _duration);
     }
 }

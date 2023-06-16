@@ -4,20 +4,52 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenuPresenter : MonoBehaviour
 {
+    [SerializeField] private GameObject _menu;
     [SerializeField] private ButtonMainMenuPresenter _buttonMainMenu;
+    [SerializeField] private ButtonContinuePresenter _buttonContinue;
+
+    private PauseGame _model;
 
     private void OnEnable()
     {
-        _buttonMainMenu.onClick.AddListener(OnClickMainMenu);
+        _model.Continued += OnPlaying;
+        _model.Paused += OnPaused;
+        _buttonContinue.onClick.AddListener(OnContinued);
+        _buttonMainMenu.onClick.AddListener(OnExited);
     }
 
     private void OnDisable()
     {
-        _buttonMainMenu.onClick.RemoveListener(OnClickMainMenu);
+        _model.Continued -= OnPlaying;
+        _model.Paused -= OnPaused;
+        _buttonContinue.onClick.RemoveListener(OnContinued);
+        _buttonMainMenu.onClick.RemoveListener(OnExited);
     }
 
-    private void OnClickMainMenu()
+    public void Init(PauseGame pauseGame)
     {
+        _model = pauseGame;
+        enabled = true;
+    }
+
+    private void OnPlaying()
+    {
+        _menu.SetActive(false);
+    }
+
+    private void OnPaused()
+    {
+        _menu.SetActive(true);
+    }
+
+    private void OnContinued()
+    {
+        _model.Continue();
+    }
+    
+    private void OnExited()
+    {
+        _model.Continue();
         SceneManager.LoadScene(Config.NumberSceneMainMenu);
     }
 }

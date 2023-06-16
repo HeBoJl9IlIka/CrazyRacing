@@ -124,7 +124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2706846776504964682}
         m_TargetAssemblyTypeName: AudioPresenter, Assembly-CSharp
-        m_MethodName: Customize
+        m_MethodName: Switch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -146,10 +146,10 @@ GameObject:
   - component: {fileID: 5090930435297637080}
   - component: {fileID: 5090930435297637031}
   - component: {fileID: 5090930435297637030}
-  - component: {fileID: 5090930435297637082}
+  - component: {fileID: 5665717802943093360}
   - component: {fileID: 2706846776504964682}
   m_Layer: 5
-  m_Name: PauseGame
+  m_Name: PauseMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &5090930435297637082
+--- !u!114 &5665717802943093360
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5090930435297637029}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f435b42d2f8e8946a02d1ec399c62f2, type: 3}
+  m_Script: {fileID: 11500000, guid: 20759b379c3a72242aee3ef91f8144fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _menu: {fileID: 5314729313450508279}

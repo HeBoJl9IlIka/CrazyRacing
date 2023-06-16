@@ -11,8 +11,8 @@ public class AudioPresenter : MonoBehaviour
             Audio.Disable();
     }
 
-    public void Customize()
+    public void Switch()
     {
-        Audio.Customize();
+        Audio.Switch();
     }
 }

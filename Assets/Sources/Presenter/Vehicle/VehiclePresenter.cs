@@ -81,12 +81,12 @@ public class VehiclePresenter : MonoBehaviour
 
     private void OnRotatingHorizontal(Vector3 vector)
     {
-        _vertical = vector;
+        _horizontal = vector;
     }
 
     private void OnRotatingVertical(Vector3 vector)
     {
-        _horizontal = vector;
+        _vertical = vector;
     }
 
     private void ResetVelocity()

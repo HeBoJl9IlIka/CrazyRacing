@@ -10,7 +10,7 @@ namespace CrazyRacing.Model
         public event Action Continued;
         public event Action Paused;
 
-        public void Execute()
+        public void Switch()
         {
             if (_isPaused)
                 Continue();

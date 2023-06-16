@@ -3,13 +3,14 @@ using UnityEngine;
 
 public class PresentersFactory : MonoBehaviour
 {
-    [SerializeField] private PauseGamePresenter _pauseGamePresenter;
+    [SerializeField] private PauseMenuPresenter _pauseMenuPresenter;
     [SerializeField] private CompletedMenuPresenter _completedMenuPresenter;
     [SerializeField] private SkippingLevelPresenter _skippingLevelPresenter;
+    [SerializeField] private ProgressBarPresenter _progressBarPresenter;
 
-    public void CreatePauseGame(PauseGame pauseGame)
+    public void CreatePauseMenu(PauseGame pauseGame)
     {
-        PauseGamePresenter pauseGamePresenter = Instantiate(_pauseGamePresenter);
+        PauseMenuPresenter pauseGamePresenter = Instantiate(_pauseMenuPresenter);
         pauseGamePresenter.Init(pauseGame);
     }
 
@@ -23,5 +24,13 @@ public class PresentersFactory : MonoBehaviour
     {
         SkippingLevelPresenter skippingLevelPresenter = Instantiate(_skippingLevelPresenter);
         skippingLevelPresenter.Init(pauseGame);
+    }
+
+    public ProgressBarPresenter CreateProgressBar(int amountCheckpoints)
+    {
+        ProgressBarPresenter progressBarPresenter = Instantiate(_progressBarPresenter);
+        progressBarPresenter.Init(amountCheckpoints);
+
+        return progressBarPresenter;
     }
 }

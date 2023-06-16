@@ -10,17 +10,17 @@ public class LevelRoot : MonoBehaviour
     [SerializeField] private PresentersFactory _presenterFactory;
     [SerializeField] private RecoveryPointPresenter _recoveryPointPresenter;
     [SerializeField] private BorderPresenter _borderPresenter;
-    [SerializeField] private ProgressBarPresenter _progressBarPresenter;
 
     private VehicleInputRouter _vehicleInputRouter;
     private VehiclesPool _vehiclesPool;
     private VehicleRecovery _vehicleRecovery;
     private CheckpointsCounter _checkpointsCounter;
-    private PauseGame _pauseGame;
+    private PauseGame _pauseMenu;
     private PauseGame _completedMenu;
     private PauseGame _skippingMenu;
     private List<Vehicle> _vehicles = new List<Vehicle>();
     private List<Checkpoint> _checkpoints = new List<Checkpoint>();
+    private ProgressBarPresenter _progressBarPresenter;
 
     private void Awake()
     {
@@ -31,10 +31,10 @@ public class LevelRoot : MonoBehaviour
         _vehiclesPool = new VehiclesPool(_vehicles.ToArray());
         _vehicleRecovery = new VehicleRecovery();
         _checkpointsCounter = new CheckpointsCounter(_checkpointPresenterFactory.AmountCheckpoints);
-        _pauseGame = new PauseGame();
+        _pauseMenu = new PauseGame();
         _completedMenu = new PauseGame();
         _skippingMenu = new PauseGame();
-        _presenterFactory.CreatePauseGame(_pauseGame);
+        _presenterFactory.CreatePauseMenu(_pauseMenu);
         _presenterFactory.CreateCompletedMenu(_completedMenu);
         _presenterFactory.CreateSkippingMenu(_skippingMenu);
     }
@@ -44,7 +44,7 @@ public class LevelRoot : MonoBehaviour
         _vehiclesPool.CreateVehicles();
         _vehiclesPool.EnableFirstVehicle();
         _checkpointsCounter.Init();
-        _progressBarPresenter.Init(_checkpoints.Count);
+        _progressBarPresenter = _presenterFactory.CreateProgressBar(_checkpoints.Count);
         Subscribe();
     }
 
@@ -141,7 +141,7 @@ public class LevelRoot : MonoBehaviour
 
     private void OnPausedGame()
     {
-        _pauseGame.Execute();
+        _pauseMenu.Switch();
     }
 }
 
