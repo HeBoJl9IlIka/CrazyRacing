@@ -2041,7 +2041,7 @@ GameObject:
   - component: {fileID: 707918609}
   - component: {fileID: 707918611}
   m_Layer: 5
-  m_Name: Continue
+  m_Name: ButtonContinue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2863,6 +2863,7 @@ MonoBehaviour:
   _levelsPresenters:
   - {fileID: 57249816}
   - {fileID: 1390108497}
+  - {fileID: 1636068080}
 --- !u!1 &1123014556
 GameObject:
   m_ObjectHideFlags: 0
@@ -4422,7 +4423,7 @@ GameObject:
   - component: {fileID: 1636068081}
   - component: {fileID: 1636068080}
   m_Layer: 5
-  m_Name: Level (1)
+  m_Name: Level3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5465,7 +5466,7 @@ MonoBehaviour:
   m_Content: {fileID: 618575383}
   m_Horizontal: 1
   m_Vertical: 0
-  m_MovementType: 0
+  m_MovementType: 1
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
@@ -5781,7 +5782,7 @@ GameObject:
   - component: {fileID: 2034558016}
   - component: {fileID: 2034558015}
   m_Layer: 5
-  m_Name: Audio
+  m_Name: ButtonAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5820,6 +5821,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35306cd3c3fa3d449b947f962ff89292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _button: {fileID: 2034558016}
+  _image: {fileID: 2034558017}
+  _iconEnabled: {fileID: 21300000, guid: eb50f62516536ba449aed7f821ef5afb, type: 3}
+  _iconDisabled: {fileID: 21300000, guid: 7719aade7083fea47a5ac28271de32e9, type: 3}
 --- !u!114 &2034558016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5863,19 +5868,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2034558017}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2034558015}
-        m_TargetAssemblyTypeName: AudioPresenter, Assembly-CSharp
-        m_MethodName: Switch
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2034558017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5896,8 +5889,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: eb50f62516536ba449aed7f821ef5afb, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

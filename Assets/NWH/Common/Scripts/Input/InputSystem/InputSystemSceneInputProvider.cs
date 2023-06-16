@@ -20,14 +20,15 @@ namespace NWH.Common.Input
             sceneInputActions.CameraControls.CameraRotationModifier.started  += ctx => _rotationModifier = true;
             sceneInputActions.CameraControls.CameraRotationModifier.canceled += ctx => _rotationModifier = false;
 
-            sceneInputActions.CameraControls.CameraPanningModifier.started  += ctx => _panningModifier = true;
-            sceneInputActions.CameraControls.CameraPanningModifier.canceled += ctx => _panningModifier = false;
+            //sceneInputActions.CameraControls.CameraPanningModifier.started  += ctx => _panningModifier = true;
+            //sceneInputActions.CameraControls.CameraPanningModifier.canceled += ctx => _panningModifier = false;
         }
 
 
         public override bool ChangeCamera()
         {
-            return sceneInputActions.CameraControls.ChangeCamera.triggered;
+            return false;
+            //return sceneInputActions.CameraControls.ChangeCamera.triggered;
         }
 
 
@@ -63,6 +64,7 @@ namespace NWH.Common.Input
 
         public override bool ChangeVehicle()
         {
+            return false;
             return sceneInputActions.SceneControls.ChangeVehicle.triggered;
         }
 

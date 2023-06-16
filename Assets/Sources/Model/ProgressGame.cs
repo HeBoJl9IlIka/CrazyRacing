@@ -18,6 +18,10 @@ public static class ProgressGame
     public static void SaveProgress()
     {
         int numberLevel = SceneManager.GetActiveScene().buildIndex;
+        int numberLastLevel = PlayerPrefs.GetInt(Config.NumberCurrentLevel);
+
+        if (numberLevel < numberLastLevel)
+            return;
 
         if (numberLevel == PlayerPrefs.GetInt(Config.NumberCurrentLevel))
             ++numberLevel;
