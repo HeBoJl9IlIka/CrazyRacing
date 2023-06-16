@@ -1,26 +1,27 @@
+using CrazyRacing.Model;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-namespace CrazyRacing.Model
+public static class ProgressGame
 {
-    public class ProgressGame
+    public static void Init()
     {
-        private const int FirstLevel = 1;
-        private const string NumberCurrentLevel = "NumberCurrentLevel";
+        if (PlayerPrefs.GetInt(Config.NumberCurrentLevel) == 0)
+            PlayerPrefs.SetInt(Config.NumberCurrentLevel, Config.NumberFirstLevel);
+    }
 
-        public void Init()
-        {
-            if (PlayerPrefs.GetInt(NumberCurrentLevel) == 0)
-                PlayerPrefs.SetInt(NumberCurrentLevel, FirstLevel);
-        }
+    public static int GetNumberCurrentLevel()
+    {
+        return PlayerPrefs.GetInt(Config.NumberCurrentLevel);
+    }
 
-        public int GetNumberCurrentLevel()
-        {
-            return PlayerPrefs.GetInt(NumberCurrentLevel);
-        }
+    public static void SaveProgress()
+    {
+        int numberLevel = SceneManager.GetActiveScene().buildIndex;
 
-        public void SaveProgress(int numberLevel)
-        {
-            PlayerPrefs.SetInt(NumberCurrentLevel, numberLevel);
-        }
+        if (numberLevel == PlayerPrefs.GetInt(Config.NumberCurrentLevel))
+            ++numberLevel;
+
+        PlayerPrefs.SetInt(Config.NumberCurrentLevel, numberLevel);
     }
 }

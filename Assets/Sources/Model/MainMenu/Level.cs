@@ -2,21 +2,16 @@ using System;
 
 namespace CrazyRacing.Model
 {
-    public class Levelmain
+    public class Level
     {
         public int Number { get; private set; }
+        public int NormalizedNumber => Number + 1;
 
-        public event Action<int> Opening;
         public event Action Unlocked;
 
-        public Levelmain(int number)
+        public Level(int number)
         {
             Number = number;
-        }
-
-        public void Open()
-        {
-            Opening?.Invoke(Number);
         }
 
         public void Unlock()

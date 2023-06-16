@@ -1,50 +1,50 @@
 using CrazyRacing.Model;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuRoot : MonoBehaviour
 {
-    [SerializeField] private LevelSetup[] _levelsSetups;
+    [SerializeField] private LevelsPresentersInitializer _levelsPresentersInitializer;
+    [SerializeField] private ButtonContinuePresenter _buttonContinue;
 
-    private List<Levelmain> _levels = new List<Levelmain>();
+    private Level[] _levels;
+
     private LevelsUnlocker _levelsUnlocker;
-    private SceneOpener _levelOpener = new SceneOpener();
-    private ProgressGame _progressGame = new ProgressGame();
 
-    private void Start()
+    public IReadOnlyCollection<Level> Levels => _levels;
+
+    private void Awake()
     {
-        Init();
-        OnEnable();
+        CreateLevels();
+        ProgressGame.Init();
+        _levelsUnlocker = new LevelsUnlocker(Levels);
         _levelsUnlocker.UnlockLevels();
     }
 
     private void OnEnable()
     {
-        if (_levelsSetups != null)
-        {
-            foreach (var level in _levels)
-                level.Opening += OnOpening;
-        }
+        _buttonContinue.onClick.AddListener(OnContinue);
     }
 
     private void OnDisable()
     {
+        _buttonContinue.onClick.RemoveListener(OnContinue);
+    }
+
+    private void OnContinue()
+    {
+        SceneManager.LoadScene(ProgressGame.GetNumberCurrentLevel());
+    }
+
+    private void CreateLevels()
+    {
+        _levels = new Level[_levelsPresentersInitializer.AmountPresenters];
+
+        for (int i = 0; i < _levels.Length; i++)
+            _levels[i] = new Level(i);
+
         foreach (var level in _levels)
-            level.Opening -= OnOpening;
-    }
-
-    private void OnOpening(int number)
-    {
-        _levelOpener.OpenScene(number);
-    }
-
-    private void Init()
-    {
-        foreach (var levelSetup in _levelsSetups)
-            _levels.Add(levelSetup.Model);
-
-        _progressGame.Init();
-        _levelsUnlocker = new LevelsUnlocker(_levels.ToArray(), _progressGame.GetNumberCurrentLevel());
-        
+            _levelsPresentersInitializer.InitPresenter(level);
     }
 }

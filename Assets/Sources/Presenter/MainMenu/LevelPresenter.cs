@@ -1,35 +1,39 @@
 using CrazyRacing.Model;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class LevelPresenter
+public class LevelPresenter : MonoBehaviour
 {
-    private LevelView _view;
-    private Levelmain _model;
+    [SerializeField] private ButtonSelectLevelPresenter _buttonSelect;
+    [SerializeField] private GameObject _levelBlock;
 
-    public LevelPresenter(LevelView view, Levelmain model)
+    private Level _model;
+
+    public void Init(Level level)
     {
-        _view = view;
-        _model = model;
+        _model = level;
+        enabled = true;
     }
 
-    public void Enable()
+    public void OnEnable()
     {
-        _view.Selected += OnSelected;
         _model.Unlocked += OnUnlocked;
+        _buttonSelect.onClick.AddListener(OnSelected);
     }
 
-    public void Disable()
+    public void OnDisable()
     {
-        _view.Selected -= OnSelected;
-        _model.Unlocked += OnUnlocked;
+        _model.Unlocked -= OnUnlocked;
+        _buttonSelect.onClick.RemoveListener(OnSelected);
     }
 
     private void OnSelected()
     {
-        _model.Open();
+        SceneManager.LoadScene(_model.NormalizedNumber);
     }
 
     private void OnUnlocked()
     {
-        _view.Unlock();
+        _levelBlock.SetActive(false);
     }
 }

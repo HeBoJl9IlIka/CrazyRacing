@@ -38,8 +38,7 @@ public class CompletedMenuPresenter : MonoBehaviour
     private void OnClickNextLevel()
     {
         _model.Continue();
-        Scene scene = SceneManager.GetActiveScene();
-        int number = scene.buildIndex;
+        int number = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(++number);
     }
 

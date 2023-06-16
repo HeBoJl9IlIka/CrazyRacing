@@ -96,6 +96,7 @@ public class LevelRoot : MonoBehaviour
 
     private void OnLevelCompleted()
     {
+        ProgressGame.SaveProgress();
         _completedMenu.Pause();
     }
 

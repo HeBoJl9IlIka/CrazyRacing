@@ -1,23 +1,27 @@
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+
 namespace CrazyRacing.Model
 {
     public class LevelsUnlocker
     {
-        private Levelmain[] _levels;
+        private IReadOnlyCollection<Level> _levels;
         private int _numberCurrentLevel;
 
-        public LevelsUnlocker(Levelmain[] levels, int numberCurrentLevel)
+        public LevelsUnlocker(IReadOnlyCollection<Level> levels)
         {
             _levels = levels;
-            _numberCurrentLevel = numberCurrentLevel;
+            _numberCurrentLevel = ProgressGame.GetNumberCurrentLevel();
         }
 
         public void UnlockLevels()
         {
-            if (_numberCurrentLevel > _levels.Length)
-                _numberCurrentLevel = _levels.Length;
+            if (_numberCurrentLevel > _levels.Count)
+                _numberCurrentLevel = _levels.Count;
 
             for (int i = 0; i < _numberCurrentLevel; i++)
-                _levels[i].Unlock();
+                _levels.ElementAt(i).Unlock();
         }
     }
 }
