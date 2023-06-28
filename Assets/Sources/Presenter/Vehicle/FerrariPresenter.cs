@@ -1,5 +1,4 @@
 using CrazyRacing.Model;
-using UnityEngine;
 
 public class FerrariPresenter : VehiclePresenter
 {

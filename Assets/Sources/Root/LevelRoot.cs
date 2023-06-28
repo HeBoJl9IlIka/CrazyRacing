@@ -98,6 +98,7 @@ public class LevelRoot : MonoBehaviour
     {
         ProgressGame.SaveProgress();
         _completedMenu.Pause();
+        _progressBarPresenter.gameObject.SetActive(false);
     }
 
     private void Subscribe()

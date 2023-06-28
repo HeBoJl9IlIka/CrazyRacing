@@ -41,8 +41,8 @@ public class VehiclePresenter : MonoBehaviour
         if (_isGrounded)
             return;
 
-        _rigidbody.AddRelativeTorque(_vertical, ForceMode.VelocityChange);
-        _rigidbody.AddRelativeTorque(_horizontal, ForceMode.VelocityChange);
+        Vector3 direction = _vertical + _horizontal;
+        _rigidbody.AddRelativeTorque(direction, ForceMode.VelocityChange);
     }
 
     private void OnTriggerStay(Collider other)

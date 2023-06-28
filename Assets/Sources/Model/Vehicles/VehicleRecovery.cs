@@ -11,6 +11,9 @@ namespace CrazyRacing.Model
 
         public void Recover(Vehicle vehicle, Vector3 position, Vector3 rotation)
         {
+            if (GamePauseController.IsPaused)
+                return;
+
             vehicle.Recover(position, rotation);
 
             ++_amountRecovery;
