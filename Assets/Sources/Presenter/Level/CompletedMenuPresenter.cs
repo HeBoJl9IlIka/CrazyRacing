@@ -8,9 +8,9 @@ public class CompletedMenuPresenter : MonoBehaviour
     [SerializeField] private ButtonMainMenuPresenter _buttonMainMenu;
     [SerializeField] private ButtonNextLevelPresenter _buttonNextLevel;
 
-    private PauseGame _model;
+    private GamePause _model;
 
-    public void Init(PauseGame pauseGame)
+    public void Init(GamePause pauseGame)
     {
         _model = pauseGame;
         enabled = true;

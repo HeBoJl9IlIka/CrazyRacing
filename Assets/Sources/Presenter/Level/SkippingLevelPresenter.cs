@@ -7,7 +7,7 @@ public class SkippingLevelPresenter : MonoBehaviour
     [SerializeField] private ButtonSkipLevelPresenter _buttonSkipLevel;
     [SerializeField] private ButtonContinuePresenter _buttonContinue;
 
-    private PauseGame _model;
+    private GamePause _model;
 
     private void OnEnable()
     {
@@ -23,7 +23,7 @@ public class SkippingLevelPresenter : MonoBehaviour
         _buttonContinue.onClick.AddListener(OnContinued);
     }
 
-    public void Init(PauseGame pauseGame)
+    public void Init(GamePause pauseGame)
     {
         _model = pauseGame;
         enabled = true;

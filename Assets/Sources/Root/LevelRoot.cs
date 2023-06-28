@@ -15,9 +15,9 @@ public class LevelRoot : MonoBehaviour
     private VehiclesPool _vehiclesPool;
     private VehicleRecovery _vehicleRecovery;
     private CheckpointsCounter _checkpointsCounter;
-    private PauseGame _pauseMenu;
-    private PauseGame _completedMenu;
-    private PauseGame _skippingMenu;
+    private GamePause _pauseMenu;
+    private GamePause _completedMenu;
+    private GamePause _skippingMenu;
     private List<Vehicle> _vehicles = new List<Vehicle>();
     private List<Checkpoint> _checkpoints = new List<Checkpoint>();
     private ProgressBarPresenter _progressBarPresenter;
@@ -31,9 +31,9 @@ public class LevelRoot : MonoBehaviour
         _vehiclesPool = new VehiclesPool(_vehicles.ToArray());
         _vehicleRecovery = new VehicleRecovery();
         _checkpointsCounter = new CheckpointsCounter(_checkpointPresenterFactory.AmountCheckpoints);
-        _pauseMenu = new PauseGame();
-        _completedMenu = new PauseGame();
-        _skippingMenu = new PauseGame();
+        _pauseMenu = new GamePause();
+        _completedMenu = new GamePause();
+        _skippingMenu = new GamePause();
         _presenterFactory.CreatePauseMenu(_pauseMenu);
         _presenterFactory.CreateCompletedMenu(_completedMenu);
         _presenterFactory.CreateSkippingMenu(_skippingMenu);

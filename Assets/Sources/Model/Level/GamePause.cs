@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace CrazyRacing.Model
 {
-    public class PauseGame
+    public class GamePause
     {
         private bool _isPaused;
 
@@ -20,10 +20,14 @@ namespace CrazyRacing.Model
 
         public void Pause()
         {
+            if (GamePauseController.IsPaused)
+                return;
+
             Audio.Disable();
             Time.timeScale = 0;
             _isPaused = true;
             Paused?.Invoke();
+            GamePauseController.Switch();
         }
 
         public void Continue()
@@ -34,6 +38,7 @@ namespace CrazyRacing.Model
             Time.timeScale = 1;
             _isPaused = false;
             Continued?.Invoke();
+            GamePauseController.Switch();
         }
     }
 }

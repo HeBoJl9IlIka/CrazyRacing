@@ -8,19 +8,19 @@ public class PresentersFactory : MonoBehaviour
     [SerializeField] private SkippingLevelPresenter _skippingLevelPresenter;
     [SerializeField] private ProgressBarPresenter _progressBarPresenter;
 
-    public void CreatePauseMenu(PauseGame pauseGame)
+    public void CreatePauseMenu(GamePause pauseGame)
     {
         PauseMenuPresenter pauseGamePresenter = Instantiate(_pauseMenuPresenter);
         pauseGamePresenter.Init(pauseGame);
     }
 
-    public void CreateCompletedMenu(PauseGame pauseGame)
+    public void CreateCompletedMenu(GamePause pauseGame)
     {
         CompletedMenuPresenter completedMenuPresenter = Instantiate(_completedMenuPresenter);
         completedMenuPresenter.Init(pauseGame);
     }
 
-    public void CreateSkippingMenu(PauseGame pauseGame)
+    public void CreateSkippingMenu(GamePause pauseGame)
     {
         SkippingLevelPresenter skippingLevelPresenter = Instantiate(_skippingLevelPresenter);
         skippingLevelPresenter.Init(pauseGame);

@@ -8,7 +8,7 @@ public class PauseMenuPresenter : MonoBehaviour
     [SerializeField] private ButtonMainMenuPresenter _buttonMainMenu;
     [SerializeField] private ButtonContinuePresenter _buttonContinue;
 
-    private PauseGame _model;
+    private GamePause _model;
 
     private void OnEnable()
     {
@@ -26,7 +26,7 @@ public class PauseMenuPresenter : MonoBehaviour
         _buttonMainMenu.onClick.RemoveListener(OnExited);
     }
 
-    public void Init(PauseGame pauseGame)
+    public void Init(GamePause pauseGame)
     {
         _model = pauseGame;
         enabled = true;
