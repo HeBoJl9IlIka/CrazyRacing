@@ -14,7 +14,8 @@ public class VehiclePresenterFactory : MonoBehaviour
         CreatorVehiclePresenter[] creatorsPresenters =
         {
             new CreatorFerrariPresenter(),
-            new CreatorNivaPresenter()
+            new CreatorNivaPresenter(),
+            new CreatorBmwPresenter()
         };
 
         CustomizeCreator(creatorsPresenters);
@@ -67,4 +68,9 @@ public class CreatorFerrariPresenter : CreatorVehiclePresenter
 public class CreatorNivaPresenter : CreatorVehiclePresenter
 {
     public override string VehicleName => Config.Niva;
+}
+
+public class CreatorBmwPresenter : CreatorVehiclePresenter
+{
+    public override string VehicleName => Config.Bmw;
 }

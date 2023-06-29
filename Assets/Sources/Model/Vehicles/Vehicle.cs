@@ -13,12 +13,12 @@ namespace CrazyRacing.Model
         public event Action<Vector3> RotatingVertical;
         public event Action<Vector3> RotatingHorizontal;
 
-        public virtual void Enable()
+        public void Enable()
         {
             Enabled?.Invoke();
         }
 
-        public virtual void Disable()
+        public void Disable()
         {
             Disabled?.Invoke();
         }

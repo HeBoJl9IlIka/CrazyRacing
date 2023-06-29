@@ -10,7 +10,10 @@ public class BoosterPresenter : MonoBehaviour
         if (other.TryGetComponent(out VehiclePresenter vehiclePresenter))
         {
             if (vehiclePresenter.TryGetComponent(out Rigidbody rigidbody))
-                rigidbody.AddRelativeForce(direction, ForceMode.VelocityChange);
+            {
+                if (rigidbody.velocity.magnitude > Config.MinSpeedForBoost)
+                    rigidbody.AddRelativeForce(direction, ForceMode.VelocityChange);
+            }
         }
     }
 }

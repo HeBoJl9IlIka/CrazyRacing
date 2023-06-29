@@ -18,24 +18,6 @@ public class VehiclePresenter : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
     }
 
-    private void OnEnable()
-    {
-        _model.Enabled += OnEnabled;
-        _model.Disabled += OnDisabled;
-        _model.Recovered += OnRecovered;
-        _model.RotatingVertical += OnRotatingVertical;
-        _model.RotatingHorizontal += OnRotatingHorizontal;
-    }
-
-    private void OnDisable()
-    {
-        _model.Enabled -= OnEnabled;
-        _model.Disabled -= OnDisabled;
-        _model.Recovered -= OnRecovered;
-        _model.RotatingVertical -= OnRotatingVertical;
-        _model.RotatingHorizontal -= OnRotatingHorizontal;
-    }
-
     private void FixedUpdate()
     {
         if (_isGrounded)
@@ -59,7 +41,8 @@ public class VehiclePresenter : MonoBehaviour
     public void Init(Vehicle model)
     {
         _model = model;
-        _model.Enabled += OnEnabled;
+        enabled = true;
+        Subscribe();
     }
 
     private void OnEnabled()
@@ -70,6 +53,7 @@ public class VehiclePresenter : MonoBehaviour
     private void OnDisabled()
     {
         gameObject.SetActive(false);
+        Unsubscribe();
     }
 
     private void OnRecovered(Vector3 position, Vector3 rotation)
@@ -93,5 +77,23 @@ public class VehiclePresenter : MonoBehaviour
     {
         _rigidbody.isKinematic = true;
         _rigidbody.isKinematic = false;
+    }
+
+    private void Subscribe()
+    {
+        _model.Enabled += OnEnabled;
+        _model.Disabled += OnDisabled;
+        _model.Recovered += OnRecovered;
+        _model.RotatingVertical += OnRotatingVertical;
+        _model.RotatingHorizontal += OnRotatingHorizontal;
+    }
+
+    private void Unsubscribe()
+    {
+        _model.Enabled -= OnEnabled;
+        _model.Disabled -= OnDisabled;
+        _model.Recovered -= OnRecovered;
+        _model.RotatingVertical -= OnRotatingVertical;
+        _model.RotatingHorizontal -= OnRotatingHorizontal;
     }
 }
