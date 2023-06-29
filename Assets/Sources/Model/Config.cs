@@ -13,9 +13,11 @@ namespace CrazyRacing.Model
         public const float MinVolumeAudio = 0f;
         public const float BoostForce = 1000f;
         public const float StopForce = 10f;
+        public const float MinSpeedForBoost = 3f;
 
         public const string Ferrari = "Ferrari";
         public const string Niva = "Niva";
+        public const string Bmw = "Bmw";
         public const string NumberCurrentLevel = "NumberCurrentLevel";
     }
 }
