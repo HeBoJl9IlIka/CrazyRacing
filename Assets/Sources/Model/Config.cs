@@ -18,6 +18,12 @@ namespace CrazyRacing.Model
         public const string Ferrari = "Ferrari";
         public const string Niva = "Niva";
         public const string Bmw = "Bmw";
+        public const string Ford = "Ford";
+        public const string Golf = "Golf";
+        public const string OldJeep = "OldJeep";
+        public const string PickUp = "PickUp";
+        public const string OldMercedes = "OldMercedes";
+        public const string Wrx = "Wrx";
         public const string NumberCurrentLevel = "NumberCurrentLevel";
     }
 }
