@@ -15,15 +15,21 @@ namespace CrazyRacing.Model
         public const float StopForce = 10f;
         public const float MinSpeedForBoost = 3f;
 
+        public const string NumberCurrentLevel = "NumberCurrentLevel";
         public const string Ferrari = "Ferrari";
         public const string Niva = "Niva";
         public const string Bmw = "Bmw";
+        public const string BmwM = "BmwM";
         public const string Ford = "Ford";
         public const string Golf = "Golf";
         public const string OldJeep = "OldJeep";
         public const string PickUp = "PickUp";
         public const string OldMercedes = "OldMercedes";
         public const string Wrx = "Wrx";
-        public const string NumberCurrentLevel = "NumberCurrentLevel";
+        public const string Audi = "Audi";
+        public const string Lamborghini = "Lamborghini";
+        public const string ChevroletSport = "ChevroletSport";
+        public const string FocusSport = "FocusSport";
+        public const string Ambulance = "Ambulance";
     }
 }

@@ -8,7 +8,10 @@ public class StopperPresenter : MonoBehaviour
         if (other.TryGetComponent(out VehiclePresenter vehiclePresenter))
         {
             if (vehiclePresenter.TryGetComponent(out Rigidbody rigidbody))
-                rigidbody.velocity = rigidbody.velocity / Config.StopForce;
+            {
+                if (rigidbody.velocity.magnitude > Config.MinSpeedForBoost)
+                    rigidbody.velocity = rigidbody.velocity / Config.StopForce;
+            }
         }
     }
 }

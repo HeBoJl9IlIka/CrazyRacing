@@ -21,7 +21,13 @@ public class VehiclePresenterFactory : MonoBehaviour
             new CreatorOldJeepPresenter(),
             new CreatorPickUpPresenter(),
             new CreatorOldMercedesPresenter(),
-            new CreatorWrxPresenter()
+            new CreatorWrxPresenter(),
+            new CreatorBmwMPresenter(),
+            new CreatorAudiPresenter(),
+            new CreatorLamborghiniPresenter(),
+            new CreatorChevroletSportPresenter(),
+            new CreatorFocusSportPresenter(),
+            new CreatorAmbulancePresenter()
         };
 
         CustomizeCreator(creatorsPresenters);
@@ -54,12 +60,12 @@ public abstract class CreatorVehiclePresenter
 
     public virtual string VehicleName { get; }
 
-    public virtual void Init(VehiclePresenter template)
+    public void Init(VehiclePresenter template)
     {
         _template = template;
     }
 
-    public virtual void Create(Vehicle vehicle)
+    public void Create(Vehicle vehicle)
     {
         VehiclePresenter presenter = UnityEngine.Object.Instantiate(_template);
         presenter.Init(vehicle);
@@ -109,4 +115,34 @@ public class CreatorOldMercedesPresenter : CreatorVehiclePresenter
 public class CreatorWrxPresenter : CreatorVehiclePresenter
 {
     public override string VehicleName => Config.Wrx;
+}
+
+public class CreatorBmwMPresenter : CreatorVehiclePresenter
+{
+    public override string VehicleName => Config.BmwM;
+}
+
+public class CreatorAudiPresenter : CreatorVehiclePresenter
+{
+    public override string VehicleName => Config.Audi;
+}
+
+public class CreatorLamborghiniPresenter : CreatorVehiclePresenter
+{
+    public override string VehicleName => Config.Lamborghini;
+}
+
+public class CreatorChevroletSportPresenter : CreatorVehiclePresenter
+{
+    public override string VehicleName => Config.ChevroletSport;
+}
+
+public class CreatorFocusSportPresenter : CreatorVehiclePresenter
+{
+    public override string VehicleName => Config.FocusSport;
+}
+
+public class CreatorAmbulancePresenter : CreatorVehiclePresenter
+{
+    public override string VehicleName => Config.Ambulance;
 }

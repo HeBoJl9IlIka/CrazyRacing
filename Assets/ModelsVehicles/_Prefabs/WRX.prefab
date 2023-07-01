@@ -2257,7 +2257,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9090915350077219743
 Transform:
   m_ObjectHideFlags: 0
@@ -4980,7 +4980,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.24756637
-    worldPosition: {x: 3.100198, y: 1.1881444, z: -1.0574598}
+    worldPosition: {x: 0.8001981, y: 0.6081445, z: -1.0574598}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -5278,7 +5278,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.24756637
-    worldPosition: {x: 1.637198, y: 1.2021444, z: 1.5445399}
+    worldPosition: {x: -0.662802, y: 0.62214446, z: 1.5445399}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -5624,7 +5624,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.24756637
-    worldPosition: {x: 1.637198, y: 1.1881444, z: -1.0574598}
+    worldPosition: {x: -0.662802, y: 0.6081445, z: -1.0574598}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -5868,17 +5868,17 @@ MonoBehaviour:
   distance: 5
   followTargetPitchAndYaw: 1
   followTargetRoll: 0
-  maxDistance: 13
+  maxDistance: 6
   minDistance: 3
   zoomSensitivity: 1
-  rotationSmoothing: 0.25
-  verticalMaxAngle: 80
-  verticalMinAngle: -40
+  rotationSmoothing: 0.2
+  verticalMaxAngle: 58
+  verticalMinAngle: -9
   rotationSensitivity: {x: 3, y: 3}
   panningSensitivity: {x: 0.06, y: 0.06}
-  initXRotation: 0
+  initXRotation: 14
   initYRotation: 0
-  targetPositionOffset: {x: 0, y: 0, z: 0}
+  targetPositionOffset: {x: 0, y: 0.6, z: 0}
   useShake: 1
   shakeMaxOffset: 0.2
   shakeIntensity: 0.125
@@ -6042,7 +6042,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.24756637
-    worldPosition: {x: 3.100198, y: 1.2021444, z: 1.5445399}
+    worldPosition: {x: 0.8001981, y: 0.62214446, z: 1.5445399}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
