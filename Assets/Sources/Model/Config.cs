@@ -31,5 +31,9 @@ namespace CrazyRacing.Model
         public const string ChevroletSport = "ChevroletSport";
         public const string FocusSport = "FocusSport";
         public const string Ambulance = "Ambulance";
+        public const string Gelenvagen = "Gelenvagen";
+        public const string ArmyTruck = "ArmyTruck";
+        public const string Truck = "Truck";
+        public const string MonsterTruck = "MonsterTruck";
     }
 }

@@ -27,7 +27,11 @@ public class VehiclePresenterFactory : MonoBehaviour
             new CreatorLamborghiniPresenter(),
             new CreatorChevroletSportPresenter(),
             new CreatorFocusSportPresenter(),
-            new CreatorAmbulancePresenter()
+            new CreatorAmbulancePresenter(),
+            new CreatorGelenvagenPresenter(),
+            new CreatorArmyTruckPresenter(),
+            new CreatorTruckPresenter(),
+            new CreatorMonsterTruckPresenter()
         };
 
         CustomizeCreator(creatorsPresenters);
@@ -145,4 +149,24 @@ public class CreatorFocusSportPresenter : CreatorVehiclePresenter
 public class CreatorAmbulancePresenter : CreatorVehiclePresenter
 {
     public override string VehicleName => Config.Ambulance;
+}
+
+public class CreatorGelenvagenPresenter : CreatorVehiclePresenter
+{
+    public override string VehicleName => Config.Gelenvagen;
+}
+
+public class CreatorArmyTruckPresenter : CreatorVehiclePresenter
+{
+    public override string VehicleName => Config.ArmyTruck;
+}
+
+public class CreatorTruckPresenter : CreatorVehiclePresenter
+{
+    public override string VehicleName => Config.Truck;
+}
+
+public class CreatorMonsterTruckPresenter : CreatorVehiclePresenter
+{
+    public override string VehicleName => Config.MonsterTruck;
 }

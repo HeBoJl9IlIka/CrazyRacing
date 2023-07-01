@@ -12085,16 +12085,14 @@ GameObject:
   - component: {fileID: 1649529085236753053}
   - component: {fileID: 1041165268}
   - component: {fileID: 900403441392062220}
-  - component: {fileID: 5120496403188121693}
-  - component: {fileID: 6470846588586428681}
-  - component: {fileID: 8611903275368641626}
+  - component: {fileID: 337444186872900601}
   m_Layer: 0
   m_Name: MonsterTruck
   m_TagString: Vehicle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1649529085636780095
 Transform:
   m_ObjectHideFlags: 0
@@ -12103,7 +12101,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649529085236753054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13420,45 +13418,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.6, y: 2, z: 4}
   m_Center: {x: 0, y: -0.1, z: 0}
---- !u!114 &5120496403188121693
+--- !u!114 &337444186872900601
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649529085236753054}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9ea07bd4547c2a4d96c72cf9bae071b, type: 3}
+  m_Script: {fileID: 11500000, guid: e7d7e4905a1115244934f9307151b04b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6470846588586428681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1649529085236753054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b25a5ec12ee44ab47ab318a6e0856df0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _force: 5
-  _maxSpeed: 1
---- !u!114 &8611903275368641626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1649529085236753054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5908d2e17f052bb44aae6132012d32b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _view: {fileID: 6470846588586428681}
 --- !u!1 &1649529085260214511
 GameObject:
   m_ObjectHideFlags: 0
