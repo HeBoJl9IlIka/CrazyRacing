@@ -210,7 +210,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.6
-    worldPosition: {x: 1.095659, y: -0.0009680051, z: 1.5550697}
+    worldPosition: {x: 7.915659, y: 1.019032, z: -12.38493}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -12079,10 +12079,6 @@ GameObject:
   - component: {fileID: 1649529085236753028}
   - component: {fileID: 1649529085636780089}
   - component: {fileID: 1649529085236753030}
-  - component: {fileID: 1649529085236753025}
-  - component: {fileID: 1649529085236753024}
-  - component: {fileID: 1649529085236753027}
-  - component: {fileID: 1649529085236753053}
   - component: {fileID: 1041165268}
   - component: {fileID: 900403441392062220}
   - component: {fileID: 337444186872900601}
@@ -13265,102 +13261,6 @@ MonoBehaviour:
     simulateDrag: 1
     lateralDragForce: 0
     longitudinalDragForce: 0
---- !u!114 &1649529085236753025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1649529085236753054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f49c68f945f545a43a58d6ff44ae91a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  module:
-    state:
-      fullName: 
-      isEnabled: 1
-      isOn: 1
-      lodIndex: -1
-      name: 
-    ABSActive:
-      m_PersistentCalls:
-        m_Calls: []
-    active: 0
-    lowerSpeedThreshold: 1
-    slipThreshold: 0.35
---- !u!114 &1649529085236753024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1649529085236753054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2aac7fb6407083e4fa0799261a2ea987, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  module:
-    state:
-      fullName: 
-      isEnabled: 1
-      isOn: 1
-      lodIndex: -1
-      name: 
-    active: 0
-    lowerSpeedThreshold: 1
-    slipThreshold: 0.35
-    TCSActive:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!114 &1649529085236753027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1649529085236753054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c00af5aad33b8a44d8da8fd2d10dae94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  module:
-    state:
-      fullName: 
-      isEnabled: 1
-      isOn: 1
-      lodIndex: -1
-      name: 
-    intensity: 0.4
-    lowerSpeedThreshold: 4
---- !u!114 &1649529085236753053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1649529085236753054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e9eddec8dadb404192b8fd997d616bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  module:
-    state:
-      fullName: 
-      isEnabled: 1
-      isOn: 1
-      lodIndex: -1
-      name: 
-    Kd: 0.1
-    Ki: 0.25
-    Kp: 0.5
-    setTargetSpeedOnEnable: 1
-    deactivateOnBrake: 0
-    targetSpeed: 0
 --- !u!114 &1041165268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13933,7 +13833,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.6
-    worldPosition: {x: -1.095659, y: -0.000968025, z: -1.5550686}
+    worldPosition: {x: 5.7243414, y: 1.019032, z: -15.495069}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -14967,7 +14867,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.6
-    worldPosition: {x: -1.095659, y: -0.0009678968, z: 1.5550697}
+    worldPosition: {x: 5.7243414, y: 1.0190321, z: -12.38493}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -16572,7 +16472,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.6
-    worldPosition: {x: 1.0956597, y: -0.000968025, z: -1.5550686}
+    worldPosition: {x: 7.91566, y: 1.019032, z: -15.495069}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}

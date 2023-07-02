@@ -410,7 +410,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.31847194
-    worldPosition: {x: -9.097134, y: 16.110773, z: 14.957787}
+    worldPosition: {x: -2.1371336, y: 0.997677, z: -12.332213}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -864,7 +864,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.56787556
-    worldPosition: {x: -10.724976, y: 16.110773, z: 11.776476}
+    worldPosition: {x: -3.7649755, y: 0.997677, z: -15.513524}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -1250,7 +1250,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.56787556
-    worldPosition: {x: -9.275024, y: 16.110773, z: 11.776477}
+    worldPosition: {x: -2.3150244, y: 0.99767697, z: -15.513523}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -1655,7 +1655,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.31847194
-    worldPosition: {x: -10.902866, y: 16.110773, z: 14.957787}
+    worldPosition: {x: -3.9428663, y: 0.997677, z: -12.332213}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -3836,15 +3836,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9817eabadfb74f04abda4bd5329b9138, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3.04
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9817eabadfb74f04abda4bd5329b9138, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9817eabadfb74f04abda4bd5329b9138, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -13.89
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9817eabadfb74f04abda4bd5329b9138, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4274,9 +4274,9 @@ MonoBehaviour:
     decelerationThreshold: 500
     deformationIgnoreTags:
     - Wheel
-    deformationRadius: 0.4
+    deformationRadius: 0.3
     deformationRandomness: 0.01
-    deformationStrength: 1
+    deformationStrength: 0.35
     deformationVerticesPerFrame: 8000
     meshDeform: 1
     OnCollision:
@@ -4686,7 +4686,7 @@ MonoBehaviour:
       slipTorque: 9999
       stallingEnabled: 1
       stallRPM: 300
-      starterActive: 0
+      starterActive: 1
       starterRPMLimit: 600
       starterRunTime: 1
       starterTorque: 60

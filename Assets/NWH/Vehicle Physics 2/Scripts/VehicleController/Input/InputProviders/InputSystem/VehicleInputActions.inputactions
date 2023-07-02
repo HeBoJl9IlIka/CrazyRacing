@@ -54,7 +54,7 @@
                     "name": "EngineStartStop",
                     "type": "Button",
                     "id": "aa0a9858-ed3f-472c-96f9-4fdf0346726d",
-                    "expectedControlType": "",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -270,160 +270,6 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "35b97d96-fd20-4097-8fb3-e4a275703cfd",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "EngineStartStop",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3cb1f792-d862-4891-8e4f-156d57a4829e",
-                    "path": "<Keyboard>/r",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "ShiftUp",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "dc3a7a67-1f90-4e7c-b07c-18f1dc7d6902",
-                    "path": "<Gamepad>/rightShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "ShiftUp",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "6c4a4e7e-d035-447e-aaae-a5fb5f586cce",
-                    "path": "<Keyboard>/f",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "ShiftDown",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "b3d427b4-5535-4cde-93b8-39952f11604f",
-                    "path": "<Gamepad>/leftShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "ShiftDown",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c80687f6-73d6-4d12-a7ec-bfd5f70b9c1f",
-                    "path": "<Keyboard>/z",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "LeftBlinker",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "685cee63-e7f3-4a07-a8e3-bf34b04f0b47",
-                    "path": "<Keyboard>/x",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RightBlinker",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "d2ec8fbe-9683-4987-931d-57ea5713d264",
-                    "path": "<Keyboard>/l",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "LowBeamLights",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c49dc91a-be6d-4a78-ae0c-cfd55da21347",
-                    "path": "<Gamepad>/buttonNorth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "LowBeamLights",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "ba07cb72-8b32-40a6-b7b7-49fda5a5696a",
-                    "path": "<Keyboard>/k",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "HighBeamLights",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "47963c3f-83fc-444f-be98-2c2ad7dd5898",
-                    "path": "<Keyboard>/j",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "HazardLights",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "c0f9f750-4f64-4408-9d29-295d1fd9c54e",
-                    "path": "<Keyboard>/semicolon",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "ExtraLights",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "95f029b5-d826-4702-888f-47f7e793f787",
-                    "path": "<Keyboard>/t",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "TrailerAttachDetach",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "cbddc214-430c-4d0b-8003-11f10876d005",
-                    "path": "<Gamepad>/buttonWest",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "TrailerAttachDetach",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "67c9fe69-ff40-4fe2-8412-6d8f476f5d93",
                     "path": "<Keyboard>/h",
                     "interactions": "",
@@ -545,17 +391,6 @@
                 },
                 {
                     "name": "",
-                    "id": "074547a7-a3ea-4b53-a88f-599e9a8004b0",
-                    "path": "<Keyboard>/m",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "FlipOver",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "76b93c66-3dac-4d90-ac1f-aae6a399a31e",
                     "path": "<Keyboard>/leftShift",
                     "interactions": "",
@@ -573,17 +408,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Boost",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "86494961-cebe-49ae-bbfe-950e9a17c5f9",
-                    "path": "<Keyboard>/n",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "CruiseControl",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

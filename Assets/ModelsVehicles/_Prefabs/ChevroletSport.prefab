@@ -1735,6 +1735,9 @@ GameObject:
   - component: {fileID: 7997789319305181351}
   - component: {fileID: 7997789319305181344}
   - component: {fileID: 7997789319305181350}
+  - component: {fileID: 687188999253054153}
+  - component: {fileID: 8701288812496740434}
+  - component: {fileID: 1598513331335141873}
   m_Layer: 0
   m_Name: ChevroletSport
   m_TagString: Vehicle
@@ -1749,7 +1752,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7995436821787297316}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1865,7 +1868,7 @@ MonoBehaviour:
     brakeOffThrottleStrength: 0.2
     brakeWhileAsleep: 1
     brakeWhileIdle: 1
-    maxTorque: 4500
+    maxTorque: 6000
     handbrakeType: 0
     handbrakeValue: 0
     smoothing: 0
@@ -1889,9 +1892,9 @@ MonoBehaviour:
     decelerationThreshold: 500
     deformationIgnoreTags:
     - Wheel
-    deformationRadius: 0.4
+    deformationRadius: 0.3
     deformationRandomness: 0.01
-    deformationStrength: 1
+    deformationStrength: 0.35
     deformationVerticesPerFrame: 8000
     meshDeform: 1
     OnCollision:
@@ -2756,6 +2759,77 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7bc628418d23ef4ba1ae8ff408ec84a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &687188999253054153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7995436821787297316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f49c68f945f545a43a58d6ff44ae91a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  module:
+    state:
+      fullName: 
+      isEnabled: 1
+      isOn: 1
+      lodIndex: -1
+      name: 
+    ABSActive:
+      m_PersistentCalls:
+        m_Calls: []
+    active: 0
+    lowerSpeedThreshold: 0.5
+    slipThreshold: 0.3
+--- !u!114 &8701288812496740434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7995436821787297316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aac7fb6407083e4fa0799261a2ea987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  module:
+    state:
+      fullName: 
+      isEnabled: 1
+      isOn: 1
+      lodIndex: -1
+      name: 
+    active: 0
+    lowerSpeedThreshold: 0.5
+    slipThreshold: 0.13
+    TCSActive:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &1598513331335141873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7995436821787297316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c00af5aad33b8a44d8da8fd2d10dae94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  module:
+    state:
+      fullName: 
+      isEnabled: 1
+      isOn: 1
+      lodIndex: -1
+      name: 
+    intensity: 0.4
+    lowerSpeedThreshold: 3
 --- !u!1 &7995486304205193260
 GameObject:
   m_ObjectHideFlags: 0

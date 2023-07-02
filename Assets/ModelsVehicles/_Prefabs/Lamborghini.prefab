@@ -515,6 +515,9 @@ GameObject:
   - component: {fileID: 6055555484009781618}
   - component: {fileID: 6055555484009781617}
   - component: {fileID: 6055555484009781616}
+  - component: {fileID: 3620351472481271764}
+  - component: {fileID: 7847425364926222088}
+  - component: {fileID: 9204863973192556415}
   m_Layer: 0
   m_Name: Lamborghini
   m_TagString: Vehicle
@@ -624,7 +627,7 @@ MonoBehaviour:
   onWake:
     m_PersistentCalls:
       m_Calls: []
-  vehicleRigidbody: {fileID: 0}
+  vehicleRigidbody: {fileID: 6055555484009781619}
   vehicleTransform: {fileID: 0}
   cameraInsideVehicle: 0
   onSetMultiplayerInstanceType:
@@ -642,7 +645,7 @@ MonoBehaviour:
     brakeOffThrottleStrength: 1
     brakeWhileAsleep: 1
     brakeWhileIdle: 0
-    maxTorque: 3500
+    maxTorque: 5000
     handbrakeType: 0
     handbrakeValue: 0
     smoothing: 0
@@ -666,7 +669,7 @@ MonoBehaviour:
     decelerationThreshold: 500
     deformationIgnoreTags:
     - Wheel
-    deformationRadius: 0.2
+    deformationRadius: 0.3
     deformationRandomness: 0.01
     deformationStrength: 0.35
     deformationVerticesPerFrame: 8000
@@ -1550,6 +1553,77 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: febe0e5bdc389e24081c2745f6c08852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3620351472481271764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6055555484009781631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f49c68f945f545a43a58d6ff44ae91a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  module:
+    state:
+      fullName: 
+      isEnabled: 1
+      isOn: 1
+      lodIndex: -1
+      name: 
+    ABSActive:
+      m_PersistentCalls:
+        m_Calls: []
+    active: 0
+    lowerSpeedThreshold: 0.5
+    slipThreshold: 0.3
+--- !u!114 &7847425364926222088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6055555484009781631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aac7fb6407083e4fa0799261a2ea987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  module:
+    state:
+      fullName: 
+      isEnabled: 1
+      isOn: 1
+      lodIndex: -1
+      name: 
+    active: 0
+    lowerSpeedThreshold: 0.5
+    slipThreshold: 0.13
+    TCSActive:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!114 &9204863973192556415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6055555484009781631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c00af5aad33b8a44d8da8fd2d10dae94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  module:
+    state:
+      fullName: 
+      isEnabled: 1
+      isOn: 1
+      lodIndex: -1
+      name: 
+    intensity: 0.4
+    lowerSpeedThreshold: 3
 --- !u!1 &6055555484060987429
 GameObject:
   m_ObjectHideFlags: 0

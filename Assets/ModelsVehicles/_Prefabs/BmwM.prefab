@@ -113,7 +113,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4281150384138092754}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -235,7 +235,7 @@ MonoBehaviour:
     brakeOffThrottleStrength: 0.2
     brakeWhileAsleep: 1
     brakeWhileIdle: 1
-    maxTorque: 4000
+    maxTorque: 4500
     handbrakeType: 0
     handbrakeValue: 0
     smoothing: 0
@@ -259,9 +259,9 @@ MonoBehaviour:
     decelerationThreshold: 500
     deformationIgnoreTags:
     - Wheel
-    deformationRadius: 0.2
+    deformationRadius: 0.3
     deformationRandomness: 0.01
-    deformationStrength: 0.6
+    deformationStrength: 0.35
     deformationVerticesPerFrame: 8000
     meshDeform: 1
     OnCollision:
@@ -1097,7 +1097,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4281150384138092754}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e52b3ac300456a14495951de5e2e7c89, type: 3}
   m_Name: 
@@ -2799,7 +2799,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.21169414
-    worldPosition: {x: -0.6970783, y: 0.9922099, z: -1.1533456}
+    worldPosition: {x: -3.0070782, y: 0.7722099, z: 2.5066545}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -3549,7 +3549,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.21169414
-    worldPosition: {x: -0.6970594, y: 0.9922006, z: 1.4206048}
+    worldPosition: {x: -3.0070596, y: 0.7722006, z: 5.080605}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -3847,7 +3847,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.21169414
-    worldPosition: {x: 0.6970616, y: 0.9922099, z: -1.1533552}
+    worldPosition: {x: -1.6129384, y: 0.7722099, z: 2.5066447}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -4352,7 +4352,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.21169414
-    worldPosition: {x: 0.6970802, y: 0.9922006, z: 1.4205952}
+    worldPosition: {x: -1.6129198, y: 0.7722006, z: 5.080595}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}

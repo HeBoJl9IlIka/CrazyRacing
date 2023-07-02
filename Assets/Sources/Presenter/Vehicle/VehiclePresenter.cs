@@ -1,11 +1,14 @@
 using CrazyRacing.Model;
+using NWH.VehiclePhysics2;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
+[RequireComponent (typeof(VehicleController))]
 public class VehiclePresenter : MonoBehaviour
 {
     private Vehicle _model;
     private Rigidbody _rigidbody;
+    private VehicleController _vehicleController;
     private Vector3 _vertical;
     private Vector3 _horizontal;
     private bool _isGrounded;
@@ -16,6 +19,7 @@ public class VehiclePresenter : MonoBehaviour
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
+        _vehicleController = GetComponent<VehicleController>();
     }
 
     private void FixedUpdate()
@@ -61,6 +65,7 @@ public class VehiclePresenter : MonoBehaviour
         transform.position = position;
         transform.eulerAngles = rotation;
         ResetVelocity();
+        _vehicleController.damageHandler.Repair();
     }
 
     private void OnRotatingHorizontal(Vector3 vector)

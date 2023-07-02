@@ -1287,9 +1287,9 @@ MonoBehaviour:
     decelerationThreshold: 500
     deformationIgnoreTags:
     - Wheel
-    deformationRadius: 0.2
+    deformationRadius: 0.3
     deformationRandomness: 0.01
-    deformationStrength: 0.6
+    deformationStrength: 0.35
     deformationVerticesPerFrame: 8000
     meshDeform: 1
     OnCollision:
@@ -1518,7 +1518,7 @@ MonoBehaviour:
       isStalling: 0
       lossTorque: 0
       maxLossTorque: 48
-      maxPower: 80
+      maxPower: 100
       maxRPM: 5200
       minRPM: -50
       OnRevLimiter:
@@ -1581,7 +1581,7 @@ MonoBehaviour:
       slipTorque: 9999
       stallingEnabled: 1
       stallRPM: 300
-      starterActive: 0
+      starterActive: 1
       starterRPMLimit: 600
       starterRunTime: 1
       starterTorque: 60
@@ -1596,7 +1596,7 @@ MonoBehaviour:
         name: Front Differential
       holdToKeepInGear: 0
       finalGearRatio: 3.2603366
-      gearingProfile: {fileID: 11400000, guid: 5e1d2b36c53bd1741bea9c2c902f03ad, type: 2}
+      gearingProfile: {fileID: 11400000, guid: 9140411f02fb37d43912bf1918047de4, type: 2}
       inclineEffectCoeff: 0
       cvtMaxInputTorque: 2060.3074
       onDownshift:
@@ -3956,7 +3956,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.24220678
-    worldPosition: {x: -0.67383415, y: 0.93002206, z: -1.2387528}
+    worldPosition: {x: 1.756166, y: 0.75002205, z: 9.2892475}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -4254,7 +4254,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.24219245
-    worldPosition: {x: 0.67060715, y: 0.93002206, z: -1.2387528}
+    worldPosition: {x: 3.1006072, y: 0.75002205, z: 9.2892475}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -4552,7 +4552,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.24220678
-    worldPosition: {x: -0.67383415, y: 0.92166996, z: 1.3748474}
+    worldPosition: {x: 1.756166, y: 0.74166995, z: 11.902847}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -4970,7 +4970,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.24219245
-    worldPosition: {x: 0.67408484, y: 0.92166996, z: 1.3748474}
+    worldPosition: {x: 3.104085, y: 0.74166995, z: 11.902847}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}

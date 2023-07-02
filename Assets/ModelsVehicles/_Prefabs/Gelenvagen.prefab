@@ -3042,7 +3042,7 @@ MonoBehaviour:
     brakeOffThrottleStrength: 0.2
     brakeWhileAsleep: 1
     brakeWhileIdle: 1
-    maxTorque: 2520
+    maxTorque: 5000
     handbrakeType: 0
     handbrakeValue: 0
     smoothing: 0

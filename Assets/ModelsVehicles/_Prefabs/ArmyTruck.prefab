@@ -1424,12 +1424,7 @@ GameObject:
   - component: {fileID: 2292938984352875570}
   - component: {fileID: 2292938984352389207}
   - component: {fileID: 2292938984352389205}
-  - component: {fileID: 2292938984352389209}
-  - component: {fileID: 4400687438598997126}
-  - component: {fileID: 3392484246304617968}
-  - component: {fileID: 620075634220714138}
   - component: {fileID: 2117526227031591844}
-  - component: {fileID: 8920774507791829163}
   - component: {fileID: 1640737959}
   - component: {fileID: 2500580037193944272}
   - component: {fileID: 9083242138934460901}
@@ -2102,7 +2097,7 @@ MonoBehaviour:
       slipTorque: 9999
       stallingEnabled: 1
       stallRPM: 300
-      starterActive: 0
+      starterActive: 1
       starterRPMLimit: 600
       starterRunTime: 1
       starterTorque: 60
@@ -2650,115 +2645,6 @@ MonoBehaviour:
   OnVehicleInitialized:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2292938984352389209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2292938984352389202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75433d1dc80d018488a61160e924cce2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  module:
-    state:
-      fullName: 
-      isEnabled: 1
-      isOn: 1
-      lodIndex: -1
-      name: 
-    attachDistanceThreshold: 0.5
-    attached: 0
-    attachmentPoint: {fileID: 2292938986049982008}
-    attachOnPlay: 1
-    breakForce: 4000000
-    detachable: 1
-    noTrailerPowerCoefficient: 1
-    onTrailerAttach:
-      m_PersistentCalls:
-        m_Calls: []
-    onTrailerDetach:
-      m_PersistentCalls:
-        m_Calls: []
-    trailerInRange: 0
-    useHingeJoint: 0
---- !u!114 &4400687438598997126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2292938984352389202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f49c68f945f545a43a58d6ff44ae91a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  module:
-    state:
-      fullName: 
-      isEnabled: 1
-      isOn: 1
-      lodIndex: -1
-      name: 
-    ABSActive:
-      m_PersistentCalls:
-        m_Calls: []
-    active: 0
-    lowerSpeedThreshold: 1
-    slipThreshold: 0.1
---- !u!114 &3392484246304617968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2292938984352389202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2aac7fb6407083e4fa0799261a2ea987, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  module:
-    state:
-      fullName: 
-      isEnabled: 1
-      isOn: 1
-      lodIndex: -1
-      name: 
-    active: 0
-    lowerSpeedThreshold: 2
-    slipThreshold: 0.1
-    TCSActive:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!114 &620075634220714138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2292938984352389202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e9eddec8dadb404192b8fd997d616bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  module:
-    state:
-      fullName: 
-      isEnabled: 1
-      isOn: 1
-      lodIndex: -1
-      name: 
-    Kd: 0.1
-    Ki: 0.25
-    Kp: 0.5
-    setTargetSpeedOnEnable: 0
-    deactivateOnBrake: 0
-    targetSpeed: 0
 --- !u!114 &2117526227031591844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2787,47 +2673,6 @@ MonoBehaviour:
     simulateDrag: 1
     lateralDragForce: 0
     longitudinalDragForce: 0
---- !u!114 &8920774507791829163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2292938984352389202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73de00e98f9f2fe4dbd478e69c4acc37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  module:
-    state:
-      fullName: 
-      isEnabled: 1
-      isOn: 1
-      lodIndex: -1
-      name: 
-    active: 0
-    capacity: 2
-    charge: 2
-    disableInReverse: 1
-    disableOffThrottle: 1
-    engineVolumeCoefficient: 1.5
-    exhaustEmissionCoefficient: 2
-    flow: 0.1
-    powerCoefficient: 2
-    soundComponent:
-      state:
-        fullName: 
-        isEnabled: 1
-        isOn: 1
-        lodIndex: -1
-        name: 
-      audioMixerGroup: {fileID: 0}
-      basePitch: 1
-      baseVolume: 0.1
-      clips: []
-      container: {fileID: 0}
-      sources: []
 --- !u!114 &1640737959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4069,7 +3914,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.5765349
-    worldPosition: {x: -1.1340648, y: 0.793682, z: -3.683387}
+    worldPosition: {x: -4.604066, y: 1.293682, z: -30.914303}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -4295,7 +4140,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.5765349
-    worldPosition: {x: 1.1331729, y: 0.7936714, z: -3.683377}
+    worldPosition: {x: -2.3368282, y: 1.2936714, z: -30.914291}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -4521,7 +4366,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.5765349
-    worldPosition: {x: -1.1340531, y: 0.79366505, z: 1.6800137}
+    worldPosition: {x: -4.6040545, y: 1.293665, z: -25.550901}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -4747,7 +4592,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.5765349
-    worldPosition: {x: 1.1331983, y: 0.79368687, z: 1.6800003}
+    worldPosition: {x: -2.336803, y: 1.2936869, z: -25.550915}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -4973,7 +4818,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.5765349
-    worldPosition: {x: -1.1340989, y: 0.79371095, z: 3.3242378}
+    worldPosition: {x: -4.6041, y: 1.293711, z: -23.906677}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -5199,7 +5044,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.5765349
-    worldPosition: {x: -1.134089, y: 0.7936881, z: -2.01373}
+    worldPosition: {x: -4.60409, y: 1.293688, z: -29.244644}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -5425,7 +5270,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.5765349
-    worldPosition: {x: 1.1331902, y: 0.79366, z: 3.3241882}
+    worldPosition: {x: -2.336811, y: 1.2936599, z: -23.906727}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -5984,7 +5829,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.5765349
-    worldPosition: {x: 1.1331977, y: 0.7936775, z: -2.013771}
+    worldPosition: {x: -2.3368034, y: 1.2936776, z: -29.244686}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}

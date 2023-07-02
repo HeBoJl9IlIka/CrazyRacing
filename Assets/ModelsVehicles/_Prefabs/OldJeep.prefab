@@ -602,9 +602,9 @@ MonoBehaviour:
     decelerationThreshold: 500
     deformationIgnoreTags:
     - Wheel
-    deformationRadius: 0.2
+    deformationRadius: 0.3
     deformationRandomness: 0.01
-    deformationStrength: 0.6
+    deformationStrength: 0.35
     deformationVerticesPerFrame: 8000
     meshDeform: 1
     OnCollision:
@@ -1915,7 +1915,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.2103548
-    worldPosition: {x: 0.6437801, y: 0.8629202, z: -0.9080844}
+    worldPosition: {x: -1.3962198, y: 0.8629202, z: 17.581915}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2261,7 +2261,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.2103548
-    worldPosition: {x: -0.6437801, y: 0.8629202, z: -0.9080844}
+    worldPosition: {x: -2.6837802, y: 0.8629202, z: 17.581915}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2559,7 +2559,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.2103548
-    worldPosition: {x: -0.6437801, y: 0.8629202, z: 1.03616}
+    worldPosition: {x: -2.6837802, y: 0.8629202, z: 19.52616}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2857,7 +2857,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.2103548
-    worldPosition: {x: 0.6437801, y: 0.8629202, z: 1.03616}
+    worldPosition: {x: -1.3962198, y: 0.8629202, z: 19.52616}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
