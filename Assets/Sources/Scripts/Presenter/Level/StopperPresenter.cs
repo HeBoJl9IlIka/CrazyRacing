@@ -21,10 +21,10 @@ public class StopperPresenter : MonoBehaviour
     private void Update()
     {
         if (_meshRenderer.material.color == _defaultColor)
-            _meshRenderer.material.DOColor(_targetColor, Config.BoosterFlashingDuration);
+            _meshRenderer.material.DOColor(_targetColor, Config.FlashingDuration);
 
         if (_meshRenderer.material.color == _targetColor)
-            _meshRenderer.material.DOColor(_defaultColor, Config.BoosterFlashingDuration);
+            _meshRenderer.material.DOColor(_defaultColor, Config.FlashingDuration);
     }
 
     private void OnTriggerEnter(Collider other)

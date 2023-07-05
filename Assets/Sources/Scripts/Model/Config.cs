@@ -12,10 +12,12 @@ namespace CrazyRacing.Model
         public const float MaxVolumeAudio = 1f;
         public const float MinVolumeAudio = 0f;
         public const float BoostForce = 1000f;
-        public const float BoosterFlashingDuration = 0.5f;
+        public const float FlashingDuration = 0.5f;
         public const float StopForce = 10f;
         public const float MinSpeedForBoost = 3f;
         public const float PropsStepRotate = 1f;
+        public const float DefaultAngularVelocity = 8f;
+        public const float MaxAngularVelocity = 2f;
 
         public const string NumberCurrentLevel = "NumberCurrentLevel";
         public const string Ferrari = "Ferrari";

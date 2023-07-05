@@ -10,22 +10,16 @@ public class BoosterPresenter : MonoBehaviour
 
     private AudioSource[] _audioSources;
     private MeshRenderer _meshRenderer;
-    private Color _defaultColor;
 
     private void Awake()
     {
         _audioSources = GetComponents<AudioSource>();
         _meshRenderer = GetComponent<MeshRenderer>();
-        _defaultColor = _meshRenderer.material.color;
     }
 
-    private void Update()
+    private void Start()
     {
-        if (_meshRenderer.material.color == _defaultColor)
-            _meshRenderer.material.DOColor(_targetColor, Config.BoosterFlashingDuration);
-
-        if(_meshRenderer.material.color == _targetColor)
-            _meshRenderer.material.DOColor(_defaultColor, Config.BoosterFlashingDuration);
+        _meshRenderer.material.DOColor(_targetColor, Config.FlashingDuration).SetLoops(-1, LoopType.Yoyo);
     }
 
     private void OnTriggerEnter(Collider other)

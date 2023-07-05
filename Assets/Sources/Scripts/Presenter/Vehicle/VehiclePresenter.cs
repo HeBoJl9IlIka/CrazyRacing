@@ -13,6 +13,8 @@ public class VehiclePresenter : MonoBehaviour
     private Vector3 _horizontal;
     private bool _isGrounded;
 
+    private bool IsRotating => _vertical != Vector3.zero || _horizontal != Vector3.zero;
+
     public virtual string VehicleName { get; }
     public Vehicle Model => _model;
 
@@ -24,6 +26,11 @@ public class VehiclePresenter : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (IsRotating)
+            _rigidbody.maxAngularVelocity = Config.MaxAngularVelocity;
+        else
+            _rigidbody.maxAngularVelocity = Config.DefaultAngularVelocity;
+
         if (_isGrounded)
             return;
 
