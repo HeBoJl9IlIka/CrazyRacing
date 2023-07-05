@@ -1,6 +1,7 @@
 using CrazyRacing.Model;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Events;
 
 public class LevelRoot : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class LevelRoot : MonoBehaviour
     private List<Vehicle> _vehicles = new List<Vehicle>();
     private List<Checkpoint> _checkpoints = new List<Checkpoint>();
     private ProgressBarPresenter _progressBarPresenter;
+
+    [SerializeField] private UnityEvent _levelCompleted;
 
     private void Awake()
     {
@@ -98,6 +101,7 @@ public class LevelRoot : MonoBehaviour
     {
         ProgressGame.SaveProgress();
         _completedMenu.Pause();
+        _levelCompleted?.Invoke();
         _progressBarPresenter.gameObject.SetActive(false);
     }
 
