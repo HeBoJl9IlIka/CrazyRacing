@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: LowCar
   m_EditorClassIdentifier: 
   forwardGears:
-  - 5.748
-  - 3.786
-  - 2.778
-  - 2.108
+  - 4.648
+  - 2.686
+  - 1.678
+  - 1.008
   reverseGears:
   - -4.432

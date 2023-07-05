@@ -158,7 +158,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.33538055
-    worldPosition: {x: 0.38099998, y: 0.92056626, z: -5.924586}
+    worldPosition: {x: -0.789, y: 1.1405663, z: 1.3854136}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -504,7 +504,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.33538055
-    worldPosition: {x: 0.3807016, y: 0.92056626, z: -8.641}
+    worldPosition: {x: -0.78929836, y: 1.1405663, z: -1.331}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -802,7 +802,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.3353806
-    worldPosition: {x: 1.9589999, y: 0.92056626, z: -5.924586}
+    worldPosition: {x: 0.789, y: 1.1405663, z: 1.3854136}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -1100,7 +1100,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.3353806
-    worldPosition: {x: 1.9589999, y: 0.92056626, z: -8.641}
+    worldPosition: {x: 0.789, y: 1.1405663, z: -1.331}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -1337,24 +1337,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aed8c99d9552ef84689c55f411f2f0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 5455844515689761063}
+  target: {fileID: 0}
   povType: 1
   allowRotation: 1
   allowPanning: 1
   distance: 5
   followTargetPitchAndYaw: 1
   followTargetRoll: 0
-  maxDistance: 13
+  maxDistance: 6
   minDistance: 3
   zoomSensitivity: 1
-  rotationSmoothing: 0.25
-  verticalMaxAngle: 80
-  verticalMinAngle: -40
+  rotationSmoothing: 0.2
+  verticalMaxAngle: 58
+  verticalMinAngle: -9
   rotationSensitivity: {x: 3, y: 3}
   panningSensitivity: {x: 0.06, y: 0.06}
-  initXRotation: 0
+  initXRotation: 14
   initYRotation: 0
-  targetPositionOffset: {x: 0, y: 0, z: 0}
+  targetPositionOffset: {x: 0, y: 0.6, z: 0}
   useShake: 1
   shakeMaxOffset: 0.2
   shakeIntensity: 0.125
@@ -1889,7 +1889,7 @@ MonoBehaviour:
       ignition: 1
       isStalling: 0
       lossTorque: 0
-      maxLossTorque: 1500
+      maxLossTorque: 1900
       maxPower: 1800
       maxRPM: 9000
       minRPM: -50
@@ -1968,7 +1968,7 @@ MonoBehaviour:
         name: Center Differential
       holdToKeepInGear: 0
       finalGearRatio: 3.630737
-      gearingProfile: {fileID: 11400000, guid: 05defac16f97b594e9f680ab3cdae797, type: 2}
+      gearingProfile: {fileID: 11400000, guid: e77ef0f949a7e084bbb077d6f49c25de, type: 2}
       inclineEffectCoeff: 0
       cvtMaxInputTorque: 2060.3074
       onDownshift:
@@ -1995,7 +1995,7 @@ MonoBehaviour:
       _targetDownshiftRPM: 0
       _targetUpshiftRPM: 0
       _transmissionType: 2
-      _upshiftRPM: 6480.0005
+      _upshiftRPM: 13000
       clutchEngaged: 0
       externalShiftChecksValid: 1
       noWheelAir: 0
@@ -2565,7 +2565,6 @@ GameObject:
   - component: {fileID: 5451783626239851128}
   - component: {fileID: 5462482560540120788}
   - component: {fileID: 5470224185994861862}
-  - component: {fileID: 5462482560540120795}
   m_Layer: 2
   m_Name: FocE_Bumper
   m_TagString: Untagged
@@ -2638,20 +2637,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5462482560540120795
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5457341159603779928}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300006, guid: eeb8d6fd760035741a64df2118f7b69a, type: 3}
 --- !u!1 &5457519385318752754
 GameObject:
   m_ObjectHideFlags: 0
@@ -2663,7 +2648,6 @@ GameObject:
   - component: {fileID: 5451825526572688034}
   - component: {fileID: 5458908651671688532}
   - component: {fileID: 5469722152092431626}
-  - component: {fileID: 5458908651671688539}
   m_Layer: 2
   m_Name: FocE_Front
   m_TagString: Untagged
@@ -2736,20 +2720,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5458908651671688539
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5457519385318752754}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300004, guid: eeb8d6fd760035741a64df2118f7b69a, type: 3}
 --- !u!1 &5457545364586477278
 GameObject:
   m_ObjectHideFlags: 0
@@ -2968,7 +2938,6 @@ GameObject:
   - component: {fileID: 5451723914183263154}
   - component: {fileID: 5462672686562726976}
   - component: {fileID: 5471252073167376396}
-  - component: {fileID: 5462672686562726983}
   m_Layer: 2
   m_Name: FocE_Hood
   m_TagString: Untagged
@@ -3041,20 +3010,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5462672686562726983
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5458145355658895680}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300002, guid: eeb8d6fd760035741a64df2118f7b69a, type: 3}
 --- !u!1 &5458190164407823778
 GameObject:
   m_ObjectHideFlags: 0

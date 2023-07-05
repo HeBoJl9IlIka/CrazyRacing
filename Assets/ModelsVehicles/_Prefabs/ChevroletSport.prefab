@@ -348,7 +348,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.30006632
-    worldPosition: {x: -1.492, y: 0.9119849, z: -6.516}
+    worldPosition: {x: 0.778, y: 1.131985, z: 1.3939999}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -646,7 +646,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.30006638
-    worldPosition: {x: -3.0480292, y: 0.9119849, z: -9.198}
+    worldPosition: {x: -0.77802914, y: 1.131985, z: -1.288}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -944,7 +944,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.30006638
-    worldPosition: {x: -3.0480292, y: 0.9119849, z: -6.5158076}
+    worldPosition: {x: -0.77802914, y: 1.131985, z: 1.3941923}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -1181,24 +1181,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aed8c99d9552ef84689c55f411f2f0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 7997789319305181347}
+  target: {fileID: 0}
   povType: 1
   allowRotation: 1
   allowPanning: 1
   distance: 5
   followTargetPitchAndYaw: 1
   followTargetRoll: 0
-  maxDistance: 13
+  maxDistance: 6
   minDistance: 3
   zoomSensitivity: 1
-  rotationSmoothing: 0.25
-  verticalMaxAngle: 80
-  verticalMinAngle: -40
+  rotationSmoothing: 0.2
+  verticalMaxAngle: 58
+  verticalMinAngle: -9
   rotationSensitivity: {x: 3, y: 3}
   panningSensitivity: {x: 0.06, y: 0.06}
-  initXRotation: 0
+  initXRotation: 14
   initYRotation: 0
-  targetPositionOffset: {x: 0, y: 0, z: 0}
+  targetPositionOffset: {x: 0, y: 0.6, z: 0}
   useShake: 1
   shakeMaxOffset: 0.2
   shakeIntensity: 0.125
@@ -1362,7 +1362,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.30006632
-    worldPosition: {x: -1.492, y: 0.9119849, z: -9.198}
+    worldPosition: {x: 0.778, y: 1.131985, z: -1.288}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2165,7 +2165,7 @@ MonoBehaviour:
       ignition: 1
       isStalling: 0
       lossTorque: 0
-      maxLossTorque: 500
+      maxLossTorque: 1500
       maxPower: 1000
       maxRPM: 9000
       minRPM: -50
@@ -2224,7 +2224,7 @@ MonoBehaviour:
       revLimiterActive: 0
       revLimiterCutoffDuration: 0
       revLimiterEnabled: 1
-      revLimiterRPM: 12000
+      revLimiterRPM: 14000
       shiftSignal: 0
       slipTorque: 9999
       stallingEnabled: 1
@@ -2244,7 +2244,7 @@ MonoBehaviour:
         name: Center Differential
       holdToKeepInGear: 0
       finalGearRatio: 3.5503747
-      gearingProfile: {fileID: 11400000, guid: 05defac16f97b594e9f680ab3cdae797, type: 2}
+      gearingProfile: {fileID: 11400000, guid: e77ef0f949a7e084bbb077d6f49c25de, type: 2}
       inclineEffectCoeff: 0
       cvtMaxInputTorque: 2060.3074
       onDownshift:
@@ -2271,7 +2271,7 @@ MonoBehaviour:
       _targetDownshiftRPM: 0
       _targetUpshiftRPM: 0
       _transmissionType: 2
-      _upshiftRPM: 6480.0005
+      _upshiftRPM: 13000
       clutchEngaged: 0
       externalShiftChecksValid: 1
       noWheelAir: 0
@@ -3220,7 +3220,6 @@ GameObject:
   - component: {fileID: 7989953103578179614}
   - component: {fileID: 7963884566944140548}
   - component: {fileID: 7971778093546801464}
-  - component: {fileID: 7963884566944140571}
   m_Layer: 0
   m_Name: Chev_Hood
   m_TagString: Untagged
@@ -3261,7 +3260,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -3294,20 +3293,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7963884566944140571
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7995737910323850892}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300002, guid: 8dcf477a4933f764e869d8a1a9b0f6d2, type: 3}
 --- !u!1 &7995790137449607132
 GameObject:
   m_ObjectHideFlags: 0

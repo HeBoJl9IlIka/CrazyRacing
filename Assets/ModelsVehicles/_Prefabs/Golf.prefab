@@ -394,8 +394,8 @@ MonoBehaviour:
       ignition: 1
       isStalling: 0
       lossTorque: 0
-      maxLossTorque: 48
-      maxPower: 50
+      maxLossTorque: 60
+      maxPower: 70
       maxRPM: 5200
       minRPM: -50
       OnRevLimiter:
@@ -472,7 +472,7 @@ MonoBehaviour:
       outputASelector:
         name: Front Differential
       holdToKeepInGear: 0
-      finalGearRatio: 3.6991112
+      finalGearRatio: 2
       gearingProfile: {fileID: 11400000, guid: 5e1d2b36c53bd1741bea9c2c902f03ad, type: 2}
       inclineEffectCoeff: 0
       cvtMaxInputTorque: 2060.3074

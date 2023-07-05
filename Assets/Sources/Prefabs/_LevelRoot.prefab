@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &628724175608874311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 628724175608874309}
+  - component: {fileID: 628724175608874314}
+  - component: {fileID: 628724175608874318}
+  - component: {fileID: 4932916453411107133}
+  - component: {fileID: 628724175608874316}
+  - component: {fileID: 628724175608874319}
+  m_Layer: 0
+  m_Name: _LevelRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &628724175608874309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628724175608874311}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &628724175608874314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628724175608874311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 1a51de51df675994cabcd62366d04151, type: 3}
+  m_NotificationBehavior: 3
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 04e56752-e3fe-4214-bb5c-30d3ca14e102
+    m_ActionName: Vehicle/RecoveryVehicle[/Keyboard/r]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Vehicle
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &628724175608874318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628724175608874311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3ba727d8a8b9e4aa0e09cd4f426529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _vehicleCreators: []
+  _vehiclePresenterFactory: {fileID: 4932916453411107133}
+  _checkpointPresenterFactory: {fileID: 628724175608874316}
+  _presenterFactory: {fileID: 628724175608874319}
+  _recoveryPointPresenter: {fileID: 0}
+  _borderPresenter: {fileID: 0}
+--- !u!114 &4932916453411107133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628724175608874311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211ad7fd3df7f804b806a796572a3a49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _vehicleTemplates:
+  - {fileID: 9056979826750947345, guid: 3e1aced4144dd784c8f3878b71b33dcf, type: 3}
+  - {fileID: -5920557227010618216, guid: 858cc54b36ffeff478f53c58eef2b16c, type: 3}
+  - {fileID: 2128905387054230269, guid: b329636a8324b1e45839868e2941d2a9, type: 3}
+  - {fileID: -5148355521483646669, guid: 2ecfed170db18a04b8ac35b8dd9cdf54, type: 3}
+  - {fileID: 1777074396469492714, guid: c2c24b66f05815445ad919eac6b909c9, type: 3}
+  - {fileID: 8052986067200312373, guid: d6e0b3ee96e37d64f84a883ffcd73266, type: 3}
+  - {fileID: 424108546526688309, guid: 2370f35e74552764aa134d7f8e443208, type: 3}
+  - {fileID: 1299478102046756757, guid: 61136cef8222a114588dbb4f0fd41782, type: 3}
+  - {fileID: 9090915350077219714, guid: cb2bef8b3213a8b4a81981275a59503e, type: 3}
+  - {fileID: 4281150384137923926, guid: b62e236f8992cfc4abc0d5ce251b004c, type: 3}
+  - {fileID: 7850388752416789381, guid: d5e443c352169df44afa89e3db4e1188, type: 3}
+  - {fileID: 6055555484009781616, guid: 4afe33dc866449342bc978239d36f033, type: 3}
+  - {fileID: 7997789319305181350, guid: fc2ae248cb0827843a56c11d5b17de08, type: 3}
+  - {fileID: 5455844515689761066, guid: dbc959e3db9b47d42a805cad825b749c, type: 3}
+  - {fileID: 723615414403679802, guid: 5396a5a43a8f7c844bb4a7aeff750df3, type: 3}
+  - {fileID: 5686229215060886470, guid: dc9824ba653dbca49b45435db647b291, type: 3}
+  - {fileID: 8942501926056906703, guid: 792b1861067db5b4ea5916aae21660f0, type: 3}
+  - {fileID: 2500580037193944272, guid: 922b25b554216dd4b962266172f6a8fc, type: 3}
+  - {fileID: 337444186872900601, guid: b9a717f48a878014eace6ca32ea4f360, type: 3}
+--- !u!114 &628724175608874316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628724175608874311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e0366b758605d242bbaf6d353ab4383, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _checkpointsPresenters:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &628724175608874319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628724175608874311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 616b9145cbebd434abd269ca8f2d55e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pauseMenuPresenter: {fileID: 5665717802943093360, guid: 2d6199b6899d53648b81c43595105317, type: 3}
+  _completedMenuPresenter: {fileID: 7976869675591846849, guid: be34432836ab03447aedf06ce04dc2cd, type: 3}
+  _skippingLevelPresenter: {fileID: 5219600541073363337, guid: 3a77757e07336f2448916af5af92a232, type: 3}
+  _progressBarPresenter: {fileID: 6910565984305343157, guid: 4ed6b169bb18dba41bd57b8313715aac, type: 3}

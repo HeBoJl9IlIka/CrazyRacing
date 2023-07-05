@@ -877,7 +877,7 @@ MonoBehaviour:
       ignition: 1
       isStalling: 0
       lossTorque: 0
-      maxLossTorque: 48
+      maxLossTorque: 40
       maxPower: 40
       maxRPM: 5200
       minRPM: -50

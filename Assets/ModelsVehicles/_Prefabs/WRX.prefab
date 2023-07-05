@@ -2681,8 +2681,8 @@ MonoBehaviour:
       ignition: 1
       isStalling: 0
       lossTorque: 0
-      maxLossTorque: 180
-      maxPower: 250
+      maxLossTorque: 500
+      maxPower: 470
       maxRPM: 9000
       minRPM: -50
       OnRevLimiter:
@@ -2760,7 +2760,7 @@ MonoBehaviour:
         name: Center Differential
       holdToKeepInGear: 0
       finalGearRatio: 3.4718575
-      gearingProfile: {fileID: 11400000, guid: 05defac16f97b594e9f680ab3cdae797, type: 2}
+      gearingProfile: {fileID: 11400000, guid: 7506074076565c24d82db8939b9b011a, type: 2}
       inclineEffectCoeff: 0
       cvtMaxInputTorque: 2060.3074
       onDownshift:

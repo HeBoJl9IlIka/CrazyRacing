@@ -947,12 +947,12 @@ MonoBehaviour:
         wastegateBoost: 0
         wastegateFlag: 0
       generatedPower: 0
-      idleRPM: 600
+      idleRPM: 900
       ignition: 1
       isStalling: 0
       lossTorque: 0
-      maxLossTorque: 48
-      maxPower: 90
+      maxLossTorque: 125
+      maxPower: 120
       maxRPM: 5200
       minRPM: -50
       OnRevLimiter:
@@ -1010,7 +1010,7 @@ MonoBehaviour:
       revLimiterActive: 0
       revLimiterCutoffDuration: 0
       revLimiterEnabled: 1
-      revLimiterRPM: 5200
+      revLimiterRPM: 4500
       shiftSignal: 0
       slipTorque: 9999
       stallingEnabled: 1
@@ -1029,8 +1029,8 @@ MonoBehaviour:
       outputASelector:
         name: Center Differential
       holdToKeepInGear: 0
-      finalGearRatio: 3.6991112
-      gearingProfile: {fileID: 11400000, guid: 5e1d2b36c53bd1741bea9c2c902f03ad, type: 2}
+      finalGearRatio: 6.5
+      gearingProfile: {fileID: 11400000, guid: 988b3fc48d1540449bebfc046b0ce991, type: 2}
       inclineEffectCoeff: 0
       cvtMaxInputTorque: 2060.3074
       onDownshift:

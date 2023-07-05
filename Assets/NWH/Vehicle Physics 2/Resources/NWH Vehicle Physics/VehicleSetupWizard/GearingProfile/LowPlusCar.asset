@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: LowPlusCar
   m_EditorClassIdentifier: 
   forwardGears:
-  - 5.748
-  - 3.786
-  - 2.778
-  - 2.108
-  - 1.7
+  - 5.048
+  - 3.386
+  - 2.378
+  - 1.708
+  - 1
   reverseGears:
   - -4.432
