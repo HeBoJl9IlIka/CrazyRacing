@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6501243138360434544}
   - component: {fileID: 6501243138360434547}
   - component: {fileID: 6501243138360434546}
+  - component: {fileID: 1983770370522375833}
   - component: {fileID: 6501243138360434559}
   m_Layer: 0
   m_Name: Stopper
@@ -111,7 +112,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8f84f3497e942144a9c1f9c01d275ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetColor: {r: 0.735849, g: 0, b: 0.023085458, a: 1}
+--- !u!114 &1983770370522375833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6501243138360434549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d1099b65fda0f459e26c281562ff28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetColor: {r: 0.7372549, g: 0, b: 0.023529412, a: 1}
 --- !u!82 &6501243138360434559
 AudioSource:
   m_ObjectHideFlags: 0

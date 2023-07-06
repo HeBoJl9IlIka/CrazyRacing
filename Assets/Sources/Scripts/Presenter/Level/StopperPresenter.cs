@@ -1,30 +1,13 @@
 using CrazyRacing.Model;
-using DG.Tweening;
 using UnityEngine;
 
-[RequireComponent(typeof(AudioSource))]
 public class StopperPresenter : MonoBehaviour
 {
-    [SerializeField] private Color _targetColor;
-
     private AudioSource[] _audioSources;
-    private MeshRenderer _meshRenderer;
-    private Color _defaultColor;
 
     private void Awake()
     {
         _audioSources = GetComponents<AudioSource>();
-        _meshRenderer = GetComponent<MeshRenderer>();
-        _defaultColor = _meshRenderer.material.color;
-    }
-
-    private void Update()
-    {
-        if (_meshRenderer.material.color == _defaultColor)
-            _meshRenderer.material.DOColor(_targetColor, Config.FlashingDuration);
-
-        if (_meshRenderer.material.color == _targetColor)
-            _meshRenderer.material.DOColor(_defaultColor, Config.FlashingDuration);
     }
 
     private void OnTriggerEnter(Collider other)
