@@ -4684,7 +4684,7 @@ MonoBehaviour:
   zoomSensitivity: 1
   rotationSmoothing: 0.2
   verticalMaxAngle: 58
-  verticalMinAngle: -9
+  verticalMinAngle: 2
   rotationSensitivity: {x: 3, y: 3}
   panningSensitivity: {x: 0.06, y: 0.06}
   initXRotation: 14
