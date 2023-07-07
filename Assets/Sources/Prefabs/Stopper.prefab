@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6501243138360434546}
   - component: {fileID: 1983770370522375833}
   - component: {fileID: 6501243138360434559}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stopper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66,6 +66,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: b17b19bc18ae72949b205a1f458c7c9f, type: 2}
+  - {fileID: 2100000, guid: 94fcfc307db0cb246b578431f0874153, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

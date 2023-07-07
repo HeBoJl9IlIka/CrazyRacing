@@ -27,8 +27,7 @@ namespace NWH.Common.Input
 
         public override bool ChangeCamera()
         {
-            return false;
-            //return sceneInputActions.CameraControls.ChangeCamera.triggered;
+            return sceneInputActions.CameraControls.ChangeCamera.triggered;
         }
 
 

@@ -15,7 +15,9 @@ GameObject:
   - component: {fileID: 7968923799813666603}
   - component: {fileID: 7968923799813666600}
   - component: {fileID: 7968923799813666601}
-  m_Layer: 0
+  - component: {fileID: 1855625515}
+  - component: {fileID: 5816066026996352035}
+  m_Layer: 6
   m_Name: Booster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,14 +31,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7968923799813666606}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 5.2, y: 0.502, z: 7.66}
-  m_LocalScale: {x: 10, y: 0.2, z: 3}
+  m_LocalScale: {x: 10, y: 0.20000002, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &7968923799813666605
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -66,6 +68,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: b23f5caaeee521e4297e3d8603d855c3, type: 2}
+  - {fileID: 2100000, guid: 44e879db5399b3a4b8e566bc53c50cd7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -112,7 +115,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0c0736f5e3bbf542bfd60654de94bcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetColor: {r: 0, g: 0.745283, b: 0.04938626, a: 1}
 --- !u!82 &7968923799813666600
 AudioSource:
   m_ObjectHideFlags: 0
@@ -305,3 +307,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1855625515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7968923799813666606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d1099b65fda0f459e26c281562ff28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetColor: {r: 0, g: 0.7075472, b: 0.01938478, a: 1}
+--- !u!114 &5816066026996352035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7968923799813666606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d1099b65fda0f459e26c281562ff28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetColor: {r: 0, g: 0.7075472, b: 0.01938478, a: 1}
