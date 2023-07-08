@@ -210,7 +210,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.6
-    worldPosition: {x: 7.915659, y: 1.019032, z: -12.38493}
+    worldPosition: {x: 1.095659, y: 0.79903203, z: 1.5550697}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -293,7 +293,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1649529086570072374}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 12.853001, y: 0, z: 0}
 --- !u!20 &1649529084650943937
 Camera:
@@ -13833,7 +13833,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.6
-    worldPosition: {x: 5.7243414, y: 1.019032, z: -15.495069}
+    worldPosition: {x: -1.095659, y: 0.799032, z: -1.5550686}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -14867,7 +14867,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.6
-    worldPosition: {x: 5.7243414, y: 1.0190321, z: -12.38493}
+    worldPosition: {x: -1.095659, y: 0.7990321, z: 1.5550697}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -16361,7 +16361,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.6
-    worldPosition: {x: 7.91566, y: 1.019032, z: -15.495069}
+    worldPosition: {x: 1.0956597, y: 0.799032, z: -1.5550686}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -18330,8 +18330,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4253421977249166601}
   - {fileID: 1649529084650943964}
+  - {fileID: 4253421977249166601}
   m_Father: {fileID: 1649529085636780095}
   m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19333,7 +19333,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1649529086570072374}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 11.950001, y: 1.4490001, z: -0.053000003}
 --- !u!20 &3043664026605084355
 Camera:
@@ -19399,8 +19399,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  distance: 5
-  height: 2.5
+  distance: 7
+  height: 4
   smoothing: 0.2
   targetForwardOffset: 0
-  targetUpOffset: 1.25
+  targetUpOffset: 2

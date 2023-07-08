@@ -1869,7 +1869,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.25
-    worldPosition: {x: 3.8497577, y: 0.69462395, z: 17.014431}
+    worldPosition: {x: 0.859758, y: 1.164624, z: -1.475569}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2250,7 +2250,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.25
-    worldPosition: {x: 3.8497577, y: 0.708, z: 20.35}
+    worldPosition: {x: 0.859758, y: 1.178, z: 1.8600001}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2631,7 +2631,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.25
-    worldPosition: {x: 2.1302419, y: 0.708, z: 20.35}
+    worldPosition: {x: -0.859758, y: 1.178, z: 1.8600001}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2803,7 +2803,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 428935310431532167}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &428935310155583615
 Camera:
@@ -3083,8 +3083,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4448602815456276588}
   - {fileID: 428935310155583612}
+  - {fileID: 4448602815456276588}
   m_Father: {fileID: 424108546526688303}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3261,7 +3261,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.25
-    worldPosition: {x: 2.1302419, y: 0.69462395, z: 17.014431}
+    worldPosition: {x: -0.859758, y: 1.164624, z: -1.475569}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -9190,7 +9190,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4448602815456276588
 Transform:
   m_ObjectHideFlags: 0
@@ -9204,7 +9204,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 428935310431532167}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 11.950001, y: 1.4490001, z: -0.053000003}
 --- !u!20 &4528725428159757178
 Camera:

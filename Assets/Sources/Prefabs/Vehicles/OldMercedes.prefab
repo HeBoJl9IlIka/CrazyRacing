@@ -158,7 +158,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.25
-    worldPosition: {x: 0.766994, y: 1.1398379, z: 12.093861}
+    worldPosition: {x: 0.766994, y: 1.1198379, z: 1.5658612}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -327,8 +327,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8806398914716338623}
   - {fileID: 1299478100735694791}
+  - {fileID: 8806398914716338623}
   m_Father: {fileID: 1299478102046756754}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -505,7 +505,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.25
-    worldPosition: {x: -0.76699406, y: 1.1398175, z: 9.26287}
+    worldPosition: {x: -0.76699406, y: 1.1198175, z: -1.26513}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -677,7 +677,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1299478100402580842}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &1299478100735694788
 Camera:
@@ -923,7 +923,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.25
-    worldPosition: {x: -0.7669944, y: 1.1398365, z: 12.094202}
+    worldPosition: {x: -0.7669944, y: 1.1198366, z: 1.566202}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -1221,7 +1221,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.25
-    worldPosition: {x: 0.76699436, y: 1.1398373, z: 9.26287}
+    worldPosition: {x: 0.76699436, y: 1.1198374, z: -1.2651303}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -1372,7 +1372,6 @@ GameObject:
   - component: {fileID: 1299478101781545989}
   - component: {fileID: 1299478101781545994}
   - component: {fileID: 1299478101781545995}
-  - component: {fileID: 1299478101781545988}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -1445,20 +1444,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &1299478101781545988
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1299478101781545990}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &1299478102046756755
 GameObject:
   m_ObjectHideFlags: 0
@@ -2977,7 +2962,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1299223340474410039}
-  - component: {fileID: 1363639703736889087}
+  - component: {fileID: 531579057679034729}
+  - component: {fileID: 527219572785543711}
+  - component: {fileID: 7375348403901918472}
+  - component: {fileID: 7839231375752286282}
   m_Layer: 2
   m_Name: SEDAN_COLLIDER
   m_TagString: Untagged
@@ -3000,8 +2988,8 @@ Transform:
   m_Father: {fileID: 1304354442925181133}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1363639703736889087
-MeshCollider:
+--- !u!136 &531579057679034729
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3010,10 +2998,50 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 58794aed2af04154aa437b05d7c167f8, type: 3}
+  m_Radius: 0.25361753
+  m_Height: 1.7
+  m_Direction: 0
+  m_Center: {x: 4.733139e-22, y: 0.61262715, z: 1.997696}
+--- !u!136 &527219572785543711
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300849917210994445}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.25361753
+  m_Height: 1.7
+  m_Direction: 0
+  m_Center: {x: 4.733139e-22, y: 0.61262715, z: -2}
+--- !u!65 &7375348403901918472
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300849917210994445}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3, y: 0.4739399, z: 3.9832263}
+  m_Center: {x: 1.6650281e-22, y: 0.61595666, z: 0.0066589685}
+--- !u!65 &7839231375752286282
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300849917210994445}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.5405297, z: 1.2730186}
+  m_Center: {x: 1.5641302e-22, y: 1.161994, z: -0.3429378}
 --- !u!1 &1300961326759640703
 GameObject:
   m_ObjectHideFlags: 0
@@ -3830,7 +3858,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1299478100402580842}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 11.950001, y: 1.4490001, z: -0.053000003}
 --- !u!20 &4601898081637383806
 Camera:

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2210207957055547845}
   - component: {fileID: 2218757785818926371}
   - component: {fileID: 2227259266283139157}
-  - component: {fileID: 2210207957055547844}
   m_Layer: 2
   m_Name: Tocus_Hood_Back
   m_TagString: Untagged
@@ -86,20 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2210207957055547844
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2213538920133480627}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300074, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
 --- !u!1 &2213542696914001171
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,7 +348,6 @@ GameObject:
   - component: {fileID: 2210525477819934141}
   - component: {fileID: 2218663794414229523}
   - component: {fileID: 2227313693432177925}
-  - component: {fileID: 2210525477819934140}
   m_Layer: 2
   m_Name: Tocus_Hood_Front
   m_TagString: Untagged
@@ -437,20 +421,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2210525477819934140
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2213640052237601771}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300076, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
 --- !u!1 &2213665885824766731
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,7 +515,6 @@ GameObject:
   - component: {fileID: 2210470541198413041}
   - component: {fileID: 2216899292670182215}
   - component: {fileID: 2228886285575435219}
-  - component: {fileID: 2210470541198413040}
   m_Layer: 2
   m_Name: Tocus_Win_Door_Right_Back
   m_TagString: Untagged
@@ -618,20 +587,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2210470541198413040
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2213705138363241427}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300100, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
 --- !u!1 &2213729979465332939
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,7 +598,6 @@ GameObject:
   - component: {fileID: 2212264433763876997}
   - component: {fileID: 2218697530801649879}
   - component: {fileID: 2227075076345507303}
-  - component: {fileID: 2212264433763876996}
   m_Layer: 2
   m_Name: Tocus_Door_Left_Back
   m_TagString: Untagged
@@ -717,20 +671,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2212264433763876996
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2213729979465332939}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300068, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
 --- !u!1 &2213801237372749683
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,7 +765,6 @@ GameObject:
   - component: {fileID: 2212259084700841831}
   - component: {fileID: 2219107818730702375}
   - component: {fileID: 2229168696732528823}
-  - component: {fileID: 2212259084700841830}
   m_Layer: 2
   m_Name: Tocus_Bottom
   m_TagString: Untagged
@@ -900,20 +839,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2212259084700841830
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2213869677803907705}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300082, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
 --- !u!1 &2213893025872871993
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,7 +850,6 @@ GameObject:
   - component: {fileID: 2210518972556645541}
   - component: {fileID: 2218537724887605997}
   - component: {fileID: 2228811326985176067}
-  - component: {fileID: 2210518972556645540}
   m_Layer: 2
   m_Name: Tocus_Win_Door_Right_Front
   m_TagString: Untagged
@@ -998,20 +922,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2210518972556645540
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2213893025872871993}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300098, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
 --- !u!1 &2213900023811618297
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,6 +1074,7 @@ Transform:
   - {fileID: 4384963923440259071}
   - {fileID: 4384963922915313522}
   - {fileID: 4384963922993541820}
+  - {fileID: 8909066418805803169}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2126,7 +2037,6 @@ GameObject:
   - component: {fileID: 2211901414746988949}
   - component: {fileID: 2218539884085897977}
   - component: {fileID: 2228728895420397781}
-  - component: {fileID: 2211901414746988948}
   m_Layer: 2
   m_Name: Tocus_Win_Door_Left
   m_TagString: Untagged
@@ -2199,20 +2109,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2211901414746988948
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2213970600430243115}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300064, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
 --- !u!1 &2213992987183387083
 GameObject:
   m_ObjectHideFlags: 0
@@ -2224,7 +2120,6 @@ GameObject:
   - component: {fileID: 2210241019044518535}
   - component: {fileID: 2218377085470746933}
   - component: {fileID: 2228898259082818261}
-  - component: {fileID: 2210241019044518534}
   m_Layer: 2
   m_Name: Tocus_Win_Door_Right
   m_TagString: Untagged
@@ -2297,20 +2192,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2210241019044518534
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2213992987183387083}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300102, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
 --- !u!1 &2214044060285346061
 GameObject:
   m_ObjectHideFlags: 0
@@ -2322,7 +2203,6 @@ GameObject:
   - component: {fileID: 2212189936497138475}
   - component: {fileID: 2217088000031119137}
   - component: {fileID: 2228893566811665475}
-  - component: {fileID: 2212189936497138474}
   m_Layer: 2
   m_Name: Tocus_Body
   m_TagString: Untagged
@@ -2397,20 +2277,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2212189936497138474
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2214044060285346061}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300060, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
 --- !u!1 &2214085320944993605
 GameObject:
   m_ObjectHideFlags: 0
@@ -2422,7 +2288,6 @@ GameObject:
   - component: {fileID: 2210199752853688095}
   - component: {fileID: 2218714475307832525}
   - component: {fileID: 2227184857898569549}
-  - component: {fileID: 2210199752853688094}
   m_Layer: 2
   m_Name: Tocus_Door_Left_Front
   m_TagString: Untagged
@@ -2497,20 +2362,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2210199752853688094
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2214085320944993605}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300070, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
 --- !u!1 &2214092564051861873
 GameObject:
   m_ObjectHideFlags: 0
@@ -2688,7 +2539,6 @@ GameObject:
   - component: {fileID: 2211933288026746023}
   - component: {fileID: 2218615390957452373}
   - component: {fileID: 2229281196130806965}
-  - component: {fileID: 2211933288026746022}
   m_Layer: 2
   m_Name: Tocus_Door_Right_Front
   m_TagString: Untagged
@@ -2763,20 +2613,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2211933288026746022
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2214118839397877847}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300084, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
 --- !u!1 &2214119931471050611
 GameObject:
   m_ObjectHideFlags: 0
@@ -2788,7 +2624,6 @@ GameObject:
   - component: {fileID: 2210509278545387029}
   - component: {fileID: 2219141394340893989}
   - component: {fileID: 2227192020960874267}
-  - component: {fileID: 2210509278545387028}
   m_Layer: 2
   m_Name: Tocus_Win_Back
   m_TagString: Untagged
@@ -2861,20 +2696,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2210509278545387028
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2214119931471050611}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300092, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
 --- !u!1 &2214137846287188561
 GameObject:
   m_ObjectHideFlags: 0
@@ -2886,7 +2707,6 @@ GameObject:
   - component: {fileID: 2212392985051381943}
   - component: {fileID: 2217091904730502001}
   - component: {fileID: 2228865870490839939}
-  - component: {fileID: 2212392985051381942}
   m_Layer: 2
   m_Name: Tocus_Win_Front
   m_TagString: Untagged
@@ -2959,20 +2779,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2212392985051381942
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2214137846287188561}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300090, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
 --- !u!1 &2214257728235359103
 GameObject:
   m_ObjectHideFlags: 0
@@ -2984,7 +2790,6 @@ GameObject:
   - component: {fileID: 2210331295773060565}
   - component: {fileID: 2219040053886419507}
   - component: {fileID: 2227192847915280283}
-  - component: {fileID: 2210331295773060564}
   m_Layer: 2
   m_Name: Tocus_Bamper_Front
   m_TagString: Untagged
@@ -3061,20 +2866,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2210331295773060564
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2214257728235359103}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300078, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
 --- !u!1 &2214283113712882531
 GameObject:
   m_ObjectHideFlags: 0
@@ -3086,7 +2877,6 @@ GameObject:
   - component: {fileID: 2210316341967028783}
   - component: {fileID: 2218602573960962671}
   - component: {fileID: 2229172158141547999}
-  - component: {fileID: 2210316341967028782}
   m_Layer: 2
   m_Name: Tocus_Door_Right_Back
   m_TagString: Untagged
@@ -3160,20 +2950,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2210316341967028782
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2214283113712882531}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300086, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
 --- !u!1 &2214283849879371207
 GameObject:
   m_ObjectHideFlags: 0
@@ -3185,7 +2961,6 @@ GameObject:
   - component: {fileID: 2211960477954144169}
   - component: {fileID: 2216954034534464737}
   - component: {fileID: 2227181498800382827}
-  - component: {fileID: 2211960477954144168}
   m_Layer: 2
   m_Name: Tocus_Win_Door_Left_Back
   m_TagString: Untagged
@@ -3258,20 +3033,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2211960477954144168
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2214283849879371207}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300096, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
 --- !u!1 &2214330196816231411
 GameObject:
   m_ObjectHideFlags: 0
@@ -3366,7 +3127,6 @@ GameObject:
   - component: {fileID: 2212173102760405091}
   - component: {fileID: 2218766646141022003}
   - component: {fileID: 2229196392309100209}
-  - component: {fileID: 2212173102760405090}
   m_Layer: 2
   m_Name: Tocus_Win_Door_Left_Front
   m_TagString: Untagged
@@ -3439,20 +3199,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2212173102760405090
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2214338036943655583}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300094, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
 --- !u!1 &2214410945531737321
 GameObject:
   m_ObjectHideFlags: 0
@@ -3630,7 +3376,6 @@ GameObject:
   - component: {fileID: 2210351566881106443}
   - component: {fileID: 2218450379484140389}
   - component: {fileID: 2227200892750726653}
-  - component: {fileID: 2210351566881106442}
   m_Layer: 2
   m_Name: Tocus_Bamper_Back
   m_TagString: Untagged
@@ -3704,20 +3449,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2210351566881106442
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2215749033806517949}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300072, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
 --- !u!1 &4384963922915313523
 GameObject:
   m_ObjectHideFlags: 0
@@ -3747,8 +3478,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8178835730210150703}
   - {fileID: 4384963924263695973}
+  - {fileID: 8178835730210150703}
   m_Father: {fileID: 2211949466309097655}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3957,7 +3688,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.24220678
-    worldPosition: {x: 1.756166, y: 0.75002205, z: 9.2892475}
+    worldPosition: {x: -0.67383415, y: 0.7300221, z: -1.2387528}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -4255,7 +3986,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.24219245
-    worldPosition: {x: 3.1006072, y: 0.75002205, z: 9.2892475}
+    worldPosition: {x: 0.67060715, y: 0.7300221, z: -1.2387528}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -4553,7 +4284,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.24220678
-    worldPosition: {x: 1.756166, y: 0.74166995, z: 11.902847}
+    worldPosition: {x: -0.67383415, y: 0.72167, z: 1.3748474}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -4725,7 +4456,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4384963922915313522}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &4384963924263695962
 Camera:
@@ -4971,7 +4702,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.24219245
-    worldPosition: {x: 3.104085, y: 0.74166995, z: 11.902847}
+    worldPosition: {x: 0.67408484, y: 0.72167, z: 1.3748474}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -5111,6 +4842,95 @@ MonoBehaviour:
   lateralScanResolution: 3
   longitudinalScanResolution: 8
   suspensionForceMagnitude: 0
+--- !u!1 &7233457294956028778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8909066418805803169}
+  - component: {fileID: 4613941407925071987}
+  - component: {fileID: 1304623488824202467}
+  - component: {fileID: 9077567212803873844}
+  - component: {fileID: 5028190481102475890}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8909066418805803169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7233457294956028778}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2211949466309097655}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &4613941407925071987
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7233457294956028778}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.23284271
+  m_Height: 1.6
+  m_Direction: 0
+  m_Center: {x: 0, y: 0.21372584, z: 1.7937706}
+--- !u!136 &1304623488824202467
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7233457294956028778}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.23284271
+  m_Height: 1.6
+  m_Direction: 0
+  m_Center: {x: 0, y: 0.21372584, z: -1.8}
+--- !u!65 &9077567212803873844
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7233457294956028778}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2, y: 0.43006426, z: 3.5647106}
+  m_Center: {x: 0, y: 0.21372584, z: -0.0050885677}
+--- !u!65 &5028190481102475890
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7233457294956028778}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.5013063, z: 1.0915971}
+  m_Center: {x: 0, y: 0.7175081, z: -0.37656438}
 --- !u!1 &7423493197169004346
 GameObject:
   m_ObjectHideFlags: 0
@@ -5129,7 +4949,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8178835730210150703
 Transform:
   m_ObjectHideFlags: 0
@@ -5143,7 +4963,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4384963922915313522}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 11.950001, y: 1.4490001, z: -0.053000003}
 --- !u!20 &3198081478652867776
 Camera:

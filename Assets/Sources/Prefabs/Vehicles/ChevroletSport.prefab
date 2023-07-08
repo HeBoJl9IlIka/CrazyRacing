@@ -32,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7994895515993640485}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 11.950001, y: 1.4490001, z: -0.053000003}
 --- !u!20 &3628568741083679218
 Camera:
@@ -103,6 +103,95 @@ MonoBehaviour:
   smoothing: 0.2
   targetForwardOffset: 0
   targetUpOffset: 1.25
+--- !u!1 &3611274666118779796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1438684670951317010}
+  - component: {fileID: 826390175473184060}
+  - component: {fileID: 9012048526077572817}
+  - component: {fileID: 4007797429473346292}
+  - component: {fileID: 8884924621726875712}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1438684670951317010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3611274666118779796}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7997789319305181356}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &826390175473184060
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3611274666118779796}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4919903, y: 0.35595596, z: 3.636474}
+  m_Center: {x: 0.0036865473, y: 0.44179106, z: -0.06644499}
+--- !u!65 &9012048526077572817
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3611274666118779796}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1003655, y: 0.5343032, z: 1.2720304}
+  m_Center: {x: 0.0020073056, y: 0.9153347, z: -0.38712025}
+--- !u!136 &4007797429473346292
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3611274666118779796}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.19251966
+  m_Height: 1.8
+  m_Direction: 0
+  m_Center: {x: 0, y: 0.43946397, z: 1.7741828}
+--- !u!136 &8884924621726875712
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3611274666118779796}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.19251966
+  m_Height: 1.8
+  m_Direction: 0
+  m_Center: {x: 0, y: 0.43946397, z: -1.9099998}
 --- !u!1 &7993954809170390814
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,8 +286,7 @@ GameObject:
   - component: {fileID: 7990124947866646802}
   - component: {fileID: 7965464019059095748}
   - component: {fileID: 7972032447358557952}
-  - component: {fileID: 7965464019059095771}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Chev_Carbody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,20 +367,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7965464019059095771
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7993985604917814960}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 8dcf477a4933f764e869d8a1a9b0f6d2, type: 3}
 --- !u!1 &7994895514356699773
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,7 +392,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7994895514356699773}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.778, y: 0.531985, z: 1.394}
+  m_LocalPosition: {x: 0.778, y: 0.45, z: 1.394}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -337,7 +411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc64011ec59d184a9dc2eabf8397a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showAdvancedSettings: 0
+  showAdvancedSettings: 1
   spring:
     bottomedOut: 0
     compressionPercent: 0
@@ -367,14 +441,14 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     length: 0
-    maxForce: 13649.999
-    maxLength: 0.22225
+    maxForce: 14300
+    maxLength: 0.21
     overExtended: 0
     prevLength: 0
     targetPoint: {x: 0, y: 0, z: 0}
     velocity: 0
   damper:
-    bumpForce: 2131.3657
+    bumpForce: 2300
     bumpCurve:
       serializedVersion: 2
       m_Curve:
@@ -424,7 +498,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     force: 0
-    reboundForce: 2770.7754
+    reboundForce: 2600
   wheel:
     angularVelocity: 0
     brakeTorque: 0
@@ -439,10 +513,10 @@ MonoBehaviour:
     motorTorque: 0
     nonRotatingPositionOffset: {x: 0, y: 0, z: 0}
     nonRotatingVisualIsNull: 0
-    radius: 0.33312523
+    radius: 0.33982998
     right: {x: 1, y: 0, z: 0}
     rimColliderGO: {fileID: 0}
-    rimOffset: 0
+    rimOffset: 0.03
     rotationAngle: 0
     RPM: 0
     steerAngle: 0
@@ -450,46 +524,46 @@ MonoBehaviour:
     visualIsNull: 0
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
-    width: 0.30006632
+    width: 0.30180112
     worldPosition: {x: 0.778, y: 1.131985, z: 1.3939999}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
-    nonRotatingVisual: {fileID: 0}
+    nonRotatingVisual: {fileID: 7995913412105044282}
     visual: {fileID: 7995790137449607132}
   forwardFriction:
     force: 0
-    forceCoefficient: 1
+    forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 1
+    slipCoefficient: 0.9
     speed: 0
   sideFriction:
     force: 0
-    forceCoefficient: 1
+    forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 1
+    slipCoefficient: 0.8
     speed: 0
-  activeFrictionPreset: {fileID: 11400000, guid: 99d32cdf55d3d6541a201d4e6306e35e, type: 2}
+  activeFrictionPreset: {fileID: 11400000, guid: 52f3fe046bf34e847b54bdb89bf46442, type: 2}
   applyForceToOthers: 0
   autoSetupLayerMask: 1
   cachedVisualTransform: {fileID: 0}
   debug: 0
-  dragTorque: 10
+  dragTorque: 40
   hasHit: 1
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967291
+    m_Bits: 4294967289
   parent: {fileID: 7995436821787297316}
-  parentNRigidbody: {fileID: 7997789319305181346}
-  singleRay: 0
-  squat: 0.1
-  useRimCollider: 1
+  parentNRigidbody: {fileID: 0}
+  singleRay: 1
+  squat: 0.683
+  useRimCollider: 0
   vehicleSide: 1
   vehicleWheelCount: 0
   visualOnlyUpdate: 0
   cachedTransform: {fileID: 0}
   powertrainCounterTorque: 0
-  slipCircleShape: 1.05
+  slipCircleShape: 1.121
   curveBasedLoadCoefficient: 0
   loadFrictionCurve:
     serializedVersion: 2
@@ -616,7 +690,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7994895514871968976}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7780292, y: 0.531985, z: -1.2880001}
+  m_LocalPosition: {x: -0.7780292, y: 0.45, z: -1.2880001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -635,7 +709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc64011ec59d184a9dc2eabf8397a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showAdvancedSettings: 0
+  showAdvancedSettings: 1
   spring:
     bottomedOut: 0
     compressionPercent: 0
@@ -665,14 +739,14 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     length: 0
-    maxForce: 13649.999
-    maxLength: 0.22225
+    maxForce: 14300
+    maxLength: 0.21
     overExtended: 0
     prevLength: 0
     targetPoint: {x: 0, y: 0, z: 0}
     velocity: 0
   damper:
-    bumpForce: 2131.3657
+    bumpForce: 2300
     bumpCurve:
       serializedVersion: 2
       m_Curve:
@@ -722,7 +796,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     force: 0
-    reboundForce: 2770.7754
+    reboundForce: 2600
   wheel:
     angularVelocity: 0
     brakeTorque: 0
@@ -737,10 +811,10 @@ MonoBehaviour:
     motorTorque: 0
     nonRotatingPositionOffset: {x: 0, y: 0, z: 0}
     nonRotatingVisualIsNull: 0
-    radius: 0.33312523
+    radius: 0.33982998
     right: {x: 1, y: 0, z: 0}
     rimColliderGO: {fileID: 0}
-    rimOffset: 0
+    rimOffset: 0.03
     rotationAngle: 0
     RPM: 0
     steerAngle: 0
@@ -748,46 +822,46 @@ MonoBehaviour:
     visualIsNull: 0
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
-    width: 0.30006638
+    width: 0.30180112
     worldPosition: {x: -0.77802914, y: 1.131985, z: -1.288}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
-    nonRotatingVisual: {fileID: 0}
+    nonRotatingVisual: {fileID: 7995942599766164636}
     visual: {fileID: 7995157090536370270}
   forwardFriction:
     force: 0
-    forceCoefficient: 1
+    forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 1
+    slipCoefficient: 0.9
     speed: 0
   sideFriction:
     force: 0
-    forceCoefficient: 1
+    forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 1
+    slipCoefficient: 0.8
     speed: 0
-  activeFrictionPreset: {fileID: 11400000, guid: 99d32cdf55d3d6541a201d4e6306e35e, type: 2}
+  activeFrictionPreset: {fileID: 11400000, guid: 52f3fe046bf34e847b54bdb89bf46442, type: 2}
   applyForceToOthers: 0
   autoSetupLayerMask: 1
   cachedVisualTransform: {fileID: 0}
   debug: 0
-  dragTorque: 10
+  dragTorque: 40
   hasHit: 1
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967291
+    m_Bits: 4294967289
   parent: {fileID: 7995436821787297316}
-  parentNRigidbody: {fileID: 7997789319305181346}
-  singleRay: 0
-  squat: 0.1
-  useRimCollider: 1
+  parentNRigidbody: {fileID: 0}
+  singleRay: 1
+  squat: 0.683
+  useRimCollider: 0
   vehicleSide: -1
   vehicleWheelCount: 0
   visualOnlyUpdate: 0
   cachedTransform: {fileID: 0}
   powertrainCounterTorque: 0
-  slipCircleShape: 1.05
+  slipCircleShape: 1.121
   curveBasedLoadCoefficient: 0
   loadFrictionCurve:
     serializedVersion: 2
@@ -914,7 +988,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7994895514980329155}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7780292, y: 0.531985, z: 1.3941922}
+  m_LocalPosition: {x: -0.7780292, y: 0.45, z: 1.3941922}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -933,7 +1007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc64011ec59d184a9dc2eabf8397a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showAdvancedSettings: 0
+  showAdvancedSettings: 1
   spring:
     bottomedOut: 0
     compressionPercent: 0
@@ -963,14 +1037,14 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     length: 0
-    maxForce: 13649.999
-    maxLength: 0.22225
+    maxForce: 14300
+    maxLength: 0.21
     overExtended: 0
     prevLength: 0
     targetPoint: {x: 0, y: 0, z: 0}
     velocity: 0
   damper:
-    bumpForce: 2131.3657
+    bumpForce: 2300
     bumpCurve:
       serializedVersion: 2
       m_Curve:
@@ -1020,7 +1094,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     force: 0
-    reboundForce: 2770.7754
+    reboundForce: 2600
   wheel:
     angularVelocity: 0
     brakeTorque: 0
@@ -1035,10 +1109,10 @@ MonoBehaviour:
     motorTorque: 0
     nonRotatingPositionOffset: {x: 0, y: 0, z: 0}
     nonRotatingVisualIsNull: 0
-    radius: 0.33312523
+    radius: 0.33982998
     right: {x: 1, y: 0, z: 0}
     rimColliderGO: {fileID: 0}
-    rimOffset: 0
+    rimOffset: 0.03
     rotationAngle: 0
     RPM: 0
     steerAngle: 0
@@ -1046,46 +1120,46 @@ MonoBehaviour:
     visualIsNull: 0
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
-    width: 0.30006638
+    width: 0.30180112
     worldPosition: {x: -0.77802914, y: 1.131985, z: 1.3941923}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
-    nonRotatingVisual: {fileID: 0}
+    nonRotatingVisual: {fileID: 7995680521481264980}
     visual: {fileID: 7995667408728916084}
   forwardFriction:
     force: 0
-    forceCoefficient: 1
+    forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 1
+    slipCoefficient: 0.9
     speed: 0
   sideFriction:
     force: 0
-    forceCoefficient: 1
+    forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 1
+    slipCoefficient: 0.8
     speed: 0
-  activeFrictionPreset: {fileID: 11400000, guid: 8fa8a2c6069c00541aa092e84e007c73, type: 2}
+  activeFrictionPreset: {fileID: 11400000, guid: 52f3fe046bf34e847b54bdb89bf46442, type: 2}
   applyForceToOthers: 0
   autoSetupLayerMask: 1
   cachedVisualTransform: {fileID: 0}
   debug: 0
-  dragTorque: 10
+  dragTorque: 40
   hasHit: 1
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967291
+    m_Bits: 4294967289
   parent: {fileID: 7995436821787297316}
-  parentNRigidbody: {fileID: 7997789319305181346}
-  singleRay: 0
-  squat: 0.1
-  useRimCollider: 1
+  parentNRigidbody: {fileID: 0}
+  singleRay: 1
+  squat: 0.683
+  useRimCollider: 0
   vehicleSide: -1
   vehicleWheelCount: 0
   visualOnlyUpdate: 0
   cachedTransform: {fileID: 0}
   powertrainCounterTorque: 0
-  slipCircleShape: 1.05
+  slipCircleShape: 1.121
   curveBasedLoadCoefficient: 0
   loadFrictionCurve:
     serializedVersion: 2
@@ -1219,7 +1293,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7994895515993640485}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &7994895515453236560
 Camera:
@@ -1332,7 +1406,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7994895515776837239}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.778, y: 0.531985, z: -1.2880001}
+  m_LocalPosition: {x: 0.778, y: 0.45, z: -1.2880001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1351,7 +1425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc64011ec59d184a9dc2eabf8397a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showAdvancedSettings: 0
+  showAdvancedSettings: 1
   spring:
     bottomedOut: 0
     compressionPercent: 0
@@ -1381,14 +1455,14 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     length: 0
-    maxForce: 13649.999
-    maxLength: 0.22225
+    maxForce: 14300
+    maxLength: 0.21
     overExtended: 0
     prevLength: 0
     targetPoint: {x: 0, y: 0, z: 0}
     velocity: 0
   damper:
-    bumpForce: 2131.3657
+    bumpForce: 2300
     bumpCurve:
       serializedVersion: 2
       m_Curve:
@@ -1438,7 +1512,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     force: 0
-    reboundForce: 2770.7754
+    reboundForce: 2600
   wheel:
     angularVelocity: 0
     brakeTorque: 0
@@ -1453,10 +1527,10 @@ MonoBehaviour:
     motorTorque: 0
     nonRotatingPositionOffset: {x: 0, y: 0, z: 0}
     nonRotatingVisualIsNull: 0
-    radius: 0.33312523
+    radius: 0.33982998
     right: {x: 1, y: 0, z: 0}
     rimColliderGO: {fileID: 0}
-    rimOffset: 0
+    rimOffset: 0.03
     rotationAngle: 0
     RPM: 0
     steerAngle: 0
@@ -1464,46 +1538,46 @@ MonoBehaviour:
     visualIsNull: 0
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
-    width: 0.30006632
+    width: 0.30180112
     worldPosition: {x: 0.778, y: 1.131985, z: -1.288}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
-    nonRotatingVisual: {fileID: 0}
+    nonRotatingVisual: {fileID: 7995486304205193260}
     visual: {fileID: 7995695070100326194}
   forwardFriction:
     force: 0
-    forceCoefficient: 1
+    forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 1
+    slipCoefficient: 0.9
     speed: 0
   sideFriction:
     force: 0
-    forceCoefficient: 1
+    forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 1
+    slipCoefficient: 0.8
     speed: 0
-  activeFrictionPreset: {fileID: 11400000, guid: 99d32cdf55d3d6541a201d4e6306e35e, type: 2}
+  activeFrictionPreset: {fileID: 11400000, guid: 52f3fe046bf34e847b54bdb89bf46442, type: 2}
   applyForceToOthers: 0
   autoSetupLayerMask: 1
   cachedVisualTransform: {fileID: 0}
   debug: 0
-  dragTorque: 10
+  dragTorque: 40
   hasHit: 1
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967291
+    m_Bits: 4294967289
   parent: {fileID: 7995436821787297316}
-  parentNRigidbody: {fileID: 7997789319305181346}
-  singleRay: 0
-  squat: 0.1
-  useRimCollider: 1
+  parentNRigidbody: {fileID: 0}
+  singleRay: 1
+  squat: 0.683
+  useRimCollider: 0
   vehicleSide: 1
   vehicleWheelCount: 0
   visualOnlyUpdate: 0
   cachedTransform: {fileID: 0}
   powertrainCounterTorque: 0
-  slipCircleShape: 1.05
+  slipCircleShape: 1.121
   curveBasedLoadCoefficient: 0
   loadFrictionCurve:
     serializedVersion: 2
@@ -1634,8 +1708,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2529969401481340517}
   - {fileID: 7994895515453236563}
+  - {fileID: 2529969401481340517}
   m_Father: {fileID: 7997789319305181356}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1873,6 +1947,7 @@ Transform:
   - {fileID: 7994895514871968982}
   - {fileID: 7994895515776837237}
   - {fileID: 7994895515993640485}
+  - {fileID: 1438684670951317010}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -31,6 +31,95 @@ Transform:
   m_Father: {fileID: 6055555484009781630}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4006585806223313718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 900331619291515536}
+  - component: {fileID: 8641529359955306712}
+  - component: {fileID: 3421904147022698407}
+  - component: {fileID: 3585843525683508632}
+  - component: {fileID: 6544529223841755556}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &900331619291515536
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4006585806223313718}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6055555484009781630}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8641529359955306712
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4006585806223313718}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.21169, y: 0.41555166, z: 1.2577099}
+  m_Center: {x: 0, y: 0.92269206, z: -0.24390358}
+--- !u!136 &3421904147022698407
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4006585806223313718}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.20988703
+  m_Height: 1.9495909
+  m_Direction: 0
+  m_Center: {x: 0, y: 0.5, z: -2}
+--- !u!136 &3585843525683508632
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4006585806223313718}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.20988703
+  m_Height: 1.9495909
+  m_Direction: 0
+  m_Center: {x: 0, y: 0.4876293, z: 1.7847867}
+--- !u!65 &6544529223841755556
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4006585806223313718}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5048164, y: 0.37730622, z: 3.7552826}
+  m_Center: {x: 0, y: 0.4892437, z: -0.107139945}
 --- !u!1 &6055555483946386971
 GameObject:
   m_ObjectHideFlags: 0
@@ -42,7 +131,7 @@ GameObject:
   - component: {fileID: 6055555483946386970}
   - component: {fileID: 6055555483946386968}
   - component: {fileID: 6055555483946386969}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Left_Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +218,7 @@ GameObject:
   - component: {fileID: 6055555483968208100}
   - component: {fileID: 6055555483968208122}
   - component: {fileID: 6055555483968208123}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RR_Wheel
   m_TagString: Wheel
   m_Icon: {fileID: 0}
@@ -246,7 +335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc64011ec59d184a9dc2eabf8397a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showAdvancedSettings: 0
+  showAdvancedSettings: 1
   spring:
     bottomedOut: 0
     compressionPercent: 0
@@ -276,14 +365,14 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     length: 0
-    maxForce: 13649.999
-    maxLength: 0.22225
+    maxForce: 14300
+    maxLength: 0.21
     overExtended: 0
     prevLength: 0
     targetPoint: {x: 0, y: 0, z: 0}
     velocity: 0
   damper:
-    bumpForce: 2131.3657
+    bumpForce: 2300
     bumpCurve:
       serializedVersion: 2
       m_Curve:
@@ -333,7 +422,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     force: 0
-    reboundForce: 2770.7754
+    reboundForce: 2600
   wheel:
     angularVelocity: 0
     brakeTorque: 0
@@ -351,7 +440,7 @@ MonoBehaviour:
     radius: 0.33942565
     right: {x: 1, y: 0, z: 0}
     rimColliderGO: {fileID: 0}
-    rimOffset: 0
+    rimOffset: 0.03
     rotationAngle: 0
     RPM: 0
     steerAngle: 0
@@ -360,7 +449,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.3009921
-    worldPosition: {x: 0.8387, y: 1.8369999, z: 1.259}
+    worldPosition: {x: 0.8387, y: 1.1669998, z: 1.259}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -368,37 +457,37 @@ MonoBehaviour:
     visual: {fileID: 6055555485247257262}
   forwardFriction:
     force: 0
-    forceCoefficient: 1
+    forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 1
+    slipCoefficient: 0.9
     speed: 0
   sideFriction:
     force: 0
-    forceCoefficient: 1
+    forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 1
+    slipCoefficient: 0.8
     speed: 0
-  activeFrictionPreset: {fileID: 11400000, guid: 99d32cdf55d3d6541a201d4e6306e35e, type: 2}
+  activeFrictionPreset: {fileID: 11400000, guid: 52f3fe046bf34e847b54bdb89bf46442, type: 2}
   applyForceToOthers: 0
   autoSetupLayerMask: 1
   cachedVisualTransform: {fileID: 0}
   debug: 0
-  dragTorque: 10
+  dragTorque: 40
   hasHit: 1
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967289
   parent: {fileID: 6055555484009781631}
   parentNRigidbody: {fileID: 6055555484009781628}
-  singleRay: 0
-  squat: 0.1
-  useRimCollider: 1
+  singleRay: 1
+  squat: 0.683
+  useRimCollider: 0
   vehicleSide: 1
   vehicleWheelCount: 0
   visualOnlyUpdate: 0
   cachedTransform: {fileID: 0}
   powertrainCounterTorque: 0
-  slipCircleShape: 1.05
+  slipCircleShape: 1.121
   curveBasedLoadCoefficient: 0
   loadFrictionCurve:
     serializedVersion: 2
@@ -546,6 +635,7 @@ Transform:
   - {fileID: 6055555484060987428}
   - {fileID: 6055555485143244358}
   - {fileID: 816209857}
+  - {fileID: 900331619291515536}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1653,8 +1743,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7320426012652309732}
   - {fileID: 6055555484136282633}
+  - {fileID: 7320426012652309732}
   m_Father: {fileID: 6055555484009781630}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1684,7 +1774,7 @@ GameObject:
   - component: {fileID: 6055555484120656070}
   - component: {fileID: 6055555484120656068}
   - component: {fileID: 6055555484120656069}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LightGlass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1790,7 +1880,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6055555484060987428}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &6055555484136282638
 Camera:
@@ -1889,7 +1979,7 @@ GameObject:
   - component: {fileID: 6055555484155784072}
   - component: {fileID: 6055555484155784078}
   - component: {fileID: 6055555484155784079}
-  m_Layer: 20
+  m_Layer: 0
   m_Name: RightHorizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1972,7 +2062,7 @@ GameObject:
   - component: {fileID: 6055555484224798750}
   - component: {fileID: 6055555484224798748}
   - component: {fileID: 6055555484224798749}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wipers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2055,7 +2145,7 @@ GameObject:
   - component: {fileID: 6055555484355722952}
   - component: {fileID: 6055555484355722958}
   - component: {fileID: 6055555484355722959}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RL_Wheel
   m_TagString: Wheel
   m_Icon: {fileID: 0}
@@ -2139,7 +2229,7 @@ GameObject:
   - component: {fileID: 6055555484381626699}
   - component: {fileID: 6055555484381626697}
   - component: {fileID: 6055555484381626698}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Engine_Hood_Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2255,7 +2345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc64011ec59d184a9dc2eabf8397a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showAdvancedSettings: 0
+  showAdvancedSettings: 1
   spring:
     bottomedOut: 0
     compressionPercent: 0
@@ -2285,14 +2375,14 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     length: 0
-    maxForce: 13649.999
-    maxLength: 0.22225
+    maxForce: 14300
+    maxLength: 0.21
     overExtended: 0
     prevLength: 0
     targetPoint: {x: 0, y: 0, z: 0}
     velocity: 0
   damper:
-    bumpForce: 2131.3657
+    bumpForce: 2300
     bumpCurve:
       serializedVersion: 2
       m_Curve:
@@ -2342,7 +2432,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     force: 0
-    reboundForce: 2770.7754
+    reboundForce: 2600
   wheel:
     angularVelocity: 0
     brakeTorque: 0
@@ -2360,7 +2450,7 @@ MonoBehaviour:
     radius: 0.36004302
     right: {x: 1, y: 0, z: 0}
     rimColliderGO: {fileID: 0}
-    rimOffset: 0
+    rimOffset: 0.03
     rotationAngle: 0
     RPM: 0
     steerAngle: 0
@@ -2369,7 +2459,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.31983253
-    worldPosition: {x: 0.8387, y: 1.8699999, z: -1.452}
+    worldPosition: {x: 0.8387, y: 1.1999999, z: -1.452}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2377,37 +2467,37 @@ MonoBehaviour:
     visual: {fileID: 6055555485243337508}
   forwardFriction:
     force: 0
-    forceCoefficient: 1
+    forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 1
+    slipCoefficient: 0.9
     speed: 0
   sideFriction:
     force: 0
-    forceCoefficient: 1
+    forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 1
+    slipCoefficient: 0.8
     speed: 0
-  activeFrictionPreset: {fileID: 11400000, guid: 99d32cdf55d3d6541a201d4e6306e35e, type: 2}
+  activeFrictionPreset: {fileID: 11400000, guid: 52f3fe046bf34e847b54bdb89bf46442, type: 2}
   applyForceToOthers: 0
   autoSetupLayerMask: 1
   cachedVisualTransform: {fileID: 0}
   debug: 0
-  dragTorque: 10
+  dragTorque: 40
   hasHit: 1
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967289
   parent: {fileID: 6055555484009781631}
   parentNRigidbody: {fileID: 6055555484009781628}
-  singleRay: 0
-  squat: 0.1
-  useRimCollider: 1
+  singleRay: 1
+  squat: 0.683
+  useRimCollider: 0
   vehicleSide: 1
   vehicleWheelCount: 0
   visualOnlyUpdate: 0
   cachedTransform: {fileID: 0}
   powertrainCounterTorque: 0
-  slipCircleShape: 1.05
+  slipCircleShape: 1.121
   curveBasedLoadCoefficient: 0
   loadFrictionCurve:
     serializedVersion: 2
@@ -2520,7 +2610,7 @@ GameObject:
   - component: {fileID: 6055555484450978766}
   - component: {fileID: 6055555484450978764}
   - component: {fileID: 6055555484450978765}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Left_Door_Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2603,7 +2693,7 @@ GameObject:
   - component: {fileID: 6055555484463916907}
   - component: {fileID: 6055555484463916905}
   - component: {fileID: 6055555484463916906}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FL_Wheel
   m_TagString: Wheel
   m_Icon: {fileID: 0}
@@ -2687,7 +2777,7 @@ GameObject:
   - component: {fileID: 6055555484468899774}
   - component: {fileID: 6055555484468899772}
   - component: {fileID: 6055555484468899773}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Right_Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2772,7 +2862,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6055555484595731944}
-  m_Layer: 20
+  m_Layer: 0
   m_Name: Exhaust Flash (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2812,7 +2902,7 @@ GameObject:
   - component: {fileID: 6055555484597498270}
   - component: {fileID: 6055555484597498268}
   - component: {fileID: 6055555484597498269}
-  m_Layer: 20
+  m_Layer: 0
   m_Name: MiddleHorizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2895,7 +2985,7 @@ GameObject:
   - component: {fileID: 6055555484655379974}
   - component: {fileID: 6055555484655379972}
   - component: {fileID: 6055555484655379973}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Front_Hood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2976,7 +3066,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6055555484836129341}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WheelRL
   m_TagString: Wheel
   m_Icon: {fileID: 0}
@@ -3009,7 +3099,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6055555484960941504}
   - component: {fileID: 6055555484960941511}
-  m_Layer: 20
+  m_Layer: 0
   m_Name: ExhaustFlashLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3104,7 +3194,7 @@ GameObject:
   - component: {fileID: 6055555484967199400}
   - component: {fileID: 6055555484967199406}
   - component: {fileID: 6055555484967199407}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body_Windows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3187,7 +3277,7 @@ GameObject:
   - component: {fileID: 6055555485095998209}
   - component: {fileID: 6055555485095998215}
   - component: {fileID: 6055555485095998208}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FR_Wheel
   m_TagString: Wheel
   m_Icon: {fileID: 0}
@@ -3269,7 +3359,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6055555485099266082}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wheels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3340,7 +3430,7 @@ GameObject:
   - component: {fileID: 6055555485192989045}
   - component: {fileID: 6055555485192989067}
   - component: {fileID: 6055555485192989044}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Right_Door_Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3423,7 +3513,7 @@ GameObject:
   - component: {fileID: 6055555485208410979}
   - component: {fileID: 6055555485208410977}
   - component: {fileID: 6055555485208410978}
-  m_Layer: 20
+  m_Layer: 0
   m_Name: MiddleVertical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3504,7 +3594,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6055555485243337531}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WheelRR
   m_TagString: Wheel
   m_Icon: {fileID: 0}
@@ -3536,7 +3626,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6055555485247257261}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WheelFR
   m_TagString: Wheel
   m_Icon: {fileID: 0}
@@ -3603,7 +3693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc64011ec59d184a9dc2eabf8397a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showAdvancedSettings: 0
+  showAdvancedSettings: 1
   spring:
     bottomedOut: 0
     compressionPercent: 0
@@ -3633,14 +3723,14 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     length: 0
-    maxForce: 13649.999
-    maxLength: 0.22225
+    maxForce: 14300
+    maxLength: 0.21
     overExtended: 0
     prevLength: 0
     targetPoint: {x: 0, y: 0, z: 0}
     velocity: 0
   damper:
-    bumpForce: 2131.3657
+    bumpForce: 2300
     bumpCurve:
       serializedVersion: 2
       m_Curve:
@@ -3690,7 +3780,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     force: 0
-    reboundForce: 2770.7754
+    reboundForce: 2600
   wheel:
     angularVelocity: 0
     brakeTorque: 0
@@ -3708,7 +3798,7 @@ MonoBehaviour:
     radius: 0.35919136
     right: {x: 1, y: 0, z: 0}
     rimColliderGO: {fileID: 0}
-    rimOffset: 0
+    rimOffset: 0.03
     rotationAngle: 0
     RPM: 0
     steerAngle: 0
@@ -3717,7 +3807,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.31812954
-    worldPosition: {x: -0.8480001, y: 1.8699999, z: -1.452}
+    worldPosition: {x: -0.8480001, y: 1.1999998, z: -1.452}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -3725,37 +3815,37 @@ MonoBehaviour:
     visual: {fileID: 6055555484836129342}
   forwardFriction:
     force: 0
-    forceCoefficient: 1
+    forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 1
+    slipCoefficient: 0.9
     speed: 0
   sideFriction:
     force: 0
-    forceCoefficient: 1
+    forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 1
+    slipCoefficient: 0.8
     speed: 0
-  activeFrictionPreset: {fileID: 11400000, guid: 99d32cdf55d3d6541a201d4e6306e35e, type: 2}
+  activeFrictionPreset: {fileID: 11400000, guid: 52f3fe046bf34e847b54bdb89bf46442, type: 2}
   applyForceToOthers: 0
   autoSetupLayerMask: 1
   cachedVisualTransform: {fileID: 0}
   debug: 0
-  dragTorque: 10
+  dragTorque: 40
   hasHit: 1
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967289
   parent: {fileID: 6055555484009781631}
   parentNRigidbody: {fileID: 6055555484009781628}
-  singleRay: 0
-  squat: 0.1
-  useRimCollider: 1
-  vehicleSide: 1
+  singleRay: 1
+  squat: 0.683
+  useRimCollider: 0
+  vehicleSide: -1
   vehicleWheelCount: 0
   visualOnlyUpdate: 0
   cachedTransform: {fileID: 0}
   powertrainCounterTorque: 0
-  slipCircleShape: 1.05
+  slipCircleShape: 1.121
   curveBasedLoadCoefficient: 0
   loadFrictionCurve:
     serializedVersion: 2
@@ -3868,7 +3958,7 @@ GameObject:
   - component: {fileID: 6055555485309007452}
   - component: {fileID: 6055555485309007442}
   - component: {fileID: 6055555485309007443}
-  m_Layer: 20
+  m_Layer: 0
   m_Name: LeftVertical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3951,7 +4041,7 @@ GameObject:
   - component: {fileID: 6055555485368935963}
   - component: {fileID: 6055555485368935961}
   - component: {fileID: 6055555485368935962}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Right_Deflector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4034,7 +4124,7 @@ GameObject:
   - component: {fileID: 6055555485374116974}
   - component: {fileID: 6055555485374116972}
   - component: {fileID: 6055555485374116973}
-  m_Layer: 20
+  m_Layer: 0
   m_Name: LeftHorizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4117,7 +4207,7 @@ GameObject:
   - component: {fileID: 6055555485425493622}
   - component: {fileID: 6055555485425493620}
   - component: {fileID: 6055555485425493621}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4200,8 +4290,7 @@ GameObject:
   - component: {fileID: 6055555485484125925}
   - component: {fileID: 6055555485484125946}
   - component: {fileID: 6055555485484125947}
-  - component: {fileID: 6055555485484125924}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4291,20 +4380,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6055555485484125924
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6055555485484125926}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300008, guid: 9a91c5e887f917e419bfe9f63efe6056, type: 3}
 --- !u!1 &6055555485580881796
 GameObject:
   m_ObjectHideFlags: 0
@@ -4316,7 +4391,7 @@ GameObject:
   - component: {fileID: 6055555485580881819}
   - component: {fileID: 6055555485580881817}
   - component: {fileID: 6055555485580881818}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Engine_Hood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4399,7 +4474,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6055555485759879437}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WheelFL
   m_TagString: Wheel
   m_Icon: {fileID: 0}
@@ -4433,7 +4508,7 @@ GameObject:
   - component: {fileID: 6055555485944672619}
   - component: {fileID: 6055555485944672617}
   - component: {fileID: 6055555485944672618}
-  m_Layer: 20
+  m_Layer: 0
   m_Name: RightVertical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4516,7 +4591,7 @@ GameObject:
   - component: {fileID: 6055555485949330571}
   - component: {fileID: 6055555485949330569}
   - component: {fileID: 6055555485949330570}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Left_Deflector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4632,7 +4707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc64011ec59d184a9dc2eabf8397a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showAdvancedSettings: 0
+  showAdvancedSettings: 1
   spring:
     bottomedOut: 0
     compressionPercent: 0
@@ -4662,14 +4737,14 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     length: 0
-    maxForce: 13649.999
-    maxLength: 0.22225
+    maxForce: 14300
+    maxLength: 0.21
     overExtended: 0
     prevLength: 0
     targetPoint: {x: 0, y: 0, z: 0}
     velocity: 0
   damper:
-    bumpForce: 2131.3657
+    bumpForce: 2300
     bumpCurve:
       serializedVersion: 2
       m_Curve:
@@ -4719,7 +4794,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     force: 0
-    reboundForce: 2770.7754
+    reboundForce: 2600
   wheel:
     angularVelocity: 0
     brakeTorque: 0
@@ -4737,7 +4812,7 @@ MonoBehaviour:
     radius: 0.33982998
     right: {x: 1, y: 0, z: 0}
     rimColliderGO: {fileID: 0}
-    rimOffset: 0
+    rimOffset: 0.03
     rotationAngle: 0
     RPM: 0
     steerAngle: 0
@@ -4746,7 +4821,7 @@ MonoBehaviour:
     visualPositionOffset: {x: 0, y: 0, z: 0}
     visualRotationOffset: {x: 0, y: 0, z: 0}
     width: 0.30180112
-    worldPosition: {x: -0.8480001, y: 1.8369999, z: 1.259}
+    worldPosition: {x: -0.8480001, y: 1.1669998, z: 1.259}
     smoothYPosition: 0
     prevAngularVelocity: 0
     worldRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -4754,37 +4829,37 @@ MonoBehaviour:
     visual: {fileID: 6055555485759879438}
   forwardFriction:
     force: 0
-    forceCoefficient: 1
+    forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 1
+    slipCoefficient: 0.9
     speed: 0
   sideFriction:
     force: 0
-    forceCoefficient: 1
+    forceCoefficient: 1.15
     slip: 0
-    slipCoefficient: 1
+    slipCoefficient: 0.8
     speed: 0
-  activeFrictionPreset: {fileID: 11400000, guid: 99d32cdf55d3d6541a201d4e6306e35e, type: 2}
+  activeFrictionPreset: {fileID: 11400000, guid: 52f3fe046bf34e847b54bdb89bf46442, type: 2}
   applyForceToOthers: 0
   autoSetupLayerMask: 1
   cachedVisualTransform: {fileID: 0}
   debug: 0
-  dragTorque: 10
+  dragTorque: 40
   hasHit: 1
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967289
   parent: {fileID: 6055555484009781631}
   parentNRigidbody: {fileID: 6055555484009781628}
-  singleRay: 0
-  squat: 0.1
-  useRimCollider: 1
-  vehicleSide: 1
+  singleRay: 1
+  squat: 0.683
+  useRimCollider: 0
+  vehicleSide: -1
   vehicleWheelCount: 0
   visualOnlyUpdate: 0
   cachedTransform: {fileID: 0}
   powertrainCounterTorque: 0
-  slipCircleShape: 1.05
+  slipCircleShape: 1.121
   curveBasedLoadCoefficient: 0
   loadFrictionCurve:
     serializedVersion: 2
@@ -4918,7 +4993,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6055555484060987428}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 11.950001, y: 1.4490001, z: -0.053000003}
 --- !u!20 &8046871443564960515
 Camera:
@@ -5045,6 +5120,10 @@ PrefabInstance:
       value: ExhaustSmoke Variant (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4367863841996410853, guid: ae35797e038fbdc4cb0d40bec8d1cfee, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367863841996410853, guid: ae35797e038fbdc4cb0d40bec8d1cfee, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -5118,6 +5197,10 @@ PrefabInstance:
     - target: {fileID: 4367863841996410853, guid: ae35797e038fbdc4cb0d40bec8d1cfee, type: 3}
       propertyPath: m_Name
       value: ExhaustSmoke Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367863841996410853, guid: ae35797e038fbdc4cb0d40bec8d1cfee, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4367863841996410853, guid: ae35797e038fbdc4cb0d40bec8d1cfee, type: 3}
       propertyPath: m_IsActive

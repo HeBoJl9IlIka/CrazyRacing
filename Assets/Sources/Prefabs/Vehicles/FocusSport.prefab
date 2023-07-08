@@ -1,5 +1,94 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2026345765704650775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 303355693273566400}
+  - component: {fileID: 1598835731799188936}
+  - component: {fileID: 3009542539419858729}
+  - component: {fileID: 1118122302622583533}
+  - component: {fileID: 5497602041114748090}
+  m_Layer: 0
+  m_Name: Colider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &303355693273566400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026345765704650775}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5455844515689761056}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1598835731799188936
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026345765704650775}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4, y: 0.39276838, z: 3.6966023}
+  m_Center: {x: 0, y: 0.49337536, z: -0.033227444}
+--- !u!65 &3009542539419858729
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026345765704650775}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1593986, y: 0.61289, z: 1.3795196}
+  m_Center: {x: 0.003795147, y: 1.0057269, z: -0.39470035}
+--- !u!136 &1118122302622583533
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026345765704650775}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.21345675
+  m_Height: 1.85
+  m_Direction: 0
+  m_Center: {x: 0, y: 0.49581617, z: 1.8319435}
+--- !u!136 &5497602041114748090
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026345765704650775}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.21345675
+  m_Height: 1.85
+  m_Direction: 0
+  m_Center: {x: 0, y: 0.49581617, z: -1.9}
 --- !u!1 &5456645841801581772
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,7 +397,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5456645841890412169}
   - component: {fileID: 5456645841890412168}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cameras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,8 +416,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6413762894442523950}
   - {fileID: 5456645843775883762}
+  - {fileID: 6413762894442523950}
   m_Father: {fileID: 5455844515689761056}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1253,7 +1342,7 @@ GameObject:
   - component: {fileID: 5456645843775883767}
   - component: {fileID: 5456645843775883760}
   - component: {fileID: 5456645843775883761}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Vehicle Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -1273,7 +1362,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5456645841890412169}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &5456645843775883767
 Camera:
@@ -1372,7 +1461,7 @@ GameObject:
   - component: {fileID: 5455720600131673664}
   - component: {fileID: 5458903357143668222}
   - component: {fileID: 5470519747133435950}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tire_LR
   m_TagString: Wheel
   m_Icon: {fileID: 0}
@@ -1465,7 +1554,7 @@ GameObject:
   - component: {fileID: 2622857301594558720}
   - component: {fileID: 2655432246888263056}
   - component: {fileID: 3315441625786419462}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FocusSport
   m_TagString: Vehicle
   m_Icon: {fileID: 0}
@@ -1494,6 +1583,7 @@ Transform:
   - {fileID: 5456645841943991013}
   - {fileID: 5456645843761396800}
   - {fileID: 5456645841890412169}
+  - {fileID: 303355693273566400}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1778,7 +1868,7 @@ MonoBehaviour:
       name: 
     clutch:
       angularVelocity: 0
-      inertia: 0.006
+      inertia: 0.01
       name: Clutch
       componentInputIsNull: 0
       outputASelector:
@@ -1962,7 +2052,7 @@ MonoBehaviour:
       powerModifierSum: 0
     transmission:
       angularVelocity: 0
-      inertia: 0.006
+      inertia: 0.01
       name: Transmission
       componentInputIsNull: 0
       outputASelector:
@@ -2566,7 +2656,7 @@ GameObject:
   - component: {fileID: 5451783626239851128}
   - component: {fileID: 5462482560540120788}
   - component: {fileID: 5470224185994861862}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: FocE_Bumper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2649,7 +2739,7 @@ GameObject:
   - component: {fileID: 5451825526572688034}
   - component: {fileID: 5458908651671688532}
   - component: {fileID: 5469722152092431626}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: FocE_Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2732,7 +2822,7 @@ GameObject:
   - component: {fileID: 5452019499368685744}
   - component: {fileID: 5462795656566737530}
   - component: {fileID: 5470209137889585804}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tire_RF
   m_TagString: Wheel
   m_Icon: {fileID: 0}
@@ -2816,7 +2906,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5455753183621468904}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tires
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2853,7 +2943,7 @@ GameObject:
   - component: {fileID: 5455796234837050220}
   - component: {fileID: 5462303560701286168}
   - component: {fileID: 5470323923212612976}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tire_RR
   m_TagString: Wheel
   m_Icon: {fileID: 0}
@@ -2939,7 +3029,7 @@ GameObject:
   - component: {fileID: 5451723914183263154}
   - component: {fileID: 5462672686562726976}
   - component: {fileID: 5471252073167376396}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: FocE_Hood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3022,8 +3112,7 @@ GameObject:
   - component: {fileID: 5451747729688531230}
   - component: {fileID: 5462825220754318216}
   - component: {fileID: 5470664445544283174}
-  - component: {fileID: 5462825220754318223}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: FocE_Carbody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3100,20 +3189,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5462825220754318223
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5458190164407823778}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: eeb8d6fd760035741a64df2118f7b69a, type: 3}
 --- !u!1 &5458314055840756350
 GameObject:
   m_ObjectHideFlags: 0
@@ -3125,7 +3200,7 @@ GameObject:
   - component: {fileID: 5451869405783822970}
   - component: {fileID: 5461764956735335080}
   - component: {fileID: 5470423108812468458}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tire_LF
   m_TagString: Wheel
   m_Icon: {fileID: 0}
@@ -3213,7 +3288,7 @@ GameObject:
   - component: {fileID: 4148440471387596497}
   - component: {fileID: 6285563424003585013}
   - component: {fileID: 1482955286055264340}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Vehicle Camera Follow
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -3233,7 +3308,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5456645841890412169}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 11.950001, y: 1.4490001, z: -0.053000003}
 --- !u!20 &4148440471387596497
 Camera:
