@@ -173,7 +173,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     smokeParticleSystems: []
-    visualOnly: 0
+    visualOnly: 1
     lastCollisionTime: -1
   effectsManager:
     state:

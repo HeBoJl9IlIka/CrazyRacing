@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PresentersFactory : MonoBehaviour
 {
+    [Header("Presenters templates")]
     [SerializeField] private PauseMenuPresenter _pauseMenuPresenter;
     [SerializeField] private CompletedMenuPresenter _completedMenuPresenter;
     [SerializeField] private SkippingLevelPresenter _skippingLevelPresenter;

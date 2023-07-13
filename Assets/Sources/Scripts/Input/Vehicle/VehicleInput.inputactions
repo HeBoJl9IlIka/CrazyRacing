@@ -66,7 +66,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "negative",
+                    "name": "positive",
                     "id": "94e7a256-470d-4e22-9efe-867e51c64376",
                     "path": "<Keyboard>/s",
                     "interactions": "",
@@ -77,7 +77,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "positive",
+                    "name": "negative",
                     "id": "0cdbae44-6672-45e7-9b98-5668c1e9eb5b",
                     "path": "<Keyboard>/w",
                     "interactions": "",
@@ -99,7 +99,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "negative",
+                    "name": "positive",
                     "id": "2a922991-f301-451c-ae98-43a73bbb3afa",
                     "path": "<Keyboard>/downArrow",
                     "interactions": "",
@@ -110,7 +110,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "positive",
+                    "name": "negative",
                     "id": "82c87dfe-e0b4-4023-ad73-4b0b0a5dfe95",
                     "path": "<Keyboard>/upArrow",
                     "interactions": "",
@@ -132,7 +132,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "negative",
+                    "name": "positive",
                     "id": "3fb99e6d-4175-411b-ad28-8a57838166e8",
                     "path": "<Keyboard>/d",
                     "interactions": "",
@@ -143,7 +143,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "positive",
+                    "name": "negative",
                     "id": "bfd19b21-6044-456f-9a9d-a3cc5389a3e5",
                     "path": "<Keyboard>/a",
                     "interactions": "",
@@ -165,7 +165,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "negative",
+                    "name": "positive",
                     "id": "70132d1c-4c39-402b-804d-1c635bfe8d9c",
                     "path": "<Keyboard>/rightArrow",
                     "interactions": "",
@@ -176,7 +176,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "positive",
+                    "name": "negative",
                     "id": "1c4bc0c8-6bd0-41d3-a38c-236754c79ee9",
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
