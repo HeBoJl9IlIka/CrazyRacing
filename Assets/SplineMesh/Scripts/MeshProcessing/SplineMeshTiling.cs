@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CrazyRacing.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -114,7 +115,9 @@ namespace SplineMesh {
                     typeof(MeshFilter),
                     typeof(MeshRenderer),
                     typeof(MeshBender),
-                    typeof(MeshCollider));
+                    typeof(MeshCollider),
+                    typeof(RoadPresenter));
+                res.tag = Config.TagRoad;
                 res.isStatic = !updateInPlayMode;
             } else {
                 res = childTransform.gameObject;
