@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7976869674353726333}
   - component: {fileID: 7976869674353726331}
   - component: {fileID: 7976869674353726330}
+  - component: {fileID: 2529759905368024981}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -135,6 +136,20 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &2529759905368024981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7976869674353726332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf51be86e70d7941bd40914206e4ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationName: Level completed!
+  FallbackText: Level completed!
 --- !u!1 &7976869674521931464
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,6 +441,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3442083174072410510, guid: e9d0561e81cc82f49aede4f7a3f6aff4, type: 3}
+      propertyPath: m_text
+      value: "\u041C\u0435\u043D\u044E"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6316510227780037596, guid: e9d0561e81cc82f49aede4f7a3f6aff4, type: 3}
+      propertyPath: FallbackText
+      value: Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 6316510227780037596, guid: e9d0561e81cc82f49aede4f7a3f6aff4, type: 3}
+      propertyPath: translationName
+      value: Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021589035193815712, guid: e9d0561e81cc82f49aede4f7a3f6aff4, type: 3}
+      propertyPath: FallbackText
+      value: Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021589035193815712, guid: e9d0561e81cc82f49aede4f7a3f6aff4, type: 3}
+      propertyPath: translationName
+      value: Menu
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9d0561e81cc82f49aede4f7a3f6aff4, type: 3}
 --- !u!114 &3798676512418607873 stripped
@@ -545,7 +580,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3442083174072410510, guid: e9d0561e81cc82f49aede4f7a3f6aff4, type: 3}
       propertyPath: m_text
-      value: "\u0414\u0430\u043B\u044C\u0448\u0435"
+      value: "\u0421\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6316510227780037596, guid: e9d0561e81cc82f49aede4f7a3f6aff4, type: 3}
+      propertyPath: FallbackText
+      value: Next
+      objectReference: {fileID: 0}
+    - target: {fileID: 6316510227780037596, guid: e9d0561e81cc82f49aede4f7a3f6aff4, type: 3}
+      propertyPath: translationName
+      value: Next
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021589035193815712, guid: e9d0561e81cc82f49aede4f7a3f6aff4, type: 3}
+      propertyPath: FallbackText
+      value: Next
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021589035193815712, guid: e9d0561e81cc82f49aede4f7a3f6aff4, type: 3}
+      propertyPath: translationName
+      value: Next
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3442083172397732950, guid: e9d0561e81cc82f49aede4f7a3f6aff4, type: 3}

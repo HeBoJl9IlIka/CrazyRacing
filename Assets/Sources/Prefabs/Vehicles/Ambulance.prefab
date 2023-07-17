@@ -1123,7 +1123,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &723615415186965559
 Transform:
   m_ObjectHideFlags: 0
@@ -1217,7 +1217,7 @@ MonoBehaviour:
   verticalMinAngle: 2
   rotationSensitivity: {x: 3, y: 3}
   panningSensitivity: {x: 0.06, y: 0.06}
-  initXRotation: 14
+  initXRotation: 25
   initYRotation: 0
   targetPositionOffset: {x: 0, y: 0.6, z: 0}
   useShake: 1
@@ -6318,9 +6318,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e622cbbcdb6d66c4f9cff271d47e58e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  distance: 7
+  target: {fileID: 2200980930004859768}
+  distance: 8
   height: 4
   smoothing: 0.2
   targetForwardOffset: 0
-  targetUpOffset: 3
+  targetUpOffset: 1.3

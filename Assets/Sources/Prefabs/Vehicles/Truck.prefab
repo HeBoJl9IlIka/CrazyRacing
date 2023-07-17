@@ -71,7 +71,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -101,7 +101,7 @@ MonoBehaviour:
   povType: 1
   allowRotation: 1
   allowPanning: 1
-  distance: 10
+  distance: 7
   followTargetPitchAndYaw: 1
   followTargetRoll: 0
   maxDistance: 10
@@ -112,7 +112,7 @@ MonoBehaviour:
   verticalMinAngle: 2
   rotationSensitivity: {x: 3, y: 3}
   panningSensitivity: {x: 0.06, y: 0.06}
-  initXRotation: 14
+  initXRotation: 25
   initYRotation: 0
   targetPositionOffset: {x: 0, y: 0.6, z: 0}
   useShake: 1
@@ -2038,7 +2038,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5134839937492283302
 Transform:
   m_ObjectHideFlags: 0
@@ -2077,8 +2077,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
-  far clip plane: 800
+  near clip plane: 0.3
+  far clip plane: 1000
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -2118,7 +2118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  distance: 7
+  distance: 8
   height: 5.3
   smoothing: 0.2
   targetForwardOffset: 0

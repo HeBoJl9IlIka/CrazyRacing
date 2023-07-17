@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 408584}
   - component: {fileID: 3382640}
   - component: {fileID: 6409816}
+  - component: {fileID: 1914720875106645939}
   m_Layer: 0
   m_Name: Ramp05_col
   m_TagString: Untagged
@@ -55,6 +56,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 3c20f2499cac18e47aae3b61f2ff7a9a, type: 3}
+--- !u!114 &1914720875106645939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2a4bfdfa30f87f4fb7d3f2b3c5c28ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &186752
 GameObject:
   m_ObjectHideFlags: 0
@@ -66,7 +79,6 @@ GameObject:
   - component: {fileID: 472942}
   - component: {fileID: 3376084}
   - component: {fileID: 2358798}
-  - component: {fileID: 2963564316217640069}
   m_Layer: 0
   m_Name: Ramps05
   m_TagString: Untagged
@@ -142,15 +154,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2963564316217640069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 186752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2a4bfdfa30f87f4fb7d3f2b3c5c28ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

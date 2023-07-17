@@ -39,5 +39,7 @@ namespace CrazyRacing.Model
         public const string ArmyTruck = "ArmyTruck";
         public const string Truck = "Truck";
         public const string MonsterTruck = "MonsterTruck";
+
+        public const string TagRoad = "Road";
     }
 }

@@ -697,10 +697,10 @@ MonoBehaviour:
   povType: 1
   allowRotation: 1
   allowPanning: 1
-  distance: 5
+  distance: 6
   followTargetPitchAndYaw: 1
   followTargetRoll: 0
-  maxDistance: 6
+  maxDistance: 7
   minDistance: 3
   zoomSensitivity: 1
   rotationSmoothing: 0.2
@@ -708,7 +708,7 @@ MonoBehaviour:
   verticalMinAngle: 2
   rotationSensitivity: {x: 3, y: 3}
   panningSensitivity: {x: 0.06, y: 0.06}
-  initXRotation: 14
+  initXRotation: 30
   initYRotation: 0
   targetPositionOffset: {x: 0, y: 0.6, z: 0}
   useShake: 1
@@ -5324,7 +5324,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 800
+  far clip plane: 1000
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -5364,8 +5364,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  distance: 6
-  height: 3.5
+  distance: 7
+  height: 4
   smoothing: 0.2
   targetForwardOffset: 0
-  targetUpOffset: 1.8
+  targetUpOffset: 1.25

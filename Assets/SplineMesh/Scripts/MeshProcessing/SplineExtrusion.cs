@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CrazyRacing.Model;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -76,7 +77,9 @@ namespace SplineMesh {
                     typeof(MeshFilter),
                     typeof(MeshRenderer),
                     typeof(ExtrusionSegment),
-                    typeof(MeshCollider));
+                    typeof(MeshCollider),
+                    typeof(RoadPresenter));
+                gameObject.tag = Config.TagRoad;
                 go.GetComponent<MeshRenderer>().material = material;
                 ExtrusionSegment seg = go.GetComponent<ExtrusionSegment>();
                 seg.ShapeVertices = shapeVertices;

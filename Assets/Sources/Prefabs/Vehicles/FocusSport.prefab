@@ -1348,7 +1348,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5456645843775883762
 Transform:
   m_ObjectHideFlags: 0
@@ -1401,7 +1401,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
-  m_AllowMSAA: 1
+  m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
@@ -3294,7 +3294,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6413762894442523950
 Transform:
   m_ObjectHideFlags: 0
@@ -3333,8 +3333,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
-  far clip plane: 800
+  near clip plane: 0.3
+  far clip plane: 1000
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -3373,9 +3373,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e622cbbcdb6d66c4f9cff271d47e58e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  distance: 5
-  height: 2.5
+  target: {fileID: 5455844515689761063}
+  distance: 7
+  height: 2.7
   smoothing: 0.2
   targetForwardOffset: 0
   targetUpOffset: 1.25
