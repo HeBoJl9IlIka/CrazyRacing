@@ -1208,6 +1208,7 @@ GameObject:
   - component: {fileID: 823757763}
   - component: {fileID: 823757765}
   - component: {fileID: 823757764}
+  - component: {fileID: 823757766}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1335,6 +1336,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 823757762}
   m_CullTransparentMesh: 1
+--- !u!114 &823757766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823757762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf51be86e70d7941bd40914206e4ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationName: Tutorial1
+  FallbackText: To control the car and rotate it in the air, use the WASD buttons
+    or arrows
 --- !u!1001 &853921226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1444,6 +1460,7 @@ GameObject:
   - component: {fileID: 1050310724}
   - component: {fileID: 1050310726}
   - component: {fileID: 1050310725}
+  - component: {fileID: 1050310727}
   m_Layer: 5
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
@@ -1568,6 +1585,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050310723}
   m_CullTransparentMesh: 1
+--- !u!114 &1050310727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050310723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf51be86e70d7941bd40914206e4ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationName: Understood
+  FallbackText: Understood
+--- !u!1001 &1094003774
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9157095083148658059, guid: b1193e61c6b5b1a4580f38b5556667f6, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157095083148658059, guid: b1193e61c6b5b1a4580f38b5556667f6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157095083148658059, guid: b1193e61c6b5b1a4580f38b5556667f6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157095083148658059, guid: b1193e61c6b5b1a4580f38b5556667f6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157095083148658059, guid: b1193e61c6b5b1a4580f38b5556667f6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157095083148658059, guid: b1193e61c6b5b1a4580f38b5556667f6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157095083148658059, guid: b1193e61c6b5b1a4580f38b5556667f6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157095083148658059, guid: b1193e61c6b5b1a4580f38b5556667f6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157095083148658059, guid: b1193e61c6b5b1a4580f38b5556667f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157095083148658059, guid: b1193e61c6b5b1a4580f38b5556667f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157095083148658059, guid: b1193e61c6b5b1a4580f38b5556667f6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157095083148658061, guid: b1193e61c6b5b1a4580f38b5556667f6, type: 3}
+      propertyPath: m_Name
+      value: LeanLocalization
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157095083821716829, guid: b1193e61c6b5b1a4580f38b5556667f6, type: 3}
+      propertyPath: entries.Array.data[2].Text
+      value: "Ka\xE7\u0131rmak"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b1193e61c6b5b1a4580f38b5556667f6, type: 3}
 --- !u!1 &1124088577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1681,6 +1773,7 @@ GameObject:
   - component: {fileID: 1299743147}
   - component: {fileID: 1299743149}
   - component: {fileID: 1299743148}
+  - component: {fileID: 1299743150}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1810,6 +1903,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1299743146}
   m_CullTransparentMesh: 1
+--- !u!114 &1299743150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299743146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf51be86e70d7941bd40914206e4ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationName: Tutorial
+  FallbackText: The goal of the game is to go down and collect all the checkpoints.
+    Every time you pick up a checkpoint, a new car is issued
 --- !u!1 &1306349489
 GameObject:
   m_ObjectHideFlags: 0
@@ -1821,6 +1929,7 @@ GameObject:
   - component: {fileID: 1306349490}
   - component: {fileID: 1306349492}
   - component: {fileID: 1306349491}
+  - component: {fileID: 1306349493}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1945,6 +2054,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306349489}
   m_CullTransparentMesh: 1
+--- !u!114 &1306349493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306349489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf51be86e70d7941bd40914206e4ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationName: Understood
+  FallbackText: Understood
 --- !u!1 &1314719472
 GameObject:
   m_ObjectHideFlags: 0
@@ -2606,6 +2729,7 @@ GameObject:
   - component: {fileID: 1511366415}
   - component: {fileID: 1511366417}
   - component: {fileID: 1511366416}
+  - component: {fileID: 1511366418}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2730,6 +2854,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511366414}
   m_CullTransparentMesh: 1
+--- !u!114 &1511366418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511366414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf51be86e70d7941bd40914206e4ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationName: Understood
+  FallbackText: Understood
 --- !u!1001 &1557782665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2798,6 +2936,7 @@ GameObject:
   - component: {fileID: 1616919837}
   - component: {fileID: 1616919839}
   - component: {fileID: 1616919838}
+  - component: {fileID: 1616919840}
   m_Layer: 5
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
@@ -2922,6 +3061,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1616919836}
   m_CullTransparentMesh: 1
+--- !u!114 &1616919840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616919836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf51be86e70d7941bd40914206e4ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  translationName: Understood
+  FallbackText: Understood
 --- !u!1 &1666519043
 GameObject:
   m_ObjectHideFlags: 0
