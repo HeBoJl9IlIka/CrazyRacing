@@ -1,55 +1,149 @@
 fileFormatVersion: 2
 guid: 8f43304905a758f499e0a683f44bd9a6
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: CIVIC_TLF
-    100002: CIVIC_TLR
-    100004: CIVIC_TRF
-    100006: CIVIC_TRR
-    100008: //RootNode
-    100010: Civ_TLF
-    100012: Civ_TLR
-    100014: Civ_TRF
-    100016: Civ_TRR
-    400000: CIVIC_TLF
-    400002: CIVIC_TLR
-    400004: CIVIC_TRF
-    400006: CIVIC_TRR
-    400008: //RootNode
-    400010: Civ_TLF
-    400012: Civ_TLR
-    400014: Civ_TRF
-    400016: Civ_TRR
-    2100000: Sidewall
-    2100002: RimIn
-    2100004: Tread
-    2100006: Brackedisk
-    2100008: Rim
-    2300000: CIVIC_TLF
-    2300002: CIVIC_TLR
-    2300004: CIVIC_TRF
-    2300006: CIVIC_TRR
-    2300008: Civ_TLF
-    2300010: Civ_TLR
-    2300012: Civ_TRF
-    2300014: Civ_TRR
-    3300000: CIVIC_TLF
-    3300002: CIVIC_TLR
-    3300004: CIVIC_TRF
-    3300006: CIVIC_TRR
-    3300008: Civ_TLF
-    3300010: Civ_TLR
-    3300012: Civ_TRF
-    3300014: Civ_TRR
-    4300000: CIVIC_TLF
-    4300002: CIVIC_TLR
-    4300004: CIVIC_TRF
-    4300006: CIVIC_TRR
-    4300008: Civ_TLF
-    4300010: Civ_TLR
-    4300012: Civ_TRF
-    4300014: Civ_TRR
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: CIVIC_TLF
+  - first:
+      1: 100002
+    second: CIVIC_TLR
+  - first:
+      1: 100004
+    second: CIVIC_TRF
+  - first:
+      1: 100006
+    second: CIVIC_TRR
+  - first:
+      1: 100008
+    second: //RootNode
+  - first:
+      1: 100010
+    second: Civ_TLF
+  - first:
+      1: 100012
+    second: Civ_TLR
+  - first:
+      1: 100014
+    second: Civ_TRF
+  - first:
+      1: 100016
+    second: Civ_TRR
+  - first:
+      4: 400000
+    second: CIVIC_TLF
+  - first:
+      4: 400002
+    second: CIVIC_TLR
+  - first:
+      4: 400004
+    second: CIVIC_TRF
+  - first:
+      4: 400006
+    second: CIVIC_TRR
+  - first:
+      4: 400008
+    second: //RootNode
+  - first:
+      4: 400010
+    second: Civ_TLF
+  - first:
+      4: 400012
+    second: Civ_TLR
+  - first:
+      4: 400014
+    second: Civ_TRF
+  - first:
+      4: 400016
+    second: Civ_TRR
+  - first:
+      21: 2100000
+    second: Sidewall
+  - first:
+      21: 2100002
+    second: RimIn
+  - first:
+      21: 2100004
+    second: Tread
+  - first:
+      21: 2100006
+    second: Brackedisk
+  - first:
+      21: 2100008
+    second: Rim
+  - first:
+      23: 2300000
+    second: CIVIC_TLF
+  - first:
+      23: 2300002
+    second: CIVIC_TLR
+  - first:
+      23: 2300004
+    second: CIVIC_TRF
+  - first:
+      23: 2300006
+    second: CIVIC_TRR
+  - first:
+      23: 2300008
+    second: Civ_TLF
+  - first:
+      23: 2300010
+    second: Civ_TLR
+  - first:
+      23: 2300012
+    second: Civ_TRF
+  - first:
+      23: 2300014
+    second: Civ_TRR
+  - first:
+      33: 3300000
+    second: CIVIC_TLF
+  - first:
+      33: 3300002
+    second: CIVIC_TLR
+  - first:
+      33: 3300004
+    second: CIVIC_TRF
+  - first:
+      33: 3300006
+    second: CIVIC_TRR
+  - first:
+      33: 3300008
+    second: Civ_TLF
+  - first:
+      33: 3300010
+    second: Civ_TLR
+  - first:
+      33: 3300012
+    second: Civ_TRF
+  - first:
+      33: 3300014
+    second: Civ_TRR
+  - first:
+      43: 4300000
+    second: CIVIC_TLF
+  - first:
+      43: 4300002
+    second: CIVIC_TLR
+  - first:
+      43: 4300004
+    second: CIVIC_TRF
+  - first:
+      43: 4300006
+    second: CIVIC_TRR
+  - first:
+      43: 4300008
+    second: Civ_TLF
+  - first:
+      43: 4300010
+    second: Civ_TLR
+  - first:
+      43: 4300012
+    second: Civ_TRF
+  - first:
+      43: 4300014
+    second: Civ_TRR
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -97,7 +191,7 @@ ModelImporter:
       name: TREAD
     second: {fileID: 2800000, guid: d536e25545ee43d409c35b8d850c002e, type: 3}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -106,6 +200,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -127,36 +222,49 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -166,14 +274,18 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
