@@ -3,7 +3,7 @@ using NWH.VehiclePhysics2;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-[RequireComponent (typeof(VehicleController))]
+[RequireComponent(typeof(VehicleController))]
 public class VehiclePresenter : MonoBehaviour
 {
     private Vehicle _model;
@@ -27,9 +27,12 @@ public class VehiclePresenter : MonoBehaviour
     private void FixedUpdate()
     {
         if (IsRotating)
-            _rigidbody.maxAngularVelocity = Config.MaxAngularVelocity;
-        else
-            _rigidbody.maxAngularVelocity = Config.DefaultAngularVelocity;
+        {
+            if (_isGrounded == false)
+                _rigidbody.maxAngularVelocity = Config.MaxAngularVelocity;
+            else
+                _rigidbody.maxAngularVelocity = Config.DefaultAngularVelocity;
+        }
 
         if (_isGrounded)
             return;

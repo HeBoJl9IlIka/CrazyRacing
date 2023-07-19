@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1082,6 +1082,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7372666997863621945, guid: 3e1aced4144dd784c8f3878b71b33dcf, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372666998507301825, guid: 3e1aced4144dd784c8f3878b71b33dcf, type: 3}
+      propertyPath: m_AllowMSAA
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372666998507301825, guid: 3e1aced4144dd784c8f3878b71b33dcf, type: 3}
+      propertyPath: field of view
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372666998507301825, guid: 3e1aced4144dd784c8f3878b71b33dcf, type: 3}
+      propertyPath: m_ForceIntoRT
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7372666998507301850, guid: 3e1aced4144dd784c8f3878b71b33dcf, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6849,6 +6865,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6055555484009781631, guid: 4afe33dc866449342bc978239d36f033, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055555484060987428, guid: 4afe33dc866449342bc978239d36f033, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055555484060987428, guid: 4afe33dc866449342bc978239d36f033, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055555484060987428, guid: 4afe33dc866449342bc978239d36f033, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055555484136282633, guid: 4afe33dc866449342bc978239d36f033, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055555484136282633, guid: 4afe33dc866449342bc978239d36f033, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055555484136282633, guid: 4afe33dc866449342bc978239d36f033, type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
