@@ -88,6 +88,9 @@ MonoBehaviour:
   _presenterFactory: {fileID: 628724175608874319}
   _recoveryPointPresenter: {fileID: 0}
   _borderPresenter: {fileID: 0}
+  _levelCompleted:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &4932916453411107133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,3 +171,4 @@ MonoBehaviour:
   _completedMenuPresenter: {fileID: 7976869675591846849, guid: be34432836ab03447aedf06ce04dc2cd, type: 3}
   _skippingLevelPresenter: {fileID: 5219600541073363337, guid: 3a77757e07336f2448916af5af92a232, type: 3}
   _progressBarPresenter: {fileID: 6910565984305343157, guid: 4ed6b169bb18dba41bd57b8313715aac, type: 3}
+  _musicPresenter: {fileID: 7706982823718272737, guid: 84b955525b0d6d241857454badd1bb8f, type: 3}

@@ -20,6 +20,8 @@ namespace CrazyRacing.Model
         public const float MaxAngularVelocity = 0.5f;
 
         public const string NumberCurrentLevel = "NumberCurrentLevel";
+        public const string TagRoad = "Road";
+
         public const string Ferrari = "Ferrari";
         public const string Niva = "Niva";
         public const string Bmw = "Bmw";
@@ -39,7 +41,5 @@ namespace CrazyRacing.Model
         public const string ArmyTruck = "ArmyTruck";
         public const string Truck = "Truck";
         public const string MonsterTruck = "MonsterTruck";
-
-        public const string TagRoad = "Road";
     }
 }

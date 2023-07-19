@@ -23,6 +23,21 @@ public class AudioPresenter : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Audio.IsEnabled)
+        {
+            if (GamePauseController.IsPaused == false)
+                Audio.Enable();
+            else
+                Audio.Disable();
+        }
+        else
+        {
+            Audio.Disable();
+        }
+    }
+
     private void OnEnable()
     {
         _button.onClick.AddListener(OnClick);

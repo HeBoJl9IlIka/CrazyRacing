@@ -40,6 +40,7 @@ public class LevelRoot : MonoBehaviour
         _presenterFactory.CreatePauseMenu(_pauseMenu);
         _presenterFactory.CreateCompletedMenu(_completedMenu);
         _presenterFactory.CreateSkippingMenu(_skippingMenu);
+        _presenterFactory.CreateMusicPresenter();
     }
 
     private void Start()

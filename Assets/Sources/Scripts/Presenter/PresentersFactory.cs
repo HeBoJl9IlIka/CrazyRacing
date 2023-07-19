@@ -8,6 +8,7 @@ public class PresentersFactory : MonoBehaviour
     [SerializeField] private CompletedMenuPresenter _completedMenuPresenter;
     [SerializeField] private SkippingLevelPresenter _skippingLevelPresenter;
     [SerializeField] private ProgressBarPresenter _progressBarPresenter;
+    [SerializeField] private MusicPresenter _musicPresenter;
 
     public void CreatePauseMenu(GamePause pauseGame)
     {
@@ -33,5 +34,10 @@ public class PresentersFactory : MonoBehaviour
         progressBarPresenter.Init(amountCheckpoints);
 
         return progressBarPresenter;
+    }
+
+    public void CreateMusicPresenter()
+    {
+        MusicPresenter musicPresenter = Instantiate(_musicPresenter);
     }
 }
