@@ -22,6 +22,7 @@ public class LevelRoot : MonoBehaviour
     private List<Vehicle> _vehicles = new List<Vehicle>();
     private List<Checkpoint> _checkpoints = new List<Checkpoint>();
     private ProgressBarPresenter _progressBarPresenter;
+    private SkippingLevelPresenter _skippingLevelPresenter;
 
     [SerializeField] private UnityEvent _levelCompleted;
 
@@ -39,8 +40,8 @@ public class LevelRoot : MonoBehaviour
         _skippingMenu = new GamePause();
         _presenterFactory.CreatePauseMenu(_pauseMenu);
         _presenterFactory.CreateCompletedMenu(_completedMenu);
-        _presenterFactory.CreateSkippingMenu(_skippingMenu);
         _presenterFactory.CreateMusicPresenter();
+        _skippingLevelPresenter = _presenterFactory.CreateSkippingMenu(_skippingMenu);
     }
 
     private void Start()
@@ -64,6 +65,7 @@ public class LevelRoot : MonoBehaviour
         _checkpointsCounter.CreatedCheckpoint += OnCreatedCheckpoint;
         _checkpointsCounter.LevelCompleted += OnLevelCompleted;
         _borderPresenter.Fell += OnRecovered;
+        _skippingLevelPresenter.Skipped += OnSkipped;
     }
 
     private void OnDisable()
@@ -81,6 +83,7 @@ public class LevelRoot : MonoBehaviour
         _checkpointsCounter.CreatedCheckpoint -= OnCreatedCheckpoint;
         _checkpointsCounter.LevelCompleted -= OnLevelCompleted;
         _borderPresenter.Fell -= OnRecovered;
+        _skippingLevelPresenter.Skipped += OnSkipped;
     }
 
     private void OnCreatedCheckpoint(Checkpoint checkpoint, int index)
@@ -149,6 +152,11 @@ public class LevelRoot : MonoBehaviour
     private void OnPausedGame()
     {
         _pauseMenu.Switch();
+    }
+
+    private void OnSkipped()
+    {
+
     }
 }
 

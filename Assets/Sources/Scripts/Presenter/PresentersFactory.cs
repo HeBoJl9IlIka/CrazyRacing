@@ -22,10 +22,12 @@ public class PresentersFactory : MonoBehaviour
         completedMenuPresenter.Init(pauseGame);
     }
 
-    public void CreateSkippingMenu(GamePause pauseGame)
+    public SkippingLevelPresenter CreateSkippingMenu(GamePause pauseGame)
     {
         SkippingLevelPresenter skippingLevelPresenter = Instantiate(_skippingLevelPresenter);
         skippingLevelPresenter.Init(pauseGame);
+
+        return skippingLevelPresenter;
     }
 
     public ProgressBarPresenter CreateProgressBar(int amountCheckpoints)

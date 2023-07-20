@@ -1,4 +1,5 @@
 using CrazyRacing.Model;
+using System;
 using UnityEngine;
 
 public class SkippingLevelPresenter : MonoBehaviour
@@ -8,6 +9,8 @@ public class SkippingLevelPresenter : MonoBehaviour
     [SerializeField] private ButtonContinuePresenter _buttonContinue;
 
     private GamePause _model;
+
+    public event Action Skipped;
 
     private void OnEnable()
     {
@@ -37,7 +40,7 @@ public class SkippingLevelPresenter : MonoBehaviour
     private void OnSkippedLevel()
     {
         _model.Continue();
-        Debug.Log("SKIPPED!");
+        Skipped?.Invoke();
     }
 
     private void OnContinued()
