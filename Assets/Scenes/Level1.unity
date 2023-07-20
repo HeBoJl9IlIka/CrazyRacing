@@ -1256,10 +1256,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0414\u043B\u044F \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F
-    \u0430\u0432\u0442\u043E\u043C\u043E\u0431\u0438\u043B\u0435\u043C \u0438 \u0432\u0440\u0430\u0449\u0435\u043D\u0438\u044F
-    \u0435\u0433\u043E \u0432 \u0432\u043E\u0437\u0434\u0443\u0445\u0435 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
-    \u043A\u043D\u043E\u043F\u043A\u0438 WASD \u0438\u043B\u0438 \u0441\u0442\u0440\u0435\u043B\u043A\u0438"
+  m_text: To control the car and rotate it in the air, use the WASD buttons or arrows
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6ebe17beba92d2e4fa1b9d49cf62ad6c, type: 2}
   m_sharedMaterial: {fileID: 9179119768531906646, guid: 6ebe17beba92d2e4fa1b9d49cf62ad6c, type: 2}
@@ -1650,6 +1647,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9157095083148658060, guid: b1193e61c6b5b1a4580f38b5556667f6, type: 3}
+      propertyPath: saveLoad
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157095083148658060, guid: b1193e61c6b5b1a4580f38b5556667f6, type: 3}
+      propertyPath: detectLanguage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157095083148658060, guid: b1193e61c6b5b1a4580f38b5556667f6, type: 3}
+      propertyPath: currentLanguage
+      value: Russian
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157095083148658060, guid: b1193e61c6b5b1a4580f38b5556667f6, type: 3}
+      propertyPath: defaultLanguage
+      value: English
+      objectReference: {fileID: 0}
     - target: {fileID: 9157095083148658061, guid: b1193e61c6b5b1a4580f38b5556667f6, type: 3}
       propertyPath: m_Name
       value: LeanLocalization
@@ -1794,7 +1807,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 29.999996}
+  m_AnchoredPosition: {x: 0, y: 30}
   m_SizeDelta: {x: -80, y: -140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1299743148
@@ -1817,12 +1830,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0426\u0435\u043B\u044C \u0438\u0433\u0440\u044B - \u0441\u043F\u0443\u0441\u0442\u0438\u0442\u044C\u0441\u044F
-    \u0438 \u0441\u043E\u0431\u0440\u0430\u0442\u044C \u0432\u0441\u0435 \u0447\u0435\u043A\u043F\u043E\u0438\u043D\u0442\u044B.
-    \u041A\u0430\u0436\u0434\u044B\u0439 \u0440\u0430\u0437 \u043A\u043E\u0433\u0434\u0430
-    \u043F\u043E\u0434\u0431\u0438\u0440\u0430\u0435\u0448\u044C \u0447\u0435\u043A\u043F\u043E\u0438\u043D\u0442
-    \u0432\u044B\u0434\u0430\u0435\u0442\u0441\u044F \u043D\u043E\u0432\u044B\u0439
-    \u0430\u0432\u0442\u043E\u043C\u043E\u0431\u0438\u043B\u044C"
+  m_text: The goal of the game is to go down and collect all the checkpoints. Every
+    time you pick up a checkpoint, a new car is issued
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6ebe17beba92d2e4fa1b9d49cf62ad6c, type: 2}
   m_sharedMaterial: {fileID: 9179119768531906646, guid: 6ebe17beba92d2e4fa1b9d49cf62ad6c, type: 2}
@@ -1849,8 +1858,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1973,7 +1982,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041F\u043E\u043D\u044F\u043B"
+  m_text: Understood
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6ebe17beba92d2e4fa1b9d49cf62ad6c, type: 2}
   m_sharedMaterial: {fileID: 9179119768531906646, guid: 6ebe17beba92d2e4fa1b9d49cf62ad6c, type: 2}
@@ -2125,7 +2134,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: fee7cb0981897184ca8e254670a1d84f, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2627,7 +2636,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: fee7cb0981897184ca8e254670a1d84f, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2773,7 +2782,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041F\u043E\u043D\u044F\u043B"
+  m_text: Understood
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6ebe17beba92d2e4fa1b9d49cf62ad6c, type: 2}
   m_sharedMaterial: {fileID: 9179119768531906646, guid: 6ebe17beba92d2e4fa1b9d49cf62ad6c, type: 2}

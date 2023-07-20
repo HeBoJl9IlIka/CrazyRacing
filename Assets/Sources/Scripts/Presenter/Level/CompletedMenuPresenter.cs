@@ -19,6 +19,7 @@ public class CompletedMenuPresenter : MonoBehaviour
     private void OnEnable()
     {
         _model.Paused += OnPaused;
+        _model.Continued += OnContinued;
         _buttonMainMenu.onClick.AddListener(OnClickMenu);
         _buttonNextLevel.onClick.AddListener(OnClickNextLevel);
     }
@@ -26,6 +27,7 @@ public class CompletedMenuPresenter : MonoBehaviour
     private void OnDisable()
     {
         _model.Paused -= OnPaused;
+        _model.Continued -= OnContinued;
         _buttonMainMenu.onClick.RemoveListener(OnClickMenu);
         _buttonNextLevel.onClick.RemoveListener(OnClickNextLevel);
     }
@@ -33,6 +35,11 @@ public class CompletedMenuPresenter : MonoBehaviour
     private void OnPaused()
     {
         _menu.SetActive(true);
+    }
+
+    private void OnContinued()
+    {
+        _menu.SetActive(false);
     }
 
     private void OnClickNextLevel()

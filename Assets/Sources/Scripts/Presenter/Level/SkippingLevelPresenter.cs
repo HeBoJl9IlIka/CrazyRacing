@@ -23,7 +23,7 @@ public class SkippingLevelPresenter : MonoBehaviour
     {
         _model.Paused -= OnPaused;
         _buttonSkipLevel.onClick.RemoveListener(OnSkippedLevel);
-        _buttonContinue.onClick.AddListener(OnContinued);
+        _buttonContinue.onClick.RemoveListener(OnContinued);
     }
 
     public void Init(GamePause pauseGame)
@@ -40,6 +40,7 @@ public class SkippingLevelPresenter : MonoBehaviour
     private void OnSkippedLevel()
     {
         _model.Continue();
+        _menu.SetActive(false);
         Skipped?.Invoke();
     }
 

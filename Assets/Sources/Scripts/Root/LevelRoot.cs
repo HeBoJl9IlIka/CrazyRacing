@@ -3,6 +3,8 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.Events;
 
+#pragma warning disable CS0162 // Обнаружен недостижимый код
+
 public class LevelRoot : MonoBehaviour
 {
     [SerializeField] private CreatorVehicle[] _vehicleCreators;
@@ -23,6 +25,7 @@ public class LevelRoot : MonoBehaviour
     private List<Checkpoint> _checkpoints = new List<Checkpoint>();
     private ProgressBarPresenter _progressBarPresenter;
     private SkippingLevelPresenter _skippingLevelPresenter;
+    private Sdk _sdk;
 
     [SerializeField] private UnityEvent _levelCompleted;
 
@@ -42,6 +45,7 @@ public class LevelRoot : MonoBehaviour
         _presenterFactory.CreateCompletedMenu(_completedMenu);
         _presenterFactory.CreateMusicPresenter();
         _skippingLevelPresenter = _presenterFactory.CreateSkippingMenu(_skippingMenu);
+        _sdk = SdkFactory.Sdk;
     }
 
     private void Start()
@@ -66,6 +70,10 @@ public class LevelRoot : MonoBehaviour
         _checkpointsCounter.LevelCompleted += OnLevelCompleted;
         _borderPresenter.Fell += OnRecovered;
         _skippingLevelPresenter.Skipped += OnSkipped;
+        _sdk.ShowedVideoAd += OnShowedVideoAd;
+        _sdk.OpenedAd += OnOpenedAd;
+        _sdk.ClosedInterstitialAd += OnClosedInterstitialAd;
+        _sdk.CrashedInterstitialAd += OnCrashedInterstitialAd;
     }
 
     private void OnDisable()
@@ -83,7 +91,13 @@ public class LevelRoot : MonoBehaviour
         _checkpointsCounter.CreatedCheckpoint -= OnCreatedCheckpoint;
         _checkpointsCounter.LevelCompleted -= OnLevelCompleted;
         _borderPresenter.Fell -= OnRecovered;
-        _skippingLevelPresenter.Skipped += OnSkipped;
+        _skippingLevelPresenter.Skipped -= OnSkipped;
+        _sdk.ShowedVideoAd -= OnShowedVideoAd;
+        _sdk.OpenedAd -= OnOpenedAd;
+        _sdk.ClosedInterstitialAd -= OnClosedInterstitialAd;
+        _sdk.ClosedVideoAd -= OnClosedVideoAd;
+        _sdk.CrashedInterstitialAd -= OnCrashedInterstitialAd;
+        _sdk.CrashedVideoAd -= OnCrashedVideoAd;
     }
 
     private void OnCreatedCheckpoint(Checkpoint checkpoint, int index)
@@ -104,9 +118,14 @@ public class LevelRoot : MonoBehaviour
     private void OnLevelCompleted()
     {
         ProgressGame.SaveProgress();
-        _completedMenu.Pause();
         _levelCompleted?.Invoke();
         _progressBarPresenter.gameObject.SetActive(false);
+
+#if !UNITY_WEBGL || UNITY_EDITOR
+        return;
+#endif
+
+        _sdk.ShowInterstitialAd();
     }
 
     private void Subscribe()
@@ -156,7 +175,45 @@ public class LevelRoot : MonoBehaviour
 
     private void OnSkipped()
     {
+#if !UNITY_WEBGL || UNITY_EDITOR
+        OnShowedVideoAd();
+        OnOpenedAd();
+        return;
+#endif
 
+        _sdk.ShowVideoAd();
+    }
+
+    private void OnShowedVideoAd()
+    {
+        ProgressGame.SaveProgress();
+        _levelCompleted?.Invoke();
+        _progressBarPresenter.gameObject.SetActive(false);
+    }
+
+    private void OnOpenedAd()
+    {
+        _completedMenu.Pause();
+    }
+
+    private void OnClosedInterstitialAd()
+    {
+        _completedMenu.Pause();
+    }
+
+    private void OnClosedVideoAd()
+    {
+        _completedMenu.Continue();
+    }
+
+    private void OnCrashedInterstitialAd()
+    {
+        _completedMenu.Pause();
+    }
+
+    private void OnCrashedVideoAd()
+    {
+        _completedMenu.Continue();
     }
 }
 

@@ -7,6 +7,8 @@ public class MainMenuRoot : MonoBehaviour
 {
     [SerializeField] private LevelsPresentersInitializer _levelsPresentersInitializer;
     [SerializeField] private ButtonContinuePresenter _buttonContinue;
+    [SerializeField] private GameObject _block;
+    [SerializeField] private Sdk[] _sdks;
 
     private Level[] _levels;
 
@@ -22,14 +24,22 @@ public class MainMenuRoot : MonoBehaviour
         _levelsUnlocker.UnlockLevels();
     }
 
+    private void Start()
+    {
+        SdkFactory.Init(_sdks);
+    }
+
     private void OnEnable()
     {
         _buttonContinue.onClick.AddListener(OnContinue);
+        SdkFactory.Initialized += OnInitialized;
     }
 
     private void OnDisable()
     {
         _buttonContinue.onClick.RemoveListener(OnContinue);
+        SdkFactory.Initialized -= OnInitialized;
+        SdkFactory.Unsubscribe();
     }
 
     private void OnContinue()
@@ -46,5 +56,10 @@ public class MainMenuRoot : MonoBehaviour
 
         foreach (var level in _levels)
             _levelsPresentersInitializer.InitPresenter(level);
+    }
+
+    private void OnInitialized()
+    {
+        _block.SetActive(false);
     }
 }

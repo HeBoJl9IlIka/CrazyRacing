@@ -41,5 +41,12 @@ namespace CrazyRacing.Model
         public const string ArmyTruck = "ArmyTruck";
         public const string Truck = "Truck";
         public const string MonsterTruck = "MonsterTruck";
+
+        public const string EnglishCode = "en";
+        public const string RussianCode = "ru";
+        public const string TurkishCode = "tr";
+        public const string EnglishLanguage = "English";
+        public const string RussianLanguage = "Russian";
+        public const string TurkishLanguage = "Turkish";
     }
 }
