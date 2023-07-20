@@ -423,7 +423,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3442083174072410510, guid: e9d0561e81cc82f49aede4f7a3f6aff4, type: 3}
       propertyPath: m_text
-      value: "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C"
+      value: "\u0412\u044B\u0431\u0440\u0430\u0442\u044C"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6316510227780037596, guid: e9d0561e81cc82f49aede4f7a3f6aff4, type: 3}
+      propertyPath: FallbackText
+      value: Choose
+      objectReference: {fileID: 0}
+    - target: {fileID: 6316510227780037596, guid: e9d0561e81cc82f49aede4f7a3f6aff4, type: 3}
+      propertyPath: translationName
+      value: Choose
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021589035193815712, guid: e9d0561e81cc82f49aede4f7a3f6aff4, type: 3}
+      propertyPath: FallbackText
+      value: Choose
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021589035193815712, guid: e9d0561e81cc82f49aede4f7a3f6aff4, type: 3}
+      propertyPath: translationName
+      value: Choose
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3442083172397732950, guid: e9d0561e81cc82f49aede4f7a3f6aff4, type: 3}
