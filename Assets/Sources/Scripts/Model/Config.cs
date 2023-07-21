@@ -18,7 +18,7 @@ namespace CrazyRacing.Model
         public const float PropsStepRotate = 1f;
         public const float DefaultAngularVelocity = 8f;
         public const float MaxAngularVelocity = 0.5f;
-        public const float DelayShowVideo = 0.2f;
+        public const float DelayShowVideo = 0.1f;
 
         public const string NumberCurrentLevel = "NumberCurrentLevel";
         public const string TagRoad = "Road";

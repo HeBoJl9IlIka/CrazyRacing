@@ -2443,6 +2443,8 @@ GameObject:
   - component: {fileID: 7117327876121024990}
   - component: {fileID: 9090915350077219715}
   - component: {fileID: 9090915350077219714}
+  - component: {fileID: 2300199641185082471}
+  - component: {fileID: 3816713732545193527}
   m_Layer: 0
   m_Name: WRX
   m_TagString: Vehicle
@@ -3468,6 +3470,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1181e9a12ee8c904788d9f976b6bc506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2300199641185082471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9089084341638243293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c00af5aad33b8a44d8da8fd2d10dae94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  module:
+    state:
+      fullName: 
+      isEnabled: 1
+      isOn: 1
+      lodIndex: -1
+      name: 
+    intensity: 0.4
+    lowerSpeedThreshold: 4
+--- !u!114 &3816713732545193527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9089084341638243293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aac7fb6407083e4fa0799261a2ea987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  module:
+    state:
+      fullName: 
+      isEnabled: 1
+      isOn: 1
+      lodIndex: -1
+      name: 
+    active: 0
+    lowerSpeedThreshold: 2
+    slipThreshold: 0.1
+    TCSActive:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &9089108019768266085
 GameObject:
   m_ObjectHideFlags: 0

@@ -128,6 +128,7 @@ public class LevelRoot : MonoBehaviour
         _mobileInputPresenter.gameObject.SetActive(false);
 
 #if !UNITY_WEBGL || UNITY_EDITOR
+        _completedMenu.Pause();
         return;
 #endif
 
@@ -195,6 +196,7 @@ public class LevelRoot : MonoBehaviour
         ProgressGame.SaveProgress();
         _levelCompleted?.Invoke();
         _progressBarPresenter.gameObject.SetActive(false);
+        _completedMenu.Pause();
     }
 
     private void OnOpenedAd()
