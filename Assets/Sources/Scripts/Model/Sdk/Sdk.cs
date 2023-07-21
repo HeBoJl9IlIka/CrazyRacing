@@ -5,6 +5,8 @@ namespace CrazyRacing.Model
 {
     public abstract class Sdk : MonoBehaviour
     {
+        public virtual bool IsMobile { get; protected set; }
+
         public Action Initialized;
         public event Action ShowedVideoAd;
         public event Action OpenedAd;
@@ -15,6 +17,18 @@ namespace CrazyRacing.Model
 
         public abstract void ShowInterstitialAd();
         public abstract void ShowVideoAd();
+
+        public void ChangeLanguage()
+        {
+            ILanguage language = GetLanguage();
+
+            if (language != null)
+                Lean.Localization.LeanLocalization.SetCurrentLanguageAll(language.Value);
+        }
+
+        protected abstract void Init();
+        protected abstract ILanguage GetLanguage();
+        protected abstract void IdentifyDevice();
 
         protected void OnRewarded()
         {

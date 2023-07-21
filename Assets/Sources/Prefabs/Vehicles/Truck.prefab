@@ -101,7 +101,7 @@ MonoBehaviour:
   povType: 1
   allowRotation: 1
   allowPanning: 1
-  distance: 7
+  distance: 8
   followTargetPitchAndYaw: 1
   followTargetRoll: 0
   maxDistance: 10
@@ -112,7 +112,7 @@ MonoBehaviour:
   verticalMinAngle: 2
   rotationSensitivity: {x: 3, y: 3}
   panningSensitivity: {x: 0.06, y: 0.06}
-  initXRotation: 25
+  initXRotation: 30
   initYRotation: 0
   targetPositionOffset: {x: 0, y: 0.6, z: 0}
   useShake: 1

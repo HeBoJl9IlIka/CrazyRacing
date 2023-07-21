@@ -9,6 +9,7 @@ public class PresentersFactory : MonoBehaviour
     [SerializeField] private SkippingLevelPresenter _skippingLevelPresenter;
     [SerializeField] private ProgressBarPresenter _progressBarPresenter;
     [SerializeField] private MusicPresenter _musicPresenter;
+    [SerializeField] private MobileInputPresenter _mobileInputPresenter;
 
     public void CreatePauseMenu(GamePause pauseGame)
     {
@@ -38,8 +39,15 @@ public class PresentersFactory : MonoBehaviour
         return progressBarPresenter;
     }
 
-    public void CreateMusicPresenter()
+    public void CreateMusic()
     {
         MusicPresenter musicPresenter = Instantiate(_musicPresenter);
+    }
+
+    public MobileInputPresenter CreateMobileInput()
+    {
+        MobileInputPresenter mobileInputPresenter = Instantiate(_mobileInputPresenter);
+
+        return mobileInputPresenter;
     }
 }

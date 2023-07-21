@@ -25,6 +25,7 @@ public class LevelRoot : MonoBehaviour
     private List<Checkpoint> _checkpoints = new List<Checkpoint>();
     private ProgressBarPresenter _progressBarPresenter;
     private SkippingLevelPresenter _skippingLevelPresenter;
+    private MobileInputPresenter _mobileInputPresenter;
     private Sdk _sdk;
 
     [SerializeField] private UnityEvent _levelCompleted;
@@ -43,9 +44,13 @@ public class LevelRoot : MonoBehaviour
         _skippingMenu = new GamePause();
         _presenterFactory.CreatePauseMenu(_pauseMenu);
         _presenterFactory.CreateCompletedMenu(_completedMenu);
-        _presenterFactory.CreateMusicPresenter();
+        _presenterFactory.CreateMusic();
         _skippingLevelPresenter = _presenterFactory.CreateSkippingMenu(_skippingMenu);
+        _mobileInputPresenter = _presenterFactory.CreateMobileInput();
         _sdk = SdkFactory.Sdk;
+
+        if(_sdk.IsMobile)
+            _mobileInputPresenter.gameObject.SetActive(true);
     }
 
     private void Start()
@@ -120,6 +125,7 @@ public class LevelRoot : MonoBehaviour
         ProgressGame.SaveProgress();
         _levelCompleted?.Invoke();
         _progressBarPresenter.gameObject.SetActive(false);
+        _mobileInputPresenter.gameObject.SetActive(false);
 
 #if !UNITY_WEBGL || UNITY_EDITOR
         return;

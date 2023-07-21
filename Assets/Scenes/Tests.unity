@@ -1082,7 +1082,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7372666997863621945, guid: 3e1aced4144dd784c8f3878b71b33dcf, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7372666998507301825, guid: 3e1aced4144dd784c8f3878b71b33dcf, type: 3}
       propertyPath: m_AllowMSAA
@@ -2482,7 +2482,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727728961}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -72.3, y: 0, z: -46.12}
+  m_LocalPosition: {x: -87.8, y: 0, z: -46.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3183,7 +3183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961905230}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -167.3, y: 0.24, z: 10.528}
+  m_LocalPosition: {x: -142.9, y: 0.24, z: 10.528}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6347,6 +6347,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 359696481}
     m_Modifications:
+    - target: {fileID: 2515618515177026397, guid: dc9824ba653dbca49b45435db647b291, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2516826368611446947, guid: dc9824ba653dbca49b45435db647b291, type: 3}
       propertyPath: m_Name
       value: Gelenvagen

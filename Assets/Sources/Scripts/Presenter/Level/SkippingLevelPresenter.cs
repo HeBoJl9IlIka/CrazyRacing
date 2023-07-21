@@ -39,14 +39,20 @@ public class SkippingLevelPresenter : MonoBehaviour
 
     private void OnSkippedLevel()
     {
-        _model.Continue();
-        _menu.SetActive(false);
-        Skipped?.Invoke();
+        Invoke(nameof(ShowVideo), Config.DelayShowVideo);
+        _model.Slowmo();
     }
 
     private void OnContinued()
     {
         _model.Continue();
         _menu.SetActive(false);
+    }
+
+    private void ShowVideo()
+    {
+        _model.Continue();
+        _menu.SetActive(false);
+        Skipped?.Invoke();
     }
 }

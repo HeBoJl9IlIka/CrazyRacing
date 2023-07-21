@@ -1,3 +1,4 @@
+using Agava.WebUtility;
 using Agava.YandexGames;
 using System.Collections;
 
@@ -27,24 +28,33 @@ namespace CrazyRacing.Model
             VideoAd.Show(OnOpenAd, OnRewarded, OnCloseVideoAd, OnErrorInterstitialAd);
         }
 
-        private void Init()
+        protected override void Init()
         {
             ChangeLanguage();
+            IdentifyDevice();
             Initialized?.Invoke();
         }
 
-        private void ChangeLanguage()
+        protected override ILanguage GetLanguage()
         {
 #if !UNITY_WEBGL || UNITY_EDITOR
-            return;
+            return null;
 #endif
 
             string languageCode = YandexGamesSdk.Environment.i18n.lang;
             LanguageFactory languageFactory = new LanguageFactory();
             ILanguage language = languageFactory.GetLanguage(languageCode);
 
-            if (language != null)
-                Lean.Localization.LeanLocalization.SetCurrentLanguageAll(language.Value);
+            return language;
+        }
+
+        protected override void IdentifyDevice()
+        {
+#if !UNITY_WEBGL || UNITY_EDITOR
+            return;
+#endif
+
+            IsMobile = Device.IsMobile;
         }
     }
 }

@@ -40,5 +40,10 @@ namespace CrazyRacing.Model
             Continued?.Invoke();
             GamePauseController.Switch();
         }
+
+        public void Slowmo()
+        {
+            Time.timeScale = 0.1f;
+        }
     }
 }
