@@ -423,7 +423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3442083174072410510, guid: e9d0561e81cc82f49aede4f7a3f6aff4, type: 3}
       propertyPath: m_text
-      value: "\u0412\u044B\u0431\u0440\u0430\u0442\u044C"
+      value: Choose
       objectReference: {fileID: 0}
     - target: {fileID: 6316510227780037596, guid: e9d0561e81cc82f49aede4f7a3f6aff4, type: 3}
       propertyPath: FallbackText
