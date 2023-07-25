@@ -4,9 +4,9 @@ namespace CrazyRacing.Model
     {
         public const int NumberSceneMainMenu = 0;
         public const int NumberFirstLevel = 1;
-        public const int MaxAmountRecovery = 20;
+        public const int MaxAmountRecovery = 5;
 
-        public const float VehicleRotationForce = 10f;
+        public const float VehicleRotationForce = 2f;
         public const float DelayEnablingCheckpointCollider = 1f;
         public const float ProgressBarFillingDuration = 1f;
         public const float MaxVolumeAudio = 1f;
@@ -17,7 +17,7 @@ namespace CrazyRacing.Model
         public const float MinSpeedForBoost = 3f;
         public const float PropsStepRotate = 1f;
         public const float DefaultAngularVelocity = 8f;
-        public const float MaxAngularVelocity = 0.5f;
+        public const float MaxAngularVelocity = 2f;
         public const float DelayShowVideo = 0.1f;
 
         public const string NumberCurrentLevel = "NumberCurrentLevel";

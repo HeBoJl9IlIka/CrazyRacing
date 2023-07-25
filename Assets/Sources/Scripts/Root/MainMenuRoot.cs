@@ -11,7 +11,6 @@ public class MainMenuRoot : MonoBehaviour
     [SerializeField] private Sdk[] _sdks;
 
     private Level[] _levels;
-
     private LevelsUnlocker _levelsUnlocker;
 
     public IReadOnlyCollection<Level> Levels => _levels;
@@ -26,7 +25,8 @@ public class MainMenuRoot : MonoBehaviour
 
     private void Start()
     {
-        SdkFactory.Init(_sdks);
+        if (SdkFactory.Sdk == null)
+            SdkFactory.Init(_sdks);
     }
 
     private void OnEnable()

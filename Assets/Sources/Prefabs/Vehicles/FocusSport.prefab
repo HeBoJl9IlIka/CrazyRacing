@@ -416,8 +416,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5456645843775883762}
   - {fileID: 6413762894442523950}
+  - {fileID: 5456645843775883762}
+  - {fileID: 5443310302047591790}
   m_Father: {fileID: 5455844515689761056}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1362,7 +1363,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5456645841890412169}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &5456645843775883767
 Camera:
@@ -1432,7 +1433,7 @@ MonoBehaviour:
   allowRotation: 1
   allowPanning: 1
   distance: 5
-  followTargetPitchAndYaw: 1
+  followTargetPitchAndYaw: 0
   followTargetRoll: 0
   maxDistance: 6
   minDistance: 3
@@ -1554,6 +1555,7 @@ GameObject:
   - component: {fileID: 2622857301594558720}
   - component: {fileID: 2655432246888263056}
   - component: {fileID: 3315441625786419462}
+  - component: {fileID: -4360329095536177848}
   m_Layer: 8
   m_Name: FocusSport
   m_TagString: Vehicle
@@ -2645,6 +2647,32 @@ MonoBehaviour:
       name: 
     intensity: 0.4
     lowerSpeedThreshold: 3
+--- !u!114 &-4360329095536177848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5457251234654989110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a9000aafa038fc419e4ffc3a58efaf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  module:
+    state:
+      fullName: 
+      isEnabled: 1
+      isOn: 1
+      lodIndex: -1
+      name: 
+    allowedAngle: 70
+    flipOverInput: 0
+    flippedOver: 0
+    manual: 0
+    maxDetectionSpeed: 0.6
+    rotationSpeed: 1
+    timeout: 3
 --- !u!1 &5457341159603779928
 GameObject:
   m_ObjectHideFlags: 0
@@ -3308,7 +3336,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5456645841890412169}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 11.950001, y: 1.4490001, z: -0.053000003}
 --- !u!20 &4148440471387596497
 Camera:
@@ -3379,3 +3407,73 @@ MonoBehaviour:
   smoothing: 0.2
   targetForwardOffset: 0
   targetUpOffset: 1.25
+--- !u!1001 &1896632460929593579
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5456645841890412169}
+    m_Modifications:
+    - target: {fileID: 1373366359118165660, guid: dbe86277512904548b37a7fc1cd12d52, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897662507235650949, guid: dbe86277512904548b37a7fc1cd12d52, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897662507235650949, guid: dbe86277512904548b37a7fc1cd12d52, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897662507235650949, guid: dbe86277512904548b37a7fc1cd12d52, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.8529999
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897662507235650949, guid: dbe86277512904548b37a7fc1cd12d52, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.2709994
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897662507235650949, guid: dbe86277512904548b37a7fc1cd12d52, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897662507235650949, guid: dbe86277512904548b37a7fc1cd12d52, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897662507235650949, guid: dbe86277512904548b37a7fc1cd12d52, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897662507235650949, guid: dbe86277512904548b37a7fc1cd12d52, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897662507235650949, guid: dbe86277512904548b37a7fc1cd12d52, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897662507235650949, guid: dbe86277512904548b37a7fc1cd12d52, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5897662507235650949, guid: dbe86277512904548b37a7fc1cd12d52, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732845884575702422, guid: dbe86277512904548b37a7fc1cd12d52, type: 3}
+      propertyPath: m_Name
+      value: CameraOnBoard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732845884575702422, guid: dbe86277512904548b37a7fc1cd12d52, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dbe86277512904548b37a7fc1cd12d52, type: 3}
+--- !u!4 &5443310302047591790 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5897662507235650949, guid: dbe86277512904548b37a7fc1cd12d52, type: 3}
+  m_PrefabInstance: {fileID: 1896632460929593579}
+  m_PrefabAsset: {fileID: 0}

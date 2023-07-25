@@ -4,7 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(VehicleController))]
-public class VehiclePresenter : MonoBehaviour
+public abstract class VehiclePresenter : MonoBehaviour
 {
     private Vehicle _model;
     private Rigidbody _rigidbody;

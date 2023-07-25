@@ -175,6 +175,17 @@ namespace NWH.Common.Input
                 },
                 {
                     ""name"": """",
+                    ""id"": ""6c45e725-acb8-4d77-8a5e-00c4fcf6c7a0"",
+                    ""path"": ""<Touchscreen>/primaryTouch/delta"",
+                    ""interactions"": """",
+                    ""processors"": ""ScaleVector2(x=0.2,y=0.2)"",
+                    ""groups"": """",
+                    ""action"": ""CameraRotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""9e78c527-4641-4f9b-98e4-fb7f87edf64d"",
                     ""path"": ""<Mouse>/delta"",
                     ""interactions"": """",
@@ -199,6 +210,17 @@ namespace NWH.Common.Input
                     ""name"": """",
                     ""id"": ""8f3a4e0e-6782-4b53-8c26-e06e68d8e1ee"",
                     ""path"": ""<Gamepad>/rightStickPress"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraRotationModifier"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""14577312-b32c-4597-9eb0-1bc60328032c"",
+                    ""path"": ""<Touchscreen>/Press"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

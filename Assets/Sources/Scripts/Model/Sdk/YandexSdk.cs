@@ -32,7 +32,7 @@ namespace CrazyRacing.Model
         {
             ChangeLanguage();
             IdentifyDevice();
-            Initialized?.Invoke();
+            OnInitialized();
         }
 
         protected override ILanguage GetLanguage()
@@ -43,9 +43,8 @@ namespace CrazyRacing.Model
 
             string languageCode = YandexGamesSdk.Environment.i18n.lang;
             LanguageFactory languageFactory = new LanguageFactory();
-            ILanguage language = languageFactory.GetLanguage(languageCode);
 
-            return language;
+            return languageFactory.GetLanguage(languageCode);
         }
 
         protected override void IdentifyDevice()

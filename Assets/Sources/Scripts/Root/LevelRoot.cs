@@ -1,7 +1,6 @@
 using CrazyRacing.Model;
 using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine.Events;
 
 #pragma warning disable CS0162 // Обнаружен недостижимый код
 
@@ -27,8 +26,6 @@ public class LevelRoot : MonoBehaviour
     private SkippingLevelPresenter _skippingLevelPresenter;
     private MobileInputPresenter _mobileInputPresenter;
     private Sdk _sdk;
-
-    [SerializeField] private UnityEvent _levelCompleted;
 
     private void Awake()
     {
@@ -113,7 +110,6 @@ public class LevelRoot : MonoBehaviour
 
     private void OnPassed(Checkpoint checkpoint, Vehicle vehicle)
     {
-        OnRecovered();
         ChangeVehicle();
         _checkpointsCounter.CountCheckpoint();
         _checkpointsCounter.ChangeCheckpoint(checkpoint);
@@ -123,7 +119,6 @@ public class LevelRoot : MonoBehaviour
     private void OnLevelCompleted()
     {
         ProgressGame.SaveProgress();
-        _levelCompleted?.Invoke();
         _progressBarPresenter.gameObject.SetActive(false);
         _mobileInputPresenter.gameObject.SetActive(false);
 
@@ -194,7 +189,6 @@ public class LevelRoot : MonoBehaviour
     private void OnShowedVideoAd()
     {
         ProgressGame.SaveProgress();
-        _levelCompleted?.Invoke();
         _progressBarPresenter.gameObject.SetActive(false);
         _completedMenu.Pause();
     }

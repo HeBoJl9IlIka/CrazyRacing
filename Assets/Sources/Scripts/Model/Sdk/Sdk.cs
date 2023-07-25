@@ -7,7 +7,7 @@ namespace CrazyRacing.Model
     {
         public virtual bool IsMobile { get; protected set; }
 
-        public Action Initialized;
+        public event Action Initialized;
         public event Action ShowedVideoAd;
         public event Action OpenedAd;
         public event Action ClosedInterstitialAd;
@@ -30,6 +30,11 @@ namespace CrazyRacing.Model
         protected abstract ILanguage GetLanguage();
         protected abstract void IdentifyDevice();
 
+        protected void OnInitialized()
+        {
+            Initialized?.Invoke();
+        }
+        
         protected void OnRewarded()
         {
             ShowedVideoAd?.Invoke();

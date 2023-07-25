@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Odometr : MonoBehaviour
+public class SpeedOmetr : MonoBehaviour
 {
     [SerializeField] private TMP_Text _currentValue;
     [SerializeField] private TMP_Text _overclocking0_50;

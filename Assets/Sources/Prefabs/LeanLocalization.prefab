@@ -63,6 +63,116 @@ MonoBehaviour:
       toplamakt\u0131r. Bir kontrol noktas\u0131n\u0131 her ald\u0131\u011F\u0131n\u0131zda,
       yeni bir araba verilir"
     Object: {fileID: 0}
+--- !u!1 &579416299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 579416300}
+  - component: {fileID: 579416301}
+  m_Layer: 0
+  m_Name: Login
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &579416300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579416299}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9157095083148658059}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &579416301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579416299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u0412\u043E\u0439\u0442\u0438"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Login
+    Object: {fileID: 0}
+  - Language: Turkish
+    Text: Girmek
+    Object: {fileID: 0}
+--- !u!1 &887798324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 887798325}
+  - component: {fileID: 887798326}
+  m_Layer: 0
+  m_Name: Desktop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &887798325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887798324}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9157095083148658059}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &887798326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887798324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: English
+    Text: Desktop
+    Object: {fileID: 0}
+  - Language: Russian
+    Text: "\u041A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440"
+    Object: {fileID: 0}
+  - Language: Turkish
+    Text: Bilgisayar
+    Object: {fileID: 0}
 --- !u!1 &1173262005
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,6 +227,116 @@ MonoBehaviour:
     Object: {fileID: 0}
   - Language: Turkish
     Text: Yazarlar
+    Object: {fileID: 0}
+--- !u!1 &1176845964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1176845965}
+  - component: {fileID: 1176845966}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1176845965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176845964}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9157095083148658059}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1176845966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176845964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u041C\u0443\u0437\u044B\u043A\u0430"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Music
+    Object: {fileID: 0}
+  - Language: Turkish
+    Text: "M\xFCzik"
+    Object: {fileID: 0}
+--- !u!1 &1200312058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1200312059}
+  - component: {fileID: 1200312060}
+  m_Layer: 0
+  m_Name: Control
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1200312059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200312058}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9157095083148658059}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1200312060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200312058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: English
+    Text: Control
+    Object: {fileID: 0}
+  - Language: Turkish
+    Text: Kontrol
+    Object: {fileID: 0}
+  - Language: Russian
+    Text: "\u0423\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435"
     Object: {fileID: 0}
 --- !u!1 &1239229129
 GameObject:
@@ -228,6 +448,61 @@ MonoBehaviour:
   - Language: Turkish
     Text: "Seviye ge\xE7ti!"
     Object: {fileID: 0}
+--- !u!1 &1869723325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1869723326}
+  - component: {fileID: 1869723327}
+  m_Layer: 0
+  m_Name: Leaders
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1869723326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869723325}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9157095083148658059}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1869723327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869723325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u041B\u0438\u0434\u0435\u0440\u044B"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Leaders
+    Object: {fileID: 0}
+  - Language: Turkish
+    Text: Liderler
+    Object: {fileID: 0}
 --- !u!1 &1893135966
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +514,7 @@ GameObject:
   - component: {fileID: 1893135967}
   - component: {fileID: 1893135968}
   m_Layer: 0
-  m_Name: Tutorial1
+  m_Name: TutorialControl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -275,17 +550,211 @@ MonoBehaviour:
   data: 0
   entries:
   - Language: Russian
-    Text: "\u0414\u043B\u044F \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F
-      \u0430\u0432\u0442\u043E\u043C\u043E\u0431\u0438\u043B\u0435\u043C \u0438 \u0432\u0440\u0430\u0449\u0435\u043D\u0438\u044F
-      \u0435\u0433\u043E \u0432 \u0432\u043E\u0437\u0434\u0443\u0445\u0435 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439
-      \u043A\u043D\u043E\u043F\u043A\u0438 WASD \u0438\u043B\u0438 \u0441\u0442\u0440\u0435\u043B\u043A\u0438"
+    Text: "\u0413\u0430\u0437 / \u041F\u043E\u0434\u043D\u044F\u0442\u044C \u043F\u0435\u0440\u0435\u0434
+      \u0430\u0432\u0442\u043E\u043C\u043E\u0431\u0438\u043B\u044F(\u0432 \u0432\u043E\u0437\u0434\u0443\u0445\u0435)\r\n\u0422\u043E\u0440\u043C\u043E\u0437
+      / \u041F\u043E\u0434\u043D\u044F\u0442\u044C \u0437\u0430\u0434 \u0430\u0432\u0442\u043E\u043C\u043E\u0431\u0438\u043B\u044F(\u0432
+      \u0432\u043E\u0437\u0434\u0443\u0445\u0435)\r\n\u041F\u0430\u0432\u043E\u0440\u043E\u0442
+      \u043D\u0430 \u043B\u0435\u0432\u043E / \u041F\u043E\u0434\u043D\u044F\u0442\u044C
+      \u043B\u0435\u0432\u044B\u0439 \u0431\u043E\u043A \u0430\u0432\u0442\u043E\u043C\u043E\u0431\u0438\u043B\u044F(\u0432
+      \u0432\u043E\u0437\u0434\u0443\u0445\u0435)\r\n\u041F\u0430\u0432\u043E\u0440\u043E\u0442
+      \u043D\u0430 \u043F\u0440\u0430\u0432\u043E / \u041F\u043E\u0434\u043D\u044F\u0442\u044C
+      \u043F\u0440\u0430\u0432\u044B\u0439 \u0431\u043E\u043A \u0430\u0432\u0442\u043E\u043C\u043E\u0431\u0438\u043B\u044F(\u0432
+      \u0432\u043E\u0437\u0434\u0443\u0445\u0435)\r\n\u0420\u0443\u0447\u043D\u0438\u043A
+      \r\n\u0412\u043E\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C
+      \u0430\u0432\u0442\u043E\u043C\u043E\u0431\u0438\u043B\u044C\r\n\u0421\u043C\u0435\u043D\u0438\u0442\u044C
+      \u043A\u0430\u043C\u0435\u0440\u0443\r\n\u041F\u0430\u0443\u0437\u0430\r"
     Object: {fileID: 0}
   - Language: Turkish
-    Text: "Arabay\u0131 kontrol etmek ve havada d\xF6nd\xFCrmek i\xE7in WASD d\xFC\u011Fmelerini
-      veya oklar\u0131n\u0131 kullan\u0131n."
+    Text: "Arac\u0131n \xF6n\xFCnde Gaz / Y\xFCkseltme (havada)\nFren / Arac\u0131n
+      arkas\u0131n\u0131 kald\u0131r\u0131n (havada)\nSola d\xF6nd\xFCr\xFCn / Araban\u0131n
+      sol taraf\u0131n\u0131 kald\u0131r\u0131n (havada)\nSa\u011Fa d\xF6n\xFCn /
+      Araban\u0131n sa\u011F taraf\u0131n\u0131 kald\u0131r\u0131n (havada)\nEl freni\narabay\u0131
+      geri y\xFCkle\nKameray\u0131 de\u011Fi\u015F\nDuraklat"
     Object: {fileID: 0}
   - Language: English
-    Text: To control the car and rotate it in the air, use the WASD buttons or arrows
+    Text: 'Gas / Raise in front of the car (in the air)
+
+      Brake / Raise the
+      rear of the car (in the air)
+
+      Turn left / Raise the left side of the
+      car (in the air)
+
+      Turn right / Raise the right side of the car (in the
+      air)
+
+      Handbrake
+
+      Restore the car
+
+      Change camera
+
+      Pause'
+    Object: {fileID: 0}
+--- !u!1 &1916745984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1916745985}
+  - component: {fileID: 1916745986}
+  m_Layer: 0
+  m_Name: Close
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1916745985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916745984}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9157095083148658059}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1916745986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916745984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: Russian
+    Text: "\u0417\u0430\u043A\u0440\u044B\u0442\u044C"
+    Object: {fileID: 0}
+  - Language: English
+    Text: Close
+    Object: {fileID: 0}
+  - Language: Turkish
+    Text: "kapal\u0131"
+    Object: {fileID: 0}
+--- !u!1 &1989291433
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1989291434}
+  - component: {fileID: 1989291435}
+  m_Layer: 0
+  m_Name: Mobile
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1989291434
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989291433}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9157095083148658059}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1989291435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989291433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: English
+    Text: Mobile
+    Object: {fileID: 0}
+  - Language: Turkish
+    Text: Seyyar
+    Object: {fileID: 0}
+  - Language: Russian
+    Text: "\u041C\u043E\u0431\u0438\u043B\u044C\u043D\u044B\u0439"
+    Object: {fileID: 0}
+--- !u!1 &2025306581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2025306582}
+  - component: {fileID: 2025306583}
+  m_Layer: 0
+  m_Name: GoalOfTheGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2025306582
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025306581}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9157095083148658059}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2025306583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025306581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb15fa0e7301ff849bf4d6dcede7c12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: 0
+  entries:
+  - Language: English
+    Text: Goal of the game
+    Object: {fileID: 0}
+  - Language: Russian
+    Text: "\u0426\u0435\u043B\u044C \u0438\u0433\u0440\u044B"
+    Object: {fileID: 0}
+  - Language: Turkish
+    Text: "Oyunun amac\u0131"
     Object: {fileID: 0}
 --- !u!1 &3486766550699838454
 GameObject:
@@ -698,6 +1167,14 @@ Transform:
   - {fileID: 1259695303094267178}
   - {fileID: 8350455575479360776}
   - {fileID: 1173262006}
+  - {fileID: 1916745985}
+  - {fileID: 1176845965}
+  - {fileID: 2025306582}
+  - {fileID: 1200312059}
+  - {fileID: 887798325}
+  - {fileID: 1989291434}
+  - {fileID: 1869723326}
+  - {fileID: 579416300}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -713,7 +1190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 806f0696300aeac44a0e17efee222854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLanguage: Russian
+  currentLanguage: English
   detectLanguage: 1
   defaultLanguage: 
   saveLoad: 1
