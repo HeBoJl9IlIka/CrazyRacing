@@ -6,7 +6,11 @@ namespace CrazyRacing.Model
         public const int NumberFirstLevel = 1;
         public const int MaxAmountRecovery = 5;
 
+#if !UNITY_WEBGL || UNITY_EDITOR
+        public const float VehicleRotationForce = 10f;
+#else
         public const float VehicleRotationForce = 2f;
+#endif
         public const float DelayEnablingCheckpointCollider = 1f;
         public const float ProgressBarFillingDuration = 1f;
         public const float MaxVolumeAudio = 1f;
@@ -17,8 +21,10 @@ namespace CrazyRacing.Model
         public const float MinSpeedForBoost = 3f;
         public const float PropsStepRotate = 1f;
         public const float DefaultAngularVelocity = 8f;
-        public const float MaxAngularVelocity = 2f;
+        public const float VehicleMaxAngularVelocity = 2f;
         public const float DelayShowVideo = 0.1f;
+        public const float BarrierMaxAngularVelocity = 1.5f;
+        public const float BarrierMinAngularVelocity = -0.5f;
 
         public const string NumberCurrentLevel = "NumberCurrentLevel";
         public const string TagRoad = "Road";

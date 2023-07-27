@@ -29,7 +29,7 @@ public abstract class VehiclePresenter : MonoBehaviour
         if (IsRotating)
         {
             if (_isGrounded == false)
-                _rigidbody.maxAngularVelocity = Config.MaxAngularVelocity;
+                _rigidbody.maxAngularVelocity = Config.BarrierMaxAngularVelocity;
             else
                 _rigidbody.maxAngularVelocity = Config.DefaultAngularVelocity;
         }

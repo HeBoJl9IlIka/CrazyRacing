@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1885291274899774385}
   - component: {fileID: 1885291274899774386}
   - component: {fileID: 1885291274899774387}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,8 +109,7 @@ GameObject:
   - component: {fileID: 1885291275120764627}
   - component: {fileID: 1885291275120764624}
   - component: {fileID: 1885291275120764625}
-  - component: {fileID: 1885291275120764623}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,20 +181,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1885291275120764623
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885291275120764628}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1885291275279034863
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,7 +190,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1885291275279034862}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,8 +228,8 @@ GameObject:
   - component: {fileID: 1885291275512801040}
   - component: {fileID: 1885291275512801037}
   - component: {fileID: 1885291275512801038}
-  - component: {fileID: 1885291275512801036}
-  m_Layer: 0
+  - component: {fileID: 6681674340283804740}
+  m_Layer: 9
   m_Name: Blade (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,8 +304,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1885291275512801036
-MeshCollider:
+--- !u!65 &6681674340283804740
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -329,10 +314,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 2
+  m_Size: {x: 1.0000004, y: 2.4944983, z: 1.0000002}
+  m_Center: {x: 0.00000022759595, y: 0.24724978, z: -0.000000074505806}
 --- !u!1 &1885291275691309640
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,7 +328,7 @@ GameObject:
   - component: {fileID: 1885291275691309639}
   - component: {fileID: 1885291275691309636}
   - component: {fileID: 1885291275691309637}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Blade (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -427,7 +411,7 @@ GameObject:
   - component: {fileID: 1885291275707242033}
   - component: {fileID: 1885291275707242030}
   - component: {fileID: 1885291275707242031}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Blade (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -511,7 +495,7 @@ GameObject:
   - component: {fileID: 1885291275953433834}
   - component: {fileID: 1885291275953433835}
   - component: {fileID: 1885291275953433836}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -608,8 +592,8 @@ GameObject:
   - component: {fileID: 1885291275957412610}
   - component: {fileID: 1885291275957412863}
   - component: {fileID: 1885291275957412608}
-  - component: {fileID: 1885291275957412862}
-  m_Layer: 0
+  - component: {fileID: 9131977569754427163}
+  m_Layer: 9
   m_Name: Blade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -684,8 +668,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1885291275957412862
-MeshCollider:
+--- !u!65 &9131977569754427163
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -694,10 +678,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 2.4992537, z: 1.0000002}
+  m_Center: {x: 0.000000059604645, y: 0.24962568, z: -0.000000074505806}
 --- !u!1 &1885291276432596303
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,7 +691,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1885291276432596302}
   - component: {fileID: 1885291276432596301}
-  m_Layer: 0
+  - component: {fileID: 2163925370611870846}
+  m_Layer: 9
   m_Name: Blades
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -746,7 +730,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _axes: 02000000
-  _speedRotate: 50
+  _maxAngularVelocity: 2
+--- !u!54 &2163925370611870846
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885291276432596303}
+  serializedVersion: 2
+  m_Mass: 50000
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 62
+  m_CollisionDetection: 1
 --- !u!1 &1885291276486438682
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,7 +758,7 @@ GameObject:
   - component: {fileID: 1885291276486438681}
   - component: {fileID: 1885291276486438678}
   - component: {fileID: 1885291276486438679}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Blade (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -842,7 +842,7 @@ GameObject:
   - component: {fileID: 1885291276520499010}
   - component: {fileID: 1885291276520499011}
   - component: {fileID: 1885291276520499012}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -938,8 +938,7 @@ GameObject:
   - component: {fileID: 1885291276529557192}
   - component: {fileID: 1885291276529557189}
   - component: {fileID: 1885291276529557190}
-  - component: {fileID: 1885291276529557188}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1011,20 +1010,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1885291276529557188
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885291276529557193}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1885291276545618452
 GameObject:
   m_ObjectHideFlags: 0
@@ -1036,7 +1021,7 @@ GameObject:
   - component: {fileID: 1885291276545618451}
   - component: {fileID: 1885291276545618448}
   - component: {fileID: 1885291276545618449}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Blade (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1119,7 +1104,7 @@ GameObject:
   - component: {fileID: 1885291276713194803}
   - component: {fileID: 1885291276713194800}
   - component: {fileID: 1885291276713194801}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Blade (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1203,7 +1188,7 @@ GameObject:
   - component: {fileID: 1885291276722725386}
   - component: {fileID: 1885291276722725387}
   - component: {fileID: 1885291276722725388}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1334,7 +1319,7 @@ GameObject:
   - component: {fileID: 1885291276880315711}
   - component: {fileID: 1885291276880315712}
   - component: {fileID: 1885291276880315713}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylinder (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1431,8 +1416,8 @@ GameObject:
   - component: {fileID: 1885291276895597993}
   - component: {fileID: 1885291276895597990}
   - component: {fileID: 1885291276895597991}
-  - component: {fileID: 1885291276895597989}
-  m_Layer: 0
+  - component: {fileID: 6319914695494271433}
+  m_Layer: 9
   m_Name: Blade (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1507,8 +1492,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1885291276895597989
-MeshCollider:
+--- !u!65 &6319914695494271433
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1517,10 +1502,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 2
+  m_Size: {x: 1.0000006, y: 2.4932072, z: 1.0000002}
+  m_Center: {x: -0.00000031372053, y: 0.24660267, z: -0.000000074505806}
 --- !u!1 &1885291276968518062
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,8 +1516,7 @@ GameObject:
   - component: {fileID: 1885291276968518061}
   - component: {fileID: 1885291276968518058}
   - component: {fileID: 1885291276968518059}
-  - component: {fileID: 1885291276968518057}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1605,20 +1588,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1885291276968518057
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1885291276968518062}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1885291276968834985
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,7 +1599,7 @@ GameObject:
   - component: {fileID: 1885291276968834984}
   - component: {fileID: 1885291276968834981}
   - component: {fileID: 1885291276968834982}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Blade (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

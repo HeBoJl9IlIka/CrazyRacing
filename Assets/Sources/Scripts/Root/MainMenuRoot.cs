@@ -17,6 +17,7 @@ public class MainMenuRoot : MonoBehaviour
 
     private void Awake()
     {
+        _block.gameObject.SetActive(true);
         CreateLevels();
         ProgressGame.Init();
         _levelsUnlocker = new LevelsUnlocker(Levels);
