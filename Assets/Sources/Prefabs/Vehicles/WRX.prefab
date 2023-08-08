@@ -2815,7 +2815,7 @@ MonoBehaviour:
         name: WheelTireRL_WheelController
       biasAB: 0.5
       coastRamp: 0.5
-      differentialType: 3
+      differentialType: 0
       outputB:
         angularVelocity: 0
         inertia: 0.02
@@ -2835,7 +2835,7 @@ MonoBehaviour:
       componentInputIsNull: 0
       outputASelector:
         name: Front Differential
-      biasAB: 1
+      biasAB: 0.5
       coastRamp: 0.5
       differentialType: 0
       outputB:

@@ -46,7 +46,7 @@ public class LevelRoot : MonoBehaviour
         _mobileInputPresenter = _presenterFactory.CreateMobileInput();
         _sdk = SdkFactory.Sdk;
 
-        if(_sdk.IsMobile)
+        if (_sdk.IsMobile)
             _mobileInputPresenter.gameObject.SetActive(true);
     }
 

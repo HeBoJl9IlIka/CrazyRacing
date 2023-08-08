@@ -80,6 +80,7 @@ namespace SplineMesh {
                     typeof(MeshCollider),
                     typeof(RoadPresenter));
                 go.tag = Config.TagRoad;
+                go.layer = Config.LayerRoad;
                 go.GetComponent<MeshRenderer>().material = material;
                 ExtrusionSegment seg = go.GetComponent<ExtrusionSegment>();
                 seg.ShapeVertices = shapeVertices;

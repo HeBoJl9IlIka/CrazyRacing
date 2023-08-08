@@ -22,12 +22,17 @@ public class MainMenuRoot : MonoBehaviour
         ProgressGame.Init();
         _levelsUnlocker = new LevelsUnlocker(Levels);
         _levelsUnlocker.UnlockLevels();
+
+        if (ProgressGame.GetNumberCurrentLevel() == Config.NumberFirstLevel)
+            _buttonContinue.gameObject.SetActive(false);
     }
 
     private void Start()
     {
         if (SdkFactory.Sdk == null)
             SdkFactory.Init(_sdks);
+        else
+            _block.SetActive(false);
     }
 
     private void OnEnable()

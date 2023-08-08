@@ -31,10 +31,13 @@ public class AudioPresenter : MonoBehaviour
                 Audio.Enable();
             else
                 Audio.Disable();
+
+            _image.sprite = _iconEnabled;
         }
         else
         {
             Audio.Disable();
+            _image.sprite = _iconDisabled;
         }
     }
 

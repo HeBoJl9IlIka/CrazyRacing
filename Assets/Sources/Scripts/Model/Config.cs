@@ -5,6 +5,7 @@ namespace CrazyRacing.Model
         public const int NumberSceneMainMenu = 0;
         public const int NumberFirstLevel = 1;
         public const int MaxAmountRecovery = 5;
+        public const int LayerRoad = 10;
 
 #if !UNITY_WEBGL || UNITY_EDITOR
         public const float VehicleRotationForce = 10f;
